@@ -16,70 +16,54 @@ primary source in the conversation that produces it.
 There is no code, no build system, no tests, no package manifest. Everything
 is Markdown. Edits are content edits.
 
-## Current state vs. README-described layout
-
-The `README.md` describes a per-tribunal subdirectory layout:
+## Layout
 
 ```
+README.md
+CLAUDE.md
 icc/
-├── SKILL.md
+├── SKILL.md          # entry point; core discipline, when-to-use, workflow, hard rules
 ├── CHANGELOG.md
-└── references/
-    ├── authoritative-sources.md
-    ├── citation-format.md
-    ├── verification-workflow.md
-    ├── foundational-texts.md
+├── references/
+│   ├── authoritative-sources.md
+│   ├── citation-format.md
+│   ├── verification-workflow.md
+│   └── foundational-texts.md
+└── examples/
     ├── example-verification.md
     └── example-audit.md
 ```
 
-What actually exists at the repo root, today:
-
-```
-README.md
-authoritative-sources.md
-citation-format.md
-verification-workflow.md
-foundational-texts.md
-example-verification.md
-example-audit.md
-```
-
-The `icc/SKILL.md`, `icc/CHANGELOG.md`, and `icc/references/` wrapper are not
-on disk. The seven Markdown files at the root are the ICC skill content that
-the README expects to find inside `icc/references/` (and the two `example-*`
-files belong in `icc/examples/` per the README's narrative, though the README
-itself groups them under `references/`).
-
-When the user asks you to add content, ask whether they want it placed at the
-root (current state) or moved into the `icc/` layout the README describes. Do
-not silently reorganise — the discrepancy is real and the user may have a
-reason for the current layout (e.g. mid-migration, or the README is what's
-out of date).
+The `icc/` folder is a self-contained Claude Skill: `SKILL.md` is the entry
+point and the rest is referenced from it.
 
 ## File map
 
-- `README.md` — public-facing description of the skill suite, methodology, and
-  intended layout.
-- `authoritative-sources.md` — the source hierarchy: Tier 1 (icc-cpi.int,
-  legal-tools.org, asp.icc-cpi.int), Tier 2 (NGOs, UN bodies, academic, news),
-  and "do not cite". Includes the fallback ladder for icc-cpi.int 403s.
-- `citation-format.md` — exact citation formats for the Rome Statute, EoC,
-  RPE, Regulations, decisions, warrants, OTP statements, ASP documents. The
-  Article 28 shorthand-vs-Statute discussion lives here.
-- `verification-workflow.md` — the operational procedure: three-level
-  verification gradient (Existence / Content / Paragraph), the fallback
-  ladder, the standard workflow (identify → list → verify → draft →
+- `README.md` — public-facing description of the skill suite and methodology.
+- `icc/SKILL.md` — entry point. Frontmatter (`name`, `description`), the core
+  discipline, when to use the skill, the workflow summary, pointers to
+  references and examples, and the five hard rules.
+- `icc/CHANGELOG.md` — version history for the ICC skill.
+- `icc/references/authoritative-sources.md` — the source hierarchy: Tier 1
+  (icc-cpi.int, legal-tools.org, asp.icc-cpi.int), Tier 2 (NGOs, UN bodies,
+  academic, news), and "do not cite". Includes the fallback ladder for
+  icc-cpi.int 403s.
+- `icc/references/citation-format.md` — exact citation formats for the Rome
+  Statute, EoC, RPE, Regulations, decisions, warrants, OTP statements, ASP
+  documents. The Article 28 shorthand-vs-Statute discussion lives here.
+- `icc/references/verification-workflow.md` — the operational procedure:
+  three-level verification gradient (Existence / Content / Paragraph), the
+  fallback ladder, the standard workflow (identify → list → verify → draft →
   self-audit), and a worked Bemba example.
-- `foundational-texts.md` — the four texts citable from project knowledge
-  without `web_fetch` (Rome Statute, EoC, RPE, Regulations), and what is *not*
-  foundational.
-- `example-verification.md` — worked end-to-end examples: level-C full
-  verification (Bemba effective control) and level-B partial verification
-  (Ntaganda 2017 jurisdiction).
-- `example-audit.md` — two audit modes: auditing a working draft vs. auditing
-  a finalised Court record. The distinction matters; mixing them produces
-  unhelpful output.
+- `icc/references/foundational-texts.md` — the four texts citable from
+  project knowledge without `web_fetch` (Rome Statute, EoC, RPE,
+  Regulations), and what is *not* foundational.
+- `icc/examples/example-verification.md` — worked end-to-end examples:
+  level-C full verification (Bemba effective control) and level-B partial
+  verification (Ntaganda 2017 jurisdiction).
+- `icc/examples/example-audit.md` — two audit modes: auditing a working
+  draft vs. auditing a finalised Court record. The distinction matters;
+  mixing them produces unhelpful output.
 
 ## House style for edits
 
@@ -129,32 +113,31 @@ enforce. Edits that weaken them are bugs.
 ## Adding a new tribunal
 
 The README anticipates skills for ICTY, ICTR, MICT, SCSL, STL, ECCC, KSC,
-IIIM, IIMM, UNITAD, and hybrid mechanisms. The intended pattern (per the
-README) is one folder per tribunal:
+IIIM, IIMM, UNITAD, and hybrid mechanisms. One folder per tribunal, mirroring
+the `icc/` layout:
 
 ```
 [tribunal]/
 ├── SKILL.md
 ├── CHANGELOG.md
-└── references/
-    ├── authoritative-sources.md
-    ├── citation-format.md
-    ├── verification-workflow.md
-    ├── foundational-texts.md
-    └── examples/
-        ├── example-verification.md
-        └── example-audit.md
+├── references/
+│   ├── authoritative-sources.md
+│   ├── citation-format.md
+│   ├── verification-workflow.md
+│   └── foundational-texts.md
+└── examples/
+    ├── example-verification.md
+    └── example-audit.md
 ```
 
-Until the existing ICC content is moved into `icc/`, adding a second tribunal
-folder will produce an inconsistent repo. Surface that to the user before
-creating the second folder; offer to migrate ICC first.
-
-When adding tribunal-specific content, mirror the seven-file structure and
-adapt — don't invent a different layout per tribunal. Constants per tribunal:
+When adding tribunal-specific content, mirror this structure and adapt —
+don't invent a different layout per tribunal. Things that vary by tribunal:
 the document numbering scheme, the foundational instruments (statute,
 RPE/equivalent, regulations/equivalent), the chamber names, the
 authoritative-source domains, the fallback ladder when direct fetch fails.
+The methodology — verification-first, three-level gradient, public-redacted
+only — is constant across tribunals and should not be re-litigated per
+folder.
 
 ## Git workflow
 
@@ -167,7 +150,9 @@ authoritative-source domains, the fallback ladder when direct fetch fails.
 
 ## What to do when an instruction is unclear
 
-The most common ambiguity will be **"add X to the skill"** — root files or
-`icc/`? Ask. The second most common will be **"fix the citations in this
-draft"** — that's a request to apply the methodology, not a request to edit
-this repo; clarify before changing repo files.
+The most common ambiguity is **"fix the citations in this draft"** — that's
+a request to *apply* the skill's methodology, not a request to edit the
+repo. If the user wants the skill itself improved, that's an edit to
+`icc/references/` or `icc/examples/`. If they want their own draft cleaned
+up, that's a separate session that uses the skill, not edits to it.
+Clarify before changing repo files.

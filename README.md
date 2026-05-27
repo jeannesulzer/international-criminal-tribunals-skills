@@ -25,14 +25,16 @@ Future tribunals (ICTY, ICTR, MICT, SCSL, STL, ECCC, KSC, IIIM, IIMM, UNITAD, hy
 ```
 international-criminal-tribunals-skills/
 ├── README.md
+├── CLAUDE.md
 ├── icc/
 │   ├── SKILL.md
 │   ├── CHANGELOG.md
-│   └── references/
-│       ├── authoritative-sources.md
-│       ├── citation-format.md
-│       ├── verification-workflow.md
-│       ├── foundational-texts.md
+│   ├── references/
+│   │   ├── authoritative-sources.md
+│   │   ├── citation-format.md
+│   │   ├── verification-workflow.md
+│   │   └── foundational-texts.md
+│   └── examples/
 │       ├── example-verification.md
 │       └── example-audit.md
 └── [future tribunal skills]/
