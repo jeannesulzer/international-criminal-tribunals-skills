@@ -45,6 +45,19 @@ eccc/
 └── examples/
     ├── example-verification.md
     └── example-audit.md
+nuremberg-tokyo/
+├── SKILL.md
+├── CHANGELOG.md
+├── references/
+│   ├── authoritative-sources.md
+│   ├── citation-format.md
+│   ├── verification-workflow.md
+│   ├── foundational-texts.md
+│   ├── jurisprudence-map.md
+│   └── defendants-and-judges.md
+└── examples/
+    ├── example-verification.md
+    └── example-audit.md
 ```
 
 Each tribunal folder is a self-contained Claude Skill: `SKILL.md` is the entry
@@ -126,6 +139,77 @@ alongside (e.g. ECCC has `case-documents-quick-reference.md` and
 - `eccc/examples/example-audit.md` — two audit modes paralleling the ICC
   skill: working draft (citations are claims to be verified) vs. finalised
   Court record (the audit task shifts to downstream-reliance inventory).
+
+### Nuremberg + Tokyo skill
+
+A single integrated skill covering three post-WWII tribunals: the
+International Military Tribunal at Nuremberg (IMT, 1945-46), the twelve
+subsequent US Nuremberg Military Tribunals under Control Council Law
+No. 10 (NMT, 1946-49), and the International Military Tribunal for the
+Far East at Tokyo (IMTFE, 1946-48). One folder, three institutions.
+
+- `nuremberg-tokyo/SKILL.md` — entry point. Frontmatter, the
+  verification-first discipline, the gradient (Existence / Content /
+  Page or volume), the standard workflow, the institutional
+  architecture (IMT vs NMT vs IMTFE), the source hierarchy, the five
+  citation modes, audit mode, substantive-doctrine pointers, and the
+  sensitive-contexts note.
+- `nuremberg-tokyo/CHANGELOG.md` — version history for the skill.
+- `nuremberg-tokyo/references/authoritative-sources.md` — Tier 1 (the
+  three official records — Blue Series, Green Series, Pritchard-Zaide
+  volumes — plus the digital archives: Avalon, Harvard Nuremberg Trials
+  Project, Stanford Taube Archive, UVA IMTFE Collection, ICC Legal
+  Tools, JACAR, UN Audiovisual Library; institutional repositories and
+  specialised university collections), Tier 2 (Nuremberg Academy,
+  USHMM, academic commentary on both Nuremberg and Tokyo), and "never
+  authoritative". Includes the languages-and-translations note.
+- `nuremberg-tokyo/references/citation-format.md` — the five citation
+  modes (Charter/Statute provisions, IMT Judgment via Blue Series or
+  Oxford ICL, NMT cases via Green Series, IMTFE Judgment via
+  Pritchard-Zaide with mandatory majority-vs-separate-opinion
+  identification, Nuremberg Principles), plus the 22 IMT and 28 IMTFE
+  defendant tables and the 11 IMTFE judges.
+- `nuremberg-tokyo/references/verification-workflow.md` — separate
+  fallback ladders for IMT/NMT and for IMTFE citations, the
+  verification-level gradient, **the four classic traps** (IMT vs NMT;
+  Nuremberg vs Tokyo; Charter terminology — Art. 6(a)(b)(c) vs Class
+  A/B/C; majority Judgment vs separate opinions), and translation
+  discipline.
+- `nuremberg-tokyo/references/foundational-texts.md` — the instruments
+  citable from project knowledge: the London Agreement and IMT Charter,
+  Control Council Law No. 10, MacArthur's Special Proclamation and the
+  Tokyo Charter, UNGA Resolutions 95(I) and 177(II), and the ILC 1950
+  Nuremberg Principles.
+- `nuremberg-tokyo/references/jurisprudence-map.md` — fourteen
+  topic-by-topic sections mapping doctrine across IMT, NMT, and IMTFE
+  (legality / *nullum crimen*, crimes against peace, war crimes, crimes
+  against humanity with the armed-conflict-nexus divergence, criminal
+  organisations, individual responsibility, no immunity, superior
+  orders, conspiracy, command responsibility, the Hirohito
+  non-indictment, the Pal dissent, the Nuremberg Principles, the twelve
+  NMT cases).
+- `nuremberg-tokyo/references/defendants-and-judges.md` — the
+  tribunal-specific reference: 22 IMT defendants with German spellings,
+  positions and sentences; the four IMT counts; the criminal-organisation
+  findings; 28 IMTFE defendants with positions and sentences; the
+  Hirohito non-indictment; Class A/B/C; the 11 IMTFE judges with their
+  separate opinions; the chief prosecutors.
+- `nuremberg-tokyo/examples/example-verification.md` — one Nuremberg
+  citation (the "men, not abstract entities" passage of the IMT
+  Judgment) and one Tokyo citation (the Pal dissent on aggressive war),
+  verified end to end.
+- `nuremberg-tokyo/examples/example-audit.md` — three audits, each
+  illustrating one of the classic traps (IMT/NMT confusion via the
+  Einsatzgruppen Case; Nuremberg/Tokyo Charter article-number confusion;
+  the Pal dissent attributed to "the Tribunal").
+
+The accused-name convention is tribunal-specific here too: IMT
+defendants keep their German spellings (Göring, Seyß-Inquart, Heß);
+IMTFE defendants keep the macrons in romanised Japanese (Tōjō, Tōgō,
+Mutō), and the skill flags that the Pritchard-Zaide and JACAR
+romanisations differ. The four classic traps are the Nuremberg + Tokyo
+analogue of the ICC Article 28 shorthand discipline and the ECCC
+severance discipline — keep them intact if you touch this skill.
 
 ## House style for edits
 
