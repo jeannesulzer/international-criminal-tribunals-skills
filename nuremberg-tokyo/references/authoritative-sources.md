@@ -119,7 +119,7 @@ For Robert Jackson's papers, speeches, and the texts of his opening and closing 
 - **Neil Boister & Robert Cryer**, *The Tokyo International Military Tribunal: A Reappraisal* (Oxford UP 2008). The leading legal-doctrinal reappraisal.
 - **B.V.A. Röling & Antonio Cassese**, *The Tokyo Trial and Beyond: Reflections of a Peacemonger* (Polity 1993). Röling was a dissenting judge at Tokyo.
 - **Tim Maga**, *Judgment at Tokyo: The Japanese War Crimes Trials* (UP of Kentucky 2001).
-- **Madoka Futamura**, *War Crimes Tribunals and Transitional Justice: The Tokyo Trial and the Nuremburg Legacy* (Routledge 2008).
+- **Madoka Futamura**, *War Crimes Tribunals and Transitional Justice: The Tokyo Trial and the Nuremberg Legacy* (Routledge 2008).
 - **Yuki Tanaka, Tim McCormack & Gerry Simpson (eds)**, *Beyond Victor's Justice? The Tokyo War Crimes Trial Revisited* (Brill 2011).
 
 ### Specialised databases

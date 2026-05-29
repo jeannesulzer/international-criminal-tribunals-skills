@@ -9,6 +9,7 @@ A suite of [Claude Skills](https://docs.claude.com/en/docs/build-with-claude/ski
 |---|---|---|
 | [`icc/`](./icc/) | v1.1 | International Criminal Court (Rome Statute system) |
 | [`eccc/`](./eccc/) | v1.2 | Extraordinary Chambers in the Courts of Cambodia (Khmer Rouge Tribunal) |
+| [`nuremberg-tokyo/`](./nuremberg-tokyo/) | v1.0 | Post-WWII international military tribunals (IMT at Nuremberg, the twelve subsequent NMT trials under Control Council Law No. 10, and the IMTFE at Tokyo) |
 
 Future tribunals (ICTY, ICTR, MICT, SCSL, STL, KSC, IIIM, IIMM, UNITAD, hybrid mechanisms) and regional human rights courts (ECtHR, IACtHR, ACtHPR) will be added one at a time as separate skills, with the same methodology and structure.
 
@@ -49,6 +50,19 @@ international-criminal-tribunals-skills/
 │   │   ├── verification-workflow.md
 │   │   ├── foundational-texts.md
 │   │   └── jurisprudence-map.md
+│   └── examples/
+│       ├── example-verification.md
+│       └── example-audit.md
+├── nuremberg-tokyo/
+│   ├── SKILL.md
+│   ├── CHANGELOG.md
+│   ├── references/
+│   │   ├── authoritative-sources.md
+│   │   ├── citation-format.md
+│   │   ├── verification-workflow.md
+│   │   ├── foundational-texts.md
+│   │   ├── jurisprudence-map.md
+│   │   └── defendants-and-judges.md
 │   └── examples/
 │       ├── example-verification.md
 │       └── example-audit.md

@@ -153,7 +153,7 @@ When the user supplies a document containing Nuremberg / Tokyo citations:
 - **Working drafts**: verify each citation against Tier 1. Watch for **the four classic traps** — (1) IMT vs NMT, (2) IMT/Nuremberg vs IMTFE/Tokyo, (3) IMT Charter Art. 6 categories vs Tokyo Charter Class A/B/C, (4) majority Judgment vs separate opinions (especially Pal, often quoted as "the Tribunal said" when it is in fact dissent).
 - **Final published texts**: treat as inventory; identify the editions, translations, and volumes cited.
 
-See `references/example-audit.md`.
+See `examples/example-audit.md`.
 
 ## Substantive doctrine — pointers
 
@@ -191,5 +191,5 @@ These tribunals adjudicated the Holocaust, the mass killings on the Eastern Fron
 - `references/foundational-texts.md` — London Agreement, IMT Charter, CCL No. 10, MacArthur Special Proclamation, Tokyo Charter, UNGA Res. 95(I) and 177(II), ILC Nuremberg Principles 1950
 - `references/jurisprudence-map.md` — topic-by-topic map of holdings across IMT, NMT, and IMTFE
 - `references/defendants-and-judges.md` — names, spellings, charges, fates for the 22 IMT defendants and the 28 IMTFE defendants; the 11 IMTFE judges with their opinions
-- `references/example-verification.md` — verifying one Nuremberg citation and one Tokyo citation end-to-end
-- `references/example-audit.md` — auditing user-supplied documents, with traps to watch for
+- `examples/example-verification.md` — verifying one Nuremberg citation and one Tokyo citation end-to-end
+- `examples/example-audit.md` — auditing user-supplied documents, with traps to watch for
