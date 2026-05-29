@@ -58,6 +58,18 @@ nuremberg-tokyo/
 └── examples/
     ├── example-verification.md
     └── example-audit.md
+icty-ictr-irmct/
+├── SKILL.md
+├── CHANGELOG.md
+├── references/
+│   ├── authoritative-sources.md
+│   ├── citation-format.md
+│   ├── verification-workflow.md
+│   ├── foundational-texts.md
+│   └── jurisprudence-map.md
+└── examples/
+    ├── example-verification.md
+    └── example-audit.md
 ```
 
 Each tribunal folder is a self-contained Claude Skill: `SKILL.md` is the entry
@@ -210,6 +222,70 @@ Mutō), and the skill flags that the Pritchard-Zaide and JACAR
 romanisations differ. The four classic traps are the Nuremberg + Tokyo
 analogue of the ICC Article 28 shorthand discipline and the ECCC
 severance discipline — keep them intact if you touch this skill.
+
+### ICTY + ICTR + IRMCT skill
+
+A single integrated skill covering the two UN ad hoc tribunals and their
+residual mechanism: the International Criminal Tribunal for the former
+Yugoslavia (ICTY, 1993-2017), the International Criminal Tribunal for
+Rwanda (ICTR, 1994-2015), and the International Residual Mechanism for
+Criminal Tribunals (IRMCT / MICT / "the Mechanism", 2010– ). They are
+one skill because the Mechanism continues both tribunals' functions,
+hosts their archives, and decided the late appeals under MICT numbers.
+
+- `icty-ictr-irmct/SKILL.md` — entry point. Frontmatter, the
+  verification-first discipline, the gradient (Existence / Content /
+  Paragraph), the standard workflow, the institutional architecture
+  (ICTY vs ICTR vs Mechanism, with the Transitional-Arrangements
+  competence rule), the source hierarchy, the citation-format overview,
+  audit mode, substantive-doctrine pointers, and the protective-measures
+  note.
+- `icty-ictr-irmct/CHANGELOG.md` — version history for the skill.
+- `icty-ictr-irmct/references/authoritative-sources.md` — Tier 1
+  (irmct.org, the Case Law Database `cld.irmct.org`, the Unified Court
+  Records `ucr.irmct.org`, the legacy `icty.org` and
+  `unictr.irmct.org`, and legal-tools.org), Tier 2 (UN documents,
+  academic commentary, trial-monitoring/NGO archives, Refworld), and
+  "never authoritative". Includes the confidential/redacted-document
+  note.
+- `icty-ictr-irmct/references/citation-format.md` — the case-number
+  anatomy (`IT-` / `ICTR-` / `MICT-`), the phase suffixes
+  (`-T`, `-A`, `-AR72`, `-S`, `-R`, `-ES`), the party-designation and
+  diacritics conventions, the IT/ICTR → MICT transition for appeals
+  (Karadžić, Mladić), and a canonical table of frequently cited
+  authorities with verified case numbers and dates.
+- `icty-ictr-irmct/references/verification-workflow.md` — the fallback
+  ladder (irmct.org / case page → CLD → UCR → legacy sites →
+  legal-tools.org → labelled secondary → ask the user), verification-
+  level matching, the hard protective-measures rule (never identify a
+  protected witness; prefer public redacted versions), and the
+  English/French language note.
+- `icty-ictr-irmct/references/foundational-texts.md` — the three
+  Statutes (ICTY: SC Res. 827, 1993; ICTR: SC Res. 955, 1994; IRMCT:
+  SC Res. 1966, 2010, with the Transitional Arrangements), the three
+  Rules of Procedure and Evidence with the revision-in-force discipline,
+  and the competence rule that explains the IT/MICT split.
+- `icty-ictr-irmct/references/jurisprudence-map.md` — topic-by-topic map
+  of the landmark holdings: jurisdiction (Tadić AR72), genocide
+  (Akayesu, Krstić, Karadžić, Mladić), incitement (Akayesu, the Media
+  case), crimes against humanity (Tadić, Kunarac), JCE (Tadić Appeal),
+  command responsibility (Čelebići, Blaškić), torture (Furundžija),
+  sexual violence (Akayesu, Kunarac, Furundžija), senior-leadership
+  guilty plea (Kambanda), and the residual/fugitive function (Kabuga).
+- `icty-ictr-irmct/examples/example-verification.md` — the Krstić /
+  Srebrenica-genocide citation verified end to end, with the
+  trial-vs-appeal distinction.
+- `icty-ictr-irmct/examples/example-audit.md` — a working-draft audit
+  (the Tadić JCE date/chamber error and the Akayesu/JCE III
+  mischaracterisation) and a final-record audit (the Mladić Appeal
+  Judgment and the IT/MICT pairing).
+
+The tribunal-specific disciplines to keep intact here are the
+IT/ICTR/MICT case-number distinction (the same accused may carry an IT
+or ICTR trial number and a later MICT appeal number — e.g. Karadžić
+IT-95-5/18 then MICT-13-55, Mladić IT-09-92 then MICT-13-56) and the
+protective-measures rule. These are this skill's analogue of the ICC
+Article 28 discipline and the ECCC severance discipline.
 
 ## House style for edits
 

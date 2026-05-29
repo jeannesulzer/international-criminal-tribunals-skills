@@ -20,7 +20,7 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 
 ### Skill scope at v1.0.0
 - Covers the **IMT** (the four-power International Military Tribunal at Nuremberg, 1945-46), the **twelve subsequent NMT** trials (US Military Tribunals at Nuremberg under Control Council Law No. 10, 1946-49), and the **IMTFE** (the International Military Tribunal for the Far East at Tokyo, 1946-48) as a single integrated skill
-- Encodes the same verification-first methodology as the `icc` and `eccc` skills in this repository, adapted to the Nuremberg + Tokyo corpus with its multiple authoritative archives
+- Encodes the same verification-first methodology as the `icc`, `eccc`, and `icty-ictr-irmct` skills in this repository, adapted to the Nuremberg + Tokyo corpus with its multiple authoritative archives
 - Positions the post-WWII tribunals as the doctrinal matrix from which the Rome Statute, the ICTY/ICTR Statutes, the ECCC Law, and the modern formulations of crimes against humanity, no-immunity, superior orders, and individual responsibility descend
 - Distinguishes IMT and IMTFE precisely, treats Pal's dissent and the Hirohito non-indictment with the seriousness they deserve in post-colonial legal scholarship, and provides explicit Class A/B/C terminology guidance for the IMTFE
 
