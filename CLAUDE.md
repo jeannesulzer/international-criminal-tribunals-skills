@@ -45,6 +45,31 @@ eccc/
 └── examples/
     ├── example-verification.md
     └── example-audit.md
+nuremberg-tokyo/
+├── SKILL.md
+├── CHANGELOG.md
+├── references/
+│   ├── authoritative-sources.md
+│   ├── citation-format.md
+│   ├── verification-workflow.md
+│   ├── foundational-texts.md
+│   ├── jurisprudence-map.md
+│   └── defendants-and-judges.md
+└── examples/
+    ├── example-verification.md
+    └── example-audit.md
+icty-ictr-irmct/
+├── SKILL.md
+├── CHANGELOG.md
+├── references/
+│   ├── authoritative-sources.md
+│   ├── citation-format.md
+│   ├── verification-workflow.md
+│   ├── foundational-texts.md
+│   └── jurisprudence-map.md
+└── examples/
+    ├── example-verification.md
+    └── example-audit.md
 ```
 
 Each tribunal folder is a self-contained Claude Skill: `SKILL.md` is the entry
@@ -126,6 +151,141 @@ alongside (e.g. ECCC has `case-documents-quick-reference.md` and
 - `eccc/examples/example-audit.md` — two audit modes paralleling the ICC
   skill: working draft (citations are claims to be verified) vs. finalised
   Court record (the audit task shifts to downstream-reliance inventory).
+
+### Nuremberg + Tokyo skill
+
+A single integrated skill covering three post-WWII tribunals: the
+International Military Tribunal at Nuremberg (IMT, 1945-46), the twelve
+subsequent US Nuremberg Military Tribunals under Control Council Law
+No. 10 (NMT, 1946-49), and the International Military Tribunal for the
+Far East at Tokyo (IMTFE, 1946-48). One folder, three institutions.
+
+- `nuremberg-tokyo/SKILL.md` — entry point. Frontmatter, the
+  verification-first discipline, the gradient (Existence / Content /
+  Page or volume), the standard workflow, the institutional
+  architecture (IMT vs NMT vs IMTFE), the source hierarchy, the five
+  citation modes, audit mode, substantive-doctrine pointers, and the
+  sensitive-contexts note.
+- `nuremberg-tokyo/CHANGELOG.md` — version history for the skill.
+- `nuremberg-tokyo/references/authoritative-sources.md` — Tier 1 (the
+  three official records — Blue Series, Green Series, Pritchard-Zaide
+  volumes — plus the digital archives: Avalon, Harvard Nuremberg Trials
+  Project, Stanford Taube Archive, UVA IMTFE Collection, ICC Legal
+  Tools, JACAR, UN Audiovisual Library; institutional repositories and
+  specialised university collections), Tier 2 (Nuremberg Academy,
+  USHMM, academic commentary on both Nuremberg and Tokyo), and "never
+  authoritative". Includes the languages-and-translations note.
+- `nuremberg-tokyo/references/citation-format.md` — the five citation
+  modes (Charter/Statute provisions, IMT Judgment via Blue Series or
+  Oxford ICL, NMT cases via Green Series, IMTFE Judgment via
+  Pritchard-Zaide with mandatory majority-vs-separate-opinion
+  identification, Nuremberg Principles), plus the 22 IMT and 28 IMTFE
+  defendant tables and the 11 IMTFE judges.
+- `nuremberg-tokyo/references/verification-workflow.md` — separate
+  fallback ladders for IMT/NMT and for IMTFE citations, the
+  verification-level gradient, **the four classic traps** (IMT vs NMT;
+  Nuremberg vs Tokyo; Charter terminology — Art. 6(a)(b)(c) vs Class
+  A/B/C; majority Judgment vs separate opinions), and translation
+  discipline.
+- `nuremberg-tokyo/references/foundational-texts.md` — the instruments
+  citable from project knowledge: the London Agreement and IMT Charter,
+  Control Council Law No. 10, MacArthur's Special Proclamation and the
+  Tokyo Charter, UNGA Resolutions 95(I) and 177(II), and the ILC 1950
+  Nuremberg Principles.
+- `nuremberg-tokyo/references/jurisprudence-map.md` — fourteen
+  topic-by-topic sections mapping doctrine across IMT, NMT, and IMTFE
+  (legality / *nullum crimen*, crimes against peace, war crimes, crimes
+  against humanity with the armed-conflict-nexus divergence, criminal
+  organisations, individual responsibility, no immunity, superior
+  orders, conspiracy, command responsibility, the Hirohito
+  non-indictment, the Pal dissent, the Nuremberg Principles, the twelve
+  NMT cases).
+- `nuremberg-tokyo/references/defendants-and-judges.md` — the
+  tribunal-specific reference: 22 IMT defendants with German spellings,
+  positions and sentences; the four IMT counts; the criminal-organisation
+  findings; 28 IMTFE defendants with positions and sentences; the
+  Hirohito non-indictment; Class A/B/C; the 11 IMTFE judges with their
+  separate opinions; the chief prosecutors.
+- `nuremberg-tokyo/examples/example-verification.md` — one Nuremberg
+  citation (the "men, not abstract entities" passage of the IMT
+  Judgment) and one Tokyo citation (the Pal dissent on aggressive war),
+  verified end to end.
+- `nuremberg-tokyo/examples/example-audit.md` — three audits, each
+  illustrating one of the classic traps (IMT/NMT confusion via the
+  Einsatzgruppen Case; Nuremberg/Tokyo Charter article-number confusion;
+  the Pal dissent attributed to "the Tribunal").
+
+The accused-name convention is tribunal-specific here too: IMT
+defendants keep their German spellings (Göring, Seyß-Inquart, Heß);
+IMTFE defendants keep the macrons in romanised Japanese (Tōjō, Tōgō,
+Mutō), and the skill flags that the Pritchard-Zaide and JACAR
+romanisations differ. The four classic traps are the Nuremberg + Tokyo
+analogue of the ICC Article 28 shorthand discipline and the ECCC
+severance discipline — keep them intact if you touch this skill.
+
+### ICTY + ICTR + IRMCT skill
+
+A single integrated skill covering the two UN ad hoc tribunals and their
+residual mechanism: the International Criminal Tribunal for the former
+Yugoslavia (ICTY, 1993-2017), the International Criminal Tribunal for
+Rwanda (ICTR, 1994-2015), and the International Residual Mechanism for
+Criminal Tribunals (IRMCT / MICT / "the Mechanism", 2010– ). They are
+one skill because the Mechanism continues both tribunals' functions,
+hosts their archives, and decided the late appeals under MICT numbers.
+
+- `icty-ictr-irmct/SKILL.md` — entry point. Frontmatter, the
+  verification-first discipline, the gradient (Existence / Content /
+  Paragraph), the standard workflow, the institutional architecture
+  (ICTY vs ICTR vs Mechanism, with the Transitional-Arrangements
+  competence rule), the source hierarchy, the citation-format overview,
+  audit mode, substantive-doctrine pointers, and the protective-measures
+  note.
+- `icty-ictr-irmct/CHANGELOG.md` — version history for the skill.
+- `icty-ictr-irmct/references/authoritative-sources.md` — Tier 1
+  (irmct.org, the Case Law Database `cld.irmct.org`, the Unified Court
+  Records `ucr.irmct.org`, the legacy `icty.org` and
+  `unictr.irmct.org`, and legal-tools.org), Tier 2 (UN documents,
+  academic commentary, trial-monitoring/NGO archives, Refworld), and
+  "never authoritative". Includes the confidential/redacted-document
+  note.
+- `icty-ictr-irmct/references/citation-format.md` — the case-number
+  anatomy (`IT-` / `ICTR-` / `MICT-`), the phase suffixes
+  (`-T`, `-A`, `-AR72`, `-S`, `-R`, `-ES`), the party-designation and
+  diacritics conventions, the IT/ICTR → MICT transition for appeals
+  (Karadžić, Mladić), and a canonical table of frequently cited
+  authorities with verified case numbers and dates.
+- `icty-ictr-irmct/references/verification-workflow.md` — the fallback
+  ladder (irmct.org / case page → CLD → UCR → legacy sites →
+  legal-tools.org → labelled secondary → ask the user), verification-
+  level matching, the hard protective-measures rule (never identify a
+  protected witness; prefer public redacted versions), and the
+  English/French language note.
+- `icty-ictr-irmct/references/foundational-texts.md` — the three
+  Statutes (ICTY: SC Res. 827, 1993; ICTR: SC Res. 955, 1994; IRMCT:
+  SC Res. 1966, 2010, with the Transitional Arrangements), the three
+  Rules of Procedure and Evidence with the revision-in-force discipline,
+  and the competence rule that explains the IT/MICT split.
+- `icty-ictr-irmct/references/jurisprudence-map.md` — topic-by-topic map
+  of the landmark holdings: jurisdiction (Tadić AR72), genocide
+  (Akayesu, Krstić, Karadžić, Mladić), incitement (Akayesu, the Media
+  case), crimes against humanity (Tadić, Kunarac), JCE (Tadić Appeal),
+  command responsibility (Čelebići, Blaškić), torture (Furundžija),
+  sexual violence (Akayesu, Kunarac, Furundžija), senior-leadership
+  guilty plea (Kambanda), and the residual/fugitive function (Kabuga).
+- `icty-ictr-irmct/examples/example-verification.md` — the Krstić /
+  Srebrenica-genocide citation verified end to end, with the
+  trial-vs-appeal distinction.
+- `icty-ictr-irmct/examples/example-audit.md` — a working-draft audit
+  (the Tadić JCE date/chamber error and the Akayesu/JCE III
+  mischaracterisation) and a final-record audit (the Mladić Appeal
+  Judgment and the IT/MICT pairing).
+
+The tribunal-specific disciplines to keep intact here are the
+IT/ICTR/MICT case-number distinction (the same accused may carry an IT
+or ICTR trial number and a later MICT appeal number — e.g. Karadžić
+IT-95-5/18 then MICT-13-55, Mladić IT-09-92 then MICT-13-56) and the
+protective-measures rule. These are this skill's analogue of the ICC
+Article 28 discipline and the ECCC severance discipline.
 
 ## House style for edits
 
