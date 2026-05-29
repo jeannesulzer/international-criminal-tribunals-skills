@@ -55,7 +55,7 @@ For the Thaçi et al. case, the indictment was initially confirmed on **26 Octob
 | Case Number | Case Name | Status as of 2026 |
 |---|---|---|
 | **KSC-BC-2020-04** | *Specialist Prosecutor v. Pjetër Shala* | Concluded; Trial Judgment 16 July 2024; Reparation Order €208,000 on 29 November 2024; Appeal Judgment 14 July 2025 (sentence reduced from 18 to 13 years) |
-| **KSC-BC-2020-05** | *Specialist Prosecutor v. Salih Mustafa* | Concluded; Trial Judgment 16 December 2022; Appeal Judgment 14 December 2023 |
+| **KSC-BC-2020-05** | *Specialist Prosecutor v. Salih Mustafa* | Concluded; Trial Judgment 16 December 2022 (26 years); Appeal Judgment 14 December 2023 (reduced to 22 years); Supreme Court Panel annulled the sentence on 29 July 2024; resentenced to 15 years on 10 September 2024 (upheld February 2025) |
 | **KSC-BC-2020-06** | *Specialist Prosecutor v. Hashim Thaçi, Kadri Veseli, Rexhep Selimi, Jakup Krasniqi* | **Trial in progress** — opening statements 3 April 2023; SPO closed case 15 April 2025; Defence case 15 September 2025 – 2 December 2025; closing statements 9-18 February 2026; **awaiting judgment** |
 | **KSC-BC-2020-07** | *Specialist Prosecutor v. Hysni Gucati and Nasim Haradinaj* | Concluded; Trial Judgment 18 May 2022 (contempt — obstruction of justice, intimidation, violation of secrecy); Appeal Judgment 2 February 2023 (sentences reduced to four years and three months' imprisonment each) |
 | **KSC-BC-2023-10** | *Specialist Prosecutor v. Sabit Januzi, Ismet Bahtijari, Haxhi Shala* | Concluded; guilty pleas to counts 2 and 3 on 18 and 19 December 2024 |

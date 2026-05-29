@@ -105,7 +105,7 @@ KSC citations follow a specific format. Two pieces matter:
 | Case Number | Case Name | Status |
 |---|---|---|
 | **KSC-BC-2020-04** | *Specialist Prosecutor v. Pjetër Shala* | Concluded; Trial Judgment 16 July 2024; Appeal Judgment 14 July 2025 (sentence reduced from 18 to 13 years) |
-| **KSC-BC-2020-05** | *Specialist Prosecutor v. Salih Mustafa* | Concluded; Trial Judgment 16 December 2022; Appeal Judgment 14 December 2023 |
+| **KSC-BC-2020-05** | *Specialist Prosecutor v. Salih Mustafa* | Concluded; Trial Judgment 16 December 2022 (26 years); Appeal Judgment 14 December 2023 (reduced to 22 years); Supreme Court Panel annulled the sentence on 29 July 2024; resentenced to 15 years on 10 September 2024 (upheld February 2025) |
 | **KSC-BC-2020-06** | *Specialist Prosecutor v. Thaçi, Veseli, Selimi and Krasniqi* | Trial ongoing; opening statements 3 April 2023; closing statements February 2026; awaiting judgment |
 | **KSC-BC-2020-07** | *Specialist Prosecutor v. Hysni Gucati and Nasim Haradinaj* | Concluded; Trial Judgment 18 May 2022 (contempt — obstruction of justice); Appeal Judgment 2 February 2023 (sentences reduced) |
 | **KSC-BC-2023-10** | *Specialist Prosecutor v. Sabit Januzi, Ismet Bahtijari and Haxhi Shala* | Concluded; guilty pleas December 2024 |

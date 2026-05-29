@@ -5,7 +5,7 @@ description: Jurisdicción Especial para la Paz (JEP) — Colombia / Special Jur
 
 # JEP — Jurisdicción Especial para la Paz (Colombia)
 
-This skill governs every output that touches the Jurisdicción Especial para la Paz (JEP) — the Special Jurisdiction for Peace, the judicial component of Colombia's transitional justice system established by the **24 November 2016 Final Peace Agreement** between the Government of Colombia and the FARC-EP. The discipline is simple and the reason for it is concrete: the JEP is **the most institutionally innovative transitional-justice court in operation** today — it issued its **first sentences in September 2025** applying *sanciones propias* (restorative non-custodial sanctions) for the gravest crimes of an internal armed conflict that lasted more than fifty years. Its procedure mixes Colombian civil-law structure, international criminal law standards, and a uniquely restorative-justice approach. Citation discipline matters acutely.
+This skill governs every output that touches the Jurisdicción Especial para la Paz (JEP) — the Special Jurisdiction for Peace, the judicial component of Colombia's transitional justice system established by the **24 November 2016 Final Peace Agreement** between the Government of Colombia and the FARC-EP. The discipline is simple and the reason for it is concrete: the JEP applies a distinctive restorative-justice model — it issued its **first sentences in September 2025** applying *sanciones propias* (restorative non-custodial sanctions) for the gravest crimes of an internal armed conflict that lasted more than fifty years. Its procedure mixes Colombian civil-law structure, international criminal law standards, and a uniquely restorative-justice approach. Citation discipline matters acutely.
 
 ## The discipline in one paragraph
 
@@ -71,7 +71,7 @@ If not in project knowledge, retrieve from jep.gov.co (Documentos / Marco Normat
 
 ## Source hierarchy
 
-**Tier 1 (autoritative):**
+**Tier 1 (authoritative):**
 - **jep.gov.co** — the official JEP website. Hosts the Acuerdo Final, the Acto Legislativo 01, Ley Estatutaria 1957, Ley 1922, Reglamento General, all macrocaso pages, autos, sentencias, comunicados de prensa, audiencias. Actively maintained.
 - **legal-tools.org** — selectively mirrors JEP foundational texts
 - **CEV / Comisión de la Verdad** (`comisiondelaverdad.co`) — the Truth Commission's final report (June 2022) — Tier 1 for truth-and-historical-record findings, but not the JEP's own judicial record
