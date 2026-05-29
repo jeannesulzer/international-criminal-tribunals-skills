@@ -93,7 +93,7 @@ When the user supplies a document, the right audit task depends on what kind of 
 
 In either mode, Step 0 (identify the document) comes first. Do not start auditing citations until the document's identity — case, document number, date, chamber — is confirmed against the document itself.
 
-See `references/example-audit.md` for both modes worked through.
+See `examples/example-audit.md` for both modes worked through.
 
 ## Substantive doctrine — pointers
 
@@ -129,7 +129,7 @@ ECCC matters involve genocide (against the Cham, against the Vietnamese), forced
 - `references/verification-workflow.md` — step-by-step procedure, fallback ladder, partial-verification handling
 - `references/foundational-texts.md` — the four foundational instruments (UN-RGC Agreement, Addendum, ECCC Law, Internal Rules) and how to work with them
 - `references/jurisprudence-map.md` — topic-by-topic map of the ECCC's principal holdings, built from the Court's own *Guide to the ECCC, Volume 2: Jurisprudence*
-- `references/example-verification.md` — verifying a single citation end-to-end
-- `references/example-audit.md` — auditing user-supplied documents (both working drafts and finalised Court records)
+- `examples/example-verification.md` — verifying a single citation end-to-end
+- `examples/example-audit.md` — auditing user-supplied documents (both working drafts and finalised Court records)
 
 

@@ -1,6 +1,6 @@
 # Example — verifying a single ECCC citation
 
-This example walks through the verification of a single ECCC citation from question to verified output. It illustrates how the workflow in `verification-workflow.md` looks in practice.
+This example walks through the verification of a single ECCC citation from question to verified output. It illustrates how the workflow in `../references/verification-workflow.md` looks in practice.
 
 ## The question
 
@@ -91,7 +91,7 @@ If any sentence does not trace, it comes out, or it is softened to what the retr
 
 - **Citing the Case 002/02 Trial Judgment without distinguishing it from the Case 002/01 Trial Judgment.** Case 002/01 (E313, 7 August 2014) does not address genocide against the Cham — that charge was tried in 002/02.
 - **Citing "Case 002" instead of "Case 002/02".** A precise reader of the citation will notice the missing slash.
-- **Citing the appeal judgment (F76, 22 September 2022) when the user wants the Trial Chamber's holding.** The appeal judgment affirmed (with adjustments) but is a different document.
+- **Citing the appeal judgment (F76, 23 December 2022) when the user wants the Trial Chamber's holding.** The appeal judgment affirmed (with adjustments) but is a different document. (The appeal was orally pronounced on 22 September 2022; cite F76 with the 23 December 2022 written-judgment date — see `../references/citation-format.md`.)
 - **Inventing a paragraph number.** If the retrieval did not surface paragraph 3445, you do not have it. Omit the pinpoint or ask for the document.
 
 ## What this example does not show
@@ -100,5 +100,5 @@ If any sentence does not trace, it comes out, or it is softened to what the retr
 - The handling of Khmer-language documents (the Trial Judgment is in English, but some underlying filings cited within it are in Khmer or French).
 - The handling of major dissents (the Case 002/02 Trial Judgment contains separate opinions; if the user wants a dissent, name the judge and verify the dissent appears in the retrieved content).
 
-For these, see `verification-workflow.md` and `example-audit.md`.
+For these, see `../references/verification-workflow.md` and `example-audit.md`.
 

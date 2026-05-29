@@ -69,7 +69,7 @@ When verification is partial, the output must say so. Three conventions:
 - **Content verified, no paragraph access** — keep the proposition; omit the paragraph pinpoint; note in the citation: "*(paragraph content not retrieved in this session — paragraph pinpoint omitted)*".
 - **Existence-only verification, broad claim** — keep the broad claim ("the Trial Chamber addressed JCE in this judgment") but not specifics ("the Trial Chamber held that JCE III is not customary international law"). Use only the level of specificity the verification supports.
 
-A worked example is in `example-verification.md`.
+A worked example is in `../examples/example-verification.md`.
 
 ## Language discipline
 

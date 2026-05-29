@@ -62,7 +62,7 @@ Available at `https://www.eccc.gov.kh/sites/default/files/legal-documents/Addend
 - Article 5 — Crimes against humanity (referring to the 1948 definition and developments through 1979)
 - Article 6 — Grave breaches of the 1949 Geneva Conventions (limited to the international armed conflict with Vietnam)
 - Article 7 — Destruction of cultural property under the 1954 Hague Convention
-- Article 8 — Crimes against internationally protected persons under the 1973 Convention
+- Article 8 — Crimes against internationally protected persons under the 1961 Vienna Convention on Diplomatic Relations
 - Article 9 new — Composition of the Trial Chamber and Supreme Court Chamber
 - Article 11 new — Composition of the Office of the Co-Prosecutors
 - Article 23 new — Composition of the Office of the Co-Investigating Judges

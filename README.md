@@ -18,7 +18,8 @@ Future tribunals (ICTY, ICTR, MICT, SCSL, STL, KSC, IIIM, IIMM, UNITAD, hybrid m
 2. **One tribunal at a time.** Each skill matures before the next begins.
 3. **Standard structure.** Every skill follows the same layout:
    - `SKILL.md` — entry point, core discipline, workflow
-   - `references/` — source hierarchy, citation format, verification workflow, foundational texts, jurisprudence map, examples
+   - `references/` — source hierarchy, citation format, verification workflow, foundational texts (and any tribunal-specific references such as a jurisprudence map or case-documents quick reference)
+   - `examples/` — worked end-to-end examples of the methodology
 4. **Authoritative sources only** for primary citations; secondary sources are clearly labelled in outputs.
 
 ## Repository layout
@@ -30,23 +31,25 @@ international-criminal-tribunals-skills/
 ├── icc/
 │   ├── SKILL.md
 │   ├── CHANGELOG.md
-│   └── references/
-│       ├── authoritative-sources.md
-│       ├── citation-format.md
-│       ├── verification-workflow.md
-│       ├── foundational-texts.md
+│   ├── references/
+│   │   ├── authoritative-sources.md
+│   │   ├── citation-format.md
+│   │   ├── verification-workflow.md
+│   │   └── foundational-texts.md
+│   └── examples/
 │       ├── example-verification.md
 │       └── example-audit.md
 ├── eccc/
 │   ├── SKILL.md
 │   ├── CHANGELOG.md
-│   └── references/
-│       ├── authoritative-sources.md
-│       ├── citation-format.md
-│       ├── case-documents-quick-reference.md
-│       ├── verification-workflow.md
-│       ├── foundational-texts.md
-│       ├── jurisprudence-map.md
+│   ├── references/
+│   │   ├── authoritative-sources.md
+│   │   ├── citation-format.md
+│   │   ├── case-documents-quick-reference.md
+│   │   ├── verification-workflow.md
+│   │   ├── foundational-texts.md
+│   │   └── jurisprudence-map.md
+│   └── examples/
 │       ├── example-verification.md
 │       └── example-audit.md
 └── [future tribunal skills]/
