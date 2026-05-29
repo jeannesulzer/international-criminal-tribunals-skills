@@ -90,7 +90,7 @@ A structured inventory of:
 
 4. **Referenced external international jurisprudence** — citations to ICTY, ICTR, SCSL, ICJ, ICC, and other tribunals' decisions, used by the ECCC for comparative or interpretive reasoning.
 
-5. **Referenced treaties and customary law sources** — 1948 Genocide Convention, 1949 Geneva Conventions, 1954 Hague Convention, 1973 Protected Persons Convention, customary international humanitarian law.
+5. **Referenced treaties and customary law sources** — 1948 Genocide Convention, 1949 Geneva Conventions, 1954 Hague Convention, 1961 Vienna Convention on Diplomatic Relations, customary international humanitarian law.
 
 6. **Referenced expert and witness materials** — expert reports, witness transcripts, civil party applications. Distinguish those available in public form from those that remain confidential.
 
@@ -119,12 +119,12 @@ These are minor. The point of flagging is so the user, in downstream work, can d
 - The audit of a PTC decision involving JCE, which requires close attention to the JCE I / II / III distinction.
 - The audit of a civil party application, which is governed by Rule 23 *bis* / *ter* / *quater* and where the revision in force at the date of application matters.
 
-For these, the workflow in `verification-workflow.md` applies, with the audit framing of this document.
+For these, the workflow in `../references/verification-workflow.md` applies, with the audit framing of this document.
 
 ## Cross-references
 
-- `SKILL.md` — entry point and standard workflow
-- `verification-workflow.md` — the fallback ladder
-- `citation-format.md` — citation conventions
+- `../SKILL.md` — entry point and standard workflow
+- `../references/verification-workflow.md` — the fallback ladder
+- `../references/citation-format.md` — citation conventions
 - `example-verification.md` — a single citation worked through end-to-end
 
