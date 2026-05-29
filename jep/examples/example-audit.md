@@ -24,12 +24,12 @@ Dos errores acumulados:
 
 2. **"Apenas cinco años sin cárcel"** es retóricamente cargado e impreciso (Trampa 1):
    - La sanción es de **5 a 8 años**, no "apenas cinco años"
-   - Las sanciones propias no son "sin nada" — incluyen restricción de residencia, prohibición de participar en política sin compatibilización judicial, ejecución obligatoria de **TOAR** (en este caso, ₹35.762 millones de pesos en componente restaurativo verificable)
+   - Las sanciones propias no son "sin nada" — incluyen restricción de residencia, prohibición de participar en política sin compatibilización judicial, ejecución obligatoria de **TOAR** (en este caso, $35.762 millones de pesos en componente restaurativo verificable)
    - La caracterización "sanciones propias = impunidad" es **políticamente contestada** en Colombia, no neutral
 
 **Reformulación sugerida (para un análisis crítico equilibrado):**
 
-> "El 16 de septiembre de 2025, la JEP impuso sanciones propias de entre 5 y 8 años de restricción efectiva de libertades y derechos, sin prisión efectiva, a siete excomandantes del último Secretariado de las antiguas FARC-EP, por la responsabilidad establecida en 21.936 secuestros calificados como crímenes contra la humanidad y crímenes de guerra. El modelo de sanciones propias — restrictivas de derechos sin cárcel, acompañadas de Trabajos, Obras y Actividades con contenido Reparador y Restaurador (TOAR) por un valor estimado de ₹35.762 millones — es institucionalmente innovador y políticamente contestado. Sectores de víctimas y de la oposición política han caracterizado las sanciones como 'impunidad'; la JEP y sus defensores las defienden como justicia restaurativa rigurosa con régimen de condicionalidad. El debate continúa."
+> "El 16 de septiembre de 2025, la JEP impuso sanciones propias de entre 5 y 8 años de restricción efectiva de libertades y derechos, sin prisión efectiva, a siete excomandantes del último Secretariado de las antiguas FARC-EP, por la responsabilidad establecida en 21.936 secuestros calificados como crímenes contra la humanidad y crímenes de guerra. El modelo de sanciones propias — restrictivas de derechos sin cárcel, acompañadas de Trabajos, Obras y Actividades con contenido Reparador y Restaurador (TOAR) por un valor estimado de $35.762 millones — es institucionalmente innovador y políticamente contestado. Sectores de víctimas y de la oposición política han caracterizado las sanciones como 'impunidad'; la JEP y sus defensores las defienden como justicia restaurativa rigurosa con régimen de condicionalidad. El debate continúa."
 
 (Si el usuario quiere defender una postura crítica, la auditoría no se opone — pero la afirmación debe ser técnicamente precisa, y la naturaleza contestada del debate explícita.)
 

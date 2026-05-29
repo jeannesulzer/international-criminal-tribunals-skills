@@ -48,7 +48,7 @@
 
 ## 5. UN-Sierra Leone Agreement on the Residual Special Court (2010)
 
-**Signed:** 29 July 2010 (New York), 11 August 2010 (Freetown). **Entered into force:** 1 January 2014 (upon dissolution of the SCSL).
+**Signed:** 29 July 2010 (New York), 11 August 2010 (Freetown). **Commencement:** the RSCSL began functioning on the dissolution of the SCSL on **2 December 2013** (the Agreement's formal entry into force is sometimes dated to early 2014 — verify the precise date against rscsl.org if it is material).
 
 **Function:** establishes the **Residual Special Court for Sierra Leone (RSCSL)** to continue the SCSL's legacy — supervision of sentences, witness protection, archives, contempt prosecutions, claims for compensation.
 

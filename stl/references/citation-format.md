@@ -97,8 +97,8 @@ Confirm the final disposition for any specific defendant by checking the latest 
 | **STL-11-01** | *Prosecutor v. Ayyash et al.* — the principal Hariri case | Concluded; Trial Judgment 18 August 2020; Sentencing 11 December 2020; Appeals 10 March 2022 |
 | **STL-13-04** | *Prosecutor v. Merhi* — joined with STL-11-01 | Concluded with the main case |
 | **STL-18-10** | *Prosecutor v. Ayyash* — connected attacks (El-Murr, Hawi, Hamadeh) | Tried separately; status check required for current disposition |
-| **STL-14-05** | *Akhbar Beirut S.A.L. and Al-Amin* — contempt | Concluded |
-| **STL-14-06** | *New TV S.A.L. and Al-Khayat* — contempt | Concluded |
+| **STL-14-05** | *New TV S.A.L. and Al-Khayat* — contempt | Concluded |
+| **STL-14-06** | *Akhbar Beirut S.A.L. and Al-Amin* — contempt | Concluded |
 
 ## When the citation cannot be completed
 

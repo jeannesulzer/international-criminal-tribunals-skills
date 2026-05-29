@@ -11,8 +11,13 @@ A suite of [Claude Skills](https://docs.claude.com/en/docs/build-with-claude/ski
 | [`eccc/`](./eccc/) | v1.2 | Extraordinary Chambers in the Courts of Cambodia (Khmer Rouge Tribunal) |
 | [`nuremberg-tokyo/`](./nuremberg-tokyo/) | v1.0 | Post-WWII international military tribunals (IMT at Nuremberg, the twelve subsequent NMT trials under Control Council Law No. 10, and the IMTFE at Tokyo) |
 | [`icty-ictr-irmct/`](./icty-ictr-irmct/) | v1.0 | UN ad hoc tribunals and their residual mechanism (ICTY, ICTR, and the IRMCT / Mechanism) |
+| [`scsl-rscsl/`](./scsl-rscsl/) | v1.0 | Special Court for Sierra Leone and its Residual Special Court (SCSL / RSCSL) |
+| [`stl/`](./stl/) | v1.0 | Special Tribunal for Lebanon (STL / TSL) |
+| [`ksc/`](./ksc/) | v1.0 | Kosovo Specialist Chambers and Specialist Prosecutor's Office (KSC / SPO) |
+| [`cps-rca/`](./cps-rca/) | v1.0 | Special Criminal Court of the Central African Republic (Cour Pénale Spéciale, CPS) |
+| [`jep/`](./jep/) | v1.0 | Special Jurisdiction for Peace, Colombia (Jurisdicción Especial para la Paz, JEP) |
 
-Future tribunals (SCSL, STL, KSC, IIIM, IIMM, UNITAD, hybrid mechanisms) and regional human rights courts (ECtHR, IACtHR, ACtHPR) will be added one at a time as separate skills, with the same methodology and structure.
+Future tribunals (IIIM, IIMM, UNITAD, other hybrid mechanisms) and regional human rights courts (ECtHR, IACtHR, ACtHPR) will be added one at a time as separate skills, with the same methodology and structure.
 
 ## Methodology
 
@@ -79,6 +84,11 @@ international-criminal-tribunals-skills/
 │   └── examples/
 │       ├── example-verification.md
 │       └── example-audit.md
+├── scsl-rscsl/          # same standard layout (SKILL.md, CHANGELOG.md,
+├── stl/                 # references/{authoritative-sources, citation-format,
+├── ksc/                 # verification-workflow, foundational-texts,
+├── cps-rca/             # jurisprudence-map}, examples/{verification, audit})
+├── jep/
 └── [future tribunal skills]/
 ​```
 

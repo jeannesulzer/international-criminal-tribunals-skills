@@ -74,8 +74,8 @@ The STL does not order reparations — victims may pursue compensation through L
 ## 8. Contempt proceedings
 
 Two media contempt cases:
-- **STL-14-05** — *Akhbar Beirut S.A.L. and Ibrahim Al-Amin* — disclosure of confidential witness identities
-- **STL-14-06** — *New TV S.A.L. and Karma Mohamed Tahsin Al-Khayat* — same subject matter, different defendants
+- **STL-14-05** — *New TV S.A.L. and Karma Mohamed Tahsin Al-Khayat* — disclosure of confidential witness identities; in this case the Appeals Panel first recognised that a corporation may be criminally liable (2 October 2014); the accused were ultimately acquitted / the conviction reversed on appeal (8 March 2016)
+- **STL-14-06** — *Akhbar Beirut S.A.L. and Ibrahim Al-Amin* — same subject matter, different defendants; here the corporation and Al-Amin were convicted (15 July 2016)
 
 Both concluded. The cases raise distinctive questions about corporate criminal liability before international tribunals (a corporation, Akhbar Beirut S.A.L., was charged and convicted) and about freedom of the press in the context of in absentia proceedings.
 

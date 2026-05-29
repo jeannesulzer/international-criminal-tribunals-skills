@@ -70,6 +70,11 @@ icty-ictr-irmct/
 └── examples/
     ├── example-verification.md
     └── example-audit.md
+scsl-rscsl/   ┐ each of these five follows the same standard layout:
+stl/          │ SKILL.md, CHANGELOG.md,
+ksc/          │ references/{authoritative-sources, citation-format,
+cps-rca/      │ verification-workflow, foundational-texts, jurisprudence-map},
+jep/          ┘ examples/{example-verification, example-audit}
 ```
 
 Each tribunal folder is a self-contained Claude Skill: `SKILL.md` is the entry
@@ -286,6 +291,73 @@ or ICTR trial number and a later MICT appeal number — e.g. Karadžić
 IT-95-5/18 then MICT-13-55, Mladić IT-09-92 then MICT-13-56) and the
 protective-measures rule. These are this skill's analogue of the ICC
 Article 28 discipline and the ECCC severance discipline.
+
+### SCSL + RSCSL skill
+
+`scsl-rscsl/` — the Special Court for Sierra Leone (2002-2013) and the
+Residual Special Court for Sierra Leone (since 2 December 2013). Standard
+seven-file backbone. Established by the UN-Sierra Leone Agreement of
+16 January 2002 pursuant to SC Res. 1315 (2000). Case-number form is
+`SCSL-[NN]-[NN]` (the docket also uses a four-digit-year long form such
+as `SCSL-2003-01` — the skill standardises on the short form). The four
+principal cases: Taylor (`SCSL-03-01`), CDF/Norman-Fofana-Kondewa
+(`SCSL-04-14`), RUF/Sesay-Kallon-Gbao (`SCSL-04-15`), AFRC/Brima-Kamara-Kanu
+(`SCSL-04-16`). The disciplines to keep intact: the SCSL's landmark
+holdings (first conviction for child-soldier recruitment; forced marriage
+as an "other inhumane act" crime against humanity; the Taylor immunity
+decision against a sitting head of State), the SCSL/RSCSL institutional
+split, and the no-life-imprisonment penalty regime (fixed terms only).
+
+### STL skill
+
+`stl/` — the Special Tribunal for Lebanon (2007-2023). Standard
+seven-file backbone. Established by SC Res. 1757 (2007); seat at
+Leidschendam. Unique features the skill must preserve: it applied
+**Lebanese criminal law**, allowed **trials in absentia**, and was the
+first international tribunal to treat **terrorism** as a discrete crime
+(the 16 February 2011 Appeals Chamber Interlocutory Decision). Main case
+*Ayyash et al.* (`STL-11-01`), Trial Judgment 18 August 2020. The
+discipline trap to keep intact: the two contempt cases are
+`STL-14-05` = New TV S.A.L. & Al-Khayat (Al Jadeed) and
+`STL-14-06` = Akhbar Beirut S.A.L. & Al-Amin — easily swapped, so the
+mapping is stated explicitly.
+
+### KSC skill
+
+`ksc/` — the Kosovo Specialist Chambers and Specialist Prosecutor's
+Office (The Hague, applying Kosovo law). Standard seven-file backbone.
+Founded on Law No. 05/L-053 (2015) and Article 162 / Amendment 24 of the
+Kosovo Constitution; mandate rooted in the Marty Report (PACE Doc. 12462,
+2011). Case-number form `KSC-BC-[YYYY]-[NN]` (trial) and `KSC-CA-...`
+(appeal). Key cases: Thaçi et al. (`KSC-BC-2020-06`), Mustafa
+(`KSC-BC-2020-05`), Shala (`KSC-BC-2020-04`), Gucati and Haradinaj
+(`KSC-BC-2020-07`). Keep appeal case numbers verified against scp-ks.org
+before citing — the registry stem does not always track the trial number.
+
+### CPS (Central African Republic) skill
+
+`cps-rca/` — the Cour Pénale Spéciale, a hybrid national/international
+court inside the CAR judicial system (seat Bangui). Standard seven-file
+backbone, written in a French/English register. Founding instrument:
+Loi organique n°15.003 of 3 June 2015; RPP is Loi 18.010. The flagship
+matter is the **Affaire Paoua** (Koundjili/Lemouna massacre): Trial
+Judgment 31 October 2022, Appeal 20 July 2023. Disciplines to keep intact:
+the statutory "**notamment**" in Art. 3 (the crime list may be
+illustrative, not exhaustive), the French-language-controls point, and
+ICC complementarity. Note cpsrca.cf and related sites 403 on direct fetch.
+
+### JEP (Colombia) skill
+
+`jep/` — the Jurisdicción Especial para la Paz, the judicial component of
+Colombia's transitional-justice system (SIVJRNR) from the 2016 Peace
+Agreement. Standard seven-file backbone, in a Spanish/English register —
+Spanish-language versions of documents control. Legal basis: Acto
+Legislativo 01 de 2017, Ley 1957 de 2019, Ley 1922 de 2018. The
+load-bearing things to keep right are the eleven **macrocaso** numbers and
+themes (Caso 01 = FARC kidnappings; Caso 03 = "falsos positivos"; etc.),
+the restorative **sanciones propias** (max 8 years) and **TOAR**, and the
+two first restorative sentences of September 2025 (Caso 01, 16 Sept;
+Caso 03, 18 Sept). Use the peso sign (`$`/COP), not other currency symbols.
 
 ## House style for edits
 

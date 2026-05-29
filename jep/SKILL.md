@@ -27,7 +27,7 @@ Label the level where relevant.
 - The **macrocaso** (Casos 01 to 11 — see citation format below)
 - The **organ** that issued the document:
   - **Salas de Justicia** — three Salas: **Sala de Reconocimiento de Verdad y Responsabilidad y de Determinación de los Hechos y Conductas** (SRVR or "Sala de Reconocimiento"); **Sala de Amnistía o Indulto** (SAI); **Sala de Definición de Situaciones Jurídicas** (SDSJ)
-  - **Tribunal Especial para la Paz** — the trial-level court (with three "Secciones": **Sección de Reconocimiento de Verdad y Responsabilidad**, **Sección de Ausencia de Reconocimiento de Verdad y Responsabilidad**, **Sección de Apelaciones**, plus the **Sección de Revisión de Sentencias**)
+  - **Tribunal Especial para la Paz** — the trial-level court (with four "Secciones": **Sección de Reconocimiento de Verdad y Responsabilidad**, **Sección de Ausencia de Reconocimiento de Verdad y Responsabilidad**, **Sección de Apelaciones**, plus the **Sección de Revisión de Sentencias**)
   - **Unidad de Investigación y Acusación (UIA)** — the prosecutorial unit
   - The **Plenary** (Sala Plena) — for administrative and general matters
 - The **document type** — Auto (procedural), Providencia (interim), Resolución (administrative), Sentencia (judgment), Lineamiento (guideline)
@@ -154,6 +154,8 @@ For each, verify through the workflow.
 ## Sensitive contexts
 
 The Colombian internal armed conflict, from approximately the mid-1960s to 2016, killed more than 450,000 people, displaced more than 7 million, and produced widespread atrocities by all parties: FARC-EP (kidnapping, attacks on civilians, recruitment of minors); other guerrilla groups (ELN, EPL, M-19); the Fuerza Pública (extrajudicial executions / "falsos positivos", forced disappearances, joint operations with paramilitary groups); paramilitaries (AUC, AGC, etc.); and others. The JEP's restorative-justice model — particularly the non-custodial sanciones propias for senior FARC-EP commanders responsible for 21,000 kidnappings — has been **politically contested** in Colombia. Maintain factual precision. Avoid characterising the sanciones propias as "impunity" or as "appropriate" in your own voice; reflect the contested character of the debate where relevant. Recognise that victims, FARC-EP, military, paramilitary survivors, and Colombian civil society are all reading this work. Use the JEP's own terminology (e.g. "comparecientes", "víctimas acreditadas", "sanciones propias", "TOAR"). Avoid both *Manichean* simplification and false equivalence.
+
+The JEP issues *versiones reservadas* of many documents to protect victims, witnesses, and *comparecientes*. Cite only the public version, say so, and never reproduce reserved identifying information or attempt to identify a protected participant — the same public-record discipline the other skills in this suite apply to protected witnesses.
 
 ## What this skill is not
 

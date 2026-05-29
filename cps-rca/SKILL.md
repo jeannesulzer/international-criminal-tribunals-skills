@@ -13,7 +13,7 @@ For any case-specific document — judgment, decision, indictment, filing, ordon
 
 ## Verification is gradient, not binary
 
-In practice, retrieval to cpsrca.cf succeeds. The site is **actively maintained** (the CPS is operating with regular new audiences, decisions and press releases). Three levels:
+In practice, cpsrca.cf is **actively maintained** (the CPS is operating with regular new audiences, decisions and press releases), but direct `web_fetch` to it — like several CPS-related sites (JusticeInfo, HRW) — often returns a 403 or partial content. Treat that as expected and work the fallback ladder (legal-tools.org, MINUSCA, JusticeInfo, RJDH, Radio Ndeke Luka) rather than as a dead end. Three levels:
 
 - **Existence verified.** Affair, document type, date, chamber confirmed.
 - **Content verified.** The fetched text confirms the proposition in substance.
@@ -40,7 +40,7 @@ Label the level where relevant. The CPS publishes summaries of judgments in addi
 
 - **Loi organique n°15.003 du 3 juin 2015** portant création, organisation et fonctionnement de la Cour pénale spéciale (adopted by the Conseil national de transition on 22 April 2015; promulgated by interim President Catherine Samba-Panza on 3 June 2015) — the constitutive instrument. Key articles:
   - Art. 1 — Création de la CPS
-  - **Art. 3 — Compétence matérielle** (genocide, crimes against humanity, war crimes; "violations graves des droits humains et violations graves du droit international humanitaire" committed in CAR territory **since 1 January 2003**)
+  - **Art. 3 — Compétence matérielle** ("les violations graves des droits humains et du droit international humanitaire … **notamment** le crime de génocide, les crimes contre l'humanité et les crimes de guerre" committed in CAR territory **since 1 January 2003**). The statutory "notamment" is load-bearing — see `references/foundational-texts.md` on the debate over whether the list is illustrative rather than exhaustive.
   - Art. 4 — Compétence personnelle
   - Art. 5 — Compétence concurrente (with national courts; CPS has primacy)
   - Art. 6 — Complémentarité avec la CPI (the CPS is **not** a strict subordinate of the ICC, but its competence yields where the ICC has commenced proceedings)
@@ -62,7 +62,7 @@ If not in project knowledge, retrieve from cpsrca.cf/documentations/textes-jurid
 - **Established by:** Loi organique n°15.003 (22 April 2015 / 3 June 2015 promulgation).
 - **Inaugural session:** **22 October 2018**, marking the beginning of judicial activity.
 - **Seat:** Bangui, Central African Republic (the CPS sits within the CAR national judicial system; the Court house is in Bangui).
-- **Composition:** 25 magistrates total — **13 national magistrates** (Central African) and **12 international magistrates** (from various jurisdictions). The President and Vice-President alternate between national and international; the Procureur spécial is international (currently Mr. Toussaint Muntazini Mukimapa, originally from DRC, but verify against current appointment).
+- **Composition:** 25 magistrates total — **13 national magistrates** (Central African) and **12 international magistrates** (from various jurisdictions). The President and Vice-President alternate between national and international; the Procureur spécial is international (the inaugural Special Prosecutor, Mr. Toussaint Muntazini Mukimapa, originally from DRC, was appointed in 2017 and held the post until his death on 25 March 2026; verify the current appointment before citing).
 - **Funding and support:** primarily from the **MINUSCA** (UN Multidimensional Integrated Stabilization Mission in CAR) and from the EU, US, France, the Netherlands and others.
 - **Operations:** **Actively operating** as of 2026 with regular hearings.
 - **Distinguishing features:**

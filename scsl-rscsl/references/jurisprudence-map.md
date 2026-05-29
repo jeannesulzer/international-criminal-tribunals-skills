@@ -4,7 +4,7 @@ A topic-by-topic map of the SCSL's principal landmark holdings.
 
 ## 1. Head of State immunity (landmark)
 
-**Decision on Immunity from Jurisdiction**, *Prosecutor v. Charles Ghankay Taylor*, Case No. SCSL-2003-01-I, Appeals Chamber, **31 May 2004**.
+**Decision on Immunity from Jurisdiction**, *Prosecutor v. Charles Ghankay Taylor*, Case No. SCSL-03-01-I, Appeals Chamber, **31 May 2004**.
 
 The Appeals Chamber rejected Taylor's challenge to the SCSL's jurisdiction on the ground that he enjoyed sovereign immunity as the (then-sitting) head of State of Liberia. The Chamber relied on:
 - SCSL Statute Art. 6(2) (no immunity for heads of State, modelled on ICTY Art. 7(2), ICTR Art. 6(2), and Rome Statute Art. 27)
@@ -25,7 +25,7 @@ This decision is among the most-cited SCSL holdings and forms part of the doctri
 
 The SCSL is the **modern foundation** of child-soldier prosecution under international criminal law. The Chamber's findings on the elements of "conscripting", "enlisting", "using to participate actively in hostilities", and the age threshold are influential and have been cited in subsequent international and national prosecutions (including the ICC's *Lubanga* Trial Judgment of 14 March 2012).
 
-A preliminary motion in the *Norman* case (subsequently *Fofana and Kondewa*) — **Decision on Preliminary Motion Based on Lack of Jurisdiction (Child Recruitment)**, *Prosecutor v. Norman*, Case No. SCSL-2004-14-AR72(E), Appeals Chamber, **31 May 2004** — held that the recruitment of children under 15 was a crime under customary international law by November 1996 (the start of the SCSL's temporal jurisdiction). A foundational decision.
+A preliminary motion in the *Norman* case (subsequently *Fofana and Kondewa*) — **Decision on Preliminary Motion Based on Lack of Jurisdiction (Child Recruitment)**, *Prosecutor v. Norman*, Case No. SCSL-04-14-AR72(E), Appeals Chamber, **31 May 2004** — held that the recruitment of children under 15 was a crime under customary international law by November 1996 (the start of the SCSL's temporal jurisdiction). A foundational decision.
 
 ## 3. Forced marriage as a crime against humanity (landmark)
 

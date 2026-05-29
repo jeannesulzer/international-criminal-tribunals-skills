@@ -37,7 +37,7 @@ This is the **constitutional anchor** of the KSC. The KSC is a *Kosovo court* �
   - Court of Appeals Chamber
   - Supreme Court Chamber
   - Constitutional Court Chamber (an unusual feature — handles constitutional referrals concerning KSC matters)
-- **Articles 30-31** — Specialist Prosecutor's Office: independent organ for investigation and prosecution. Led by the Specialist Prosecutor (currently Kimberly West, since 18 October 2023; previously David Schwendiman; Jack Smith).
+- **Articles 30-31** — Specialist Prosecutor's Office: independent organ for investigation and prosecution. Led by the Specialist Prosecutor (currently Kimberly West, since October 2023; previously Jack Smith (2018-2022) and David Schwendiman (2016-2018)).
 - **Article 34** — Detention: the KSC manages its own detention facilities in Scheveningen, The Hague.
 - **Article 38** — Independence: judges and prosecutors decide on the basis of facts and law, free from any influence.
 - **Article 39** — Cooperation: with Kosovo authorities and third States.

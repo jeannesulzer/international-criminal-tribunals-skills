@@ -22,7 +22,7 @@ Carte topique des décisions principales de la CPS au 2026. La jurisprudence de 
 - Yaouba Ousman et Mahamat Tahir reconnus coupables comme co-auteurs ; condamnés à **20 ans d'emprisonnement chacun**.
 - Tous trois acquittés du crime de torture (la Chambre a estimé que les actes ne présentaient pas le degré de gravité requis pour la torture).
 
-**Décision sur les intérêts civils (Chambre d'assises) :** Les trois condamnés condamnés **solidairement et conjointement** à verser des dommages-intérêts aux parties civiles (date à vérifier — autour de juin 2023).
+**Décision sur les intérêts civils (Chambre d'assises) :** Les trois condamnés condamnés **solidairement et conjointement** à verser des dommages-intérêts aux parties civiles (Décision sur les intérêts civils du **16 juin 2023**).
 
 **Arrêt de la Chambre d'appel (20 juillet 2023) — premier arrêt sur le fond de la Chambre d'appel :**
 - Issa Sallet Adoum **acquitté** du crime contre l'humanité d'autres actes inhumains et du crime de guerre d'atteinte à la dignité des personnes (partiellement)

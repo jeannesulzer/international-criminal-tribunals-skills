@@ -53,9 +53,9 @@ Label the level where relevant.
   - Art. 9 — Non bis in idem
   - Art. 12 — Composition of the Chambers (Trial Chamber and Appeals Chamber)
   - Art. 17 — Rights of the accused
-  - Art. 19 — Penalties (life imprisonment maximum; no death penalty)
+  - Art. 19 — Penalties (imprisonment for a specified number of years — the SCSL Statute provides no life-imprisonment penalty and no death penalty; the longest sentence imposed in practice was Taylor's 50 years)
 - **Rules of Procedure and Evidence of the SCSL** — adopted by the judges; multiple revisions
-- **Agreement between the United Nations and the Government of Sierra Leone on the Establishment of a Residual Special Court for Sierra Leone** (signed at Freetown 11 August 2010 and at New York 29 July 2010, brought into force 1 January 2014 upon dissolution of the SCSL)
+- **Agreement between the United Nations and the Government of Sierra Leone on the Establishment of a Residual Special Court for Sierra Leone** (signed 29 July 2010 in New York and 11 August 2010 in Freetown; the RSCSL commenced functioning on the SCSL's dissolution on 2 December 2013)
 - **Statute of the Residual Special Court for Sierra Leone**, annexed to the 2010 Agreement — provides for residual functions: supervision of sentences, witness protection, archives, contempt prosecutions, claims for compensation
 
 If not in project knowledge, retrieve from rscsl.org/Documents.

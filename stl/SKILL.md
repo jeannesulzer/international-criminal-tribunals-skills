@@ -1,6 +1,6 @@
 ---
 name: stl
-description: Special Tribunal for Lebanon (STL / TSL — Tribunal Spécial pour le Liban) research, drafting, and analysis. Use whenever the conversation involves the STL, the Hariri investigation, the assassination of former Lebanese Prime Minister Rafiq Hariri on 14 February 2005, the Ayyash et al. case (STL-11-01), the Merhi case (STL-13-04), the related-attacks cases (STL-18-10 against Salim Ayyash on the El-Murr, Hawi and Hamadeh attacks; STL-14-05 Akhbar Beirut S.A.L. and Al-Amin contempt case; STL-14-06 New TV S.A.L. and Al-Khayat contempt case), the Statute of the Special Tribunal for Lebanon, UN Security Council Resolution 1757 (2007), the UN-Lebanon Agreement of February 2007, the STL Rules of Procedure and Evidence, the application of Lebanese criminal law (Articles 314, 188-189, 270, 314, 549 of the Lebanese Criminal Code, the 1958 Law on Increasing the Punishments of Sedition, Civil War and Inter-Confessional Strife), trial in absentia under Article 22 of the Statute, the STL's landmark February 2011 Interlocutory Decision on the Applicable Law (defining terrorism as a crime under customary international law), victim participation under Rule 86, sentencing, the closure of the STL on 31 December 2023 and the residual mechanism, or any STL document or case identifier. Enforces a verification-first discipline: every case-law, decision, indictment, filing, or judgment citation must be verified against stl-tsl.org (legacy site, archived) or legal-tools.org before appearing in any output. Foundational texts (UN-Lebanon Agreement, Statute, Rules of Procedure and Evidence) may be cited from project knowledge when present. Trigger this skill any time STL, TSL, Tribunal Spécial Liban, Hariri tribunal, Ayyash, Resolution 1757, or any STL case identifier appears in the request, even if the user does not explicitly ask for STL research.
+description: Special Tribunal for Lebanon (STL / TSL — Tribunal Spécial pour le Liban) research, drafting, and analysis. Use whenever the conversation involves the STL, the Hariri investigation, the assassination of former Lebanese Prime Minister Rafiq Hariri on 14 February 2005, the Ayyash et al. case (STL-11-01), the Merhi case (STL-13-04), the related-attacks cases (STL-18-10 against Salim Ayyash on the El-Murr, Hawi and Hamadeh attacks; STL-14-05 New TV S.A.L. and Al-Khayat contempt case; STL-14-06 Akhbar Beirut S.A.L. and Al-Amin contempt case), the Statute of the Special Tribunal for Lebanon, UN Security Council Resolution 1757 (2007), the UN-Lebanon Agreement of February 2007, the STL Rules of Procedure and Evidence, the application of Lebanese criminal law (Articles 314, 188-189, 270, 549 of the Lebanese Criminal Code, the 1958 Law on Increasing the Punishments of Sedition, Civil War and Inter-Confessional Strife), trial in absentia under Article 22 of the Statute, the STL's landmark February 2011 Interlocutory Decision on the Applicable Law (defining terrorism as a crime under customary international law), victim participation under Rule 86, sentencing, the closure of the STL on 31 December 2023 and the residual mechanism, or any STL document or case identifier. Enforces a verification-first discipline: every case-law, decision, indictment, filing, or judgment citation must be verified against stl-tsl.org (legacy site, archived) or legal-tools.org before appearing in any output. Foundational texts (UN-Lebanon Agreement, Statute, Rules of Procedure and Evidence) may be cited from project knowledge when present. Trigger this skill any time STL, TSL, Tribunal Spécial Liban, Hariri tribunal, Ayyash, Resolution 1757, or any STL case identifier appears in the request, even if the user does not explicitly ask for STL research.
 ---
 
 # STL — Special Tribunal for Lebanon
@@ -13,7 +13,7 @@ For any case-specific document — judgment, decision, indictment, filing, OTP s
 
 ## Verification is gradient, not binary
 
-In practice, retrieval to stl-tsl.org succeeds (the site is preserved as a legacy archive) but some materials are mirrored on legal-tools.org. Three levels:
+In practice, retrieval to stl-tsl.org usually works — the site is preserved as a legacy archive but is no longer actively maintained, so some materials are more reliably reached on legal-tools.org. Three levels:
 
 - **Existence verified.** Document number, case number, date, chamber confirmed against an authoritative source. Sufficient for "X was indicted in case Y."
 - **Content verified.** The fetched text confirms the proposition in substance. Sufficient for "the Trial Chamber held that…".
@@ -28,7 +28,7 @@ Label the level where relevant. The 2011 Interlocutory Decision and the Ayyash T
 - The **connected/related-attacks cases** under STL-11-01 (attacks of 1 October 2004 against Marwan Hamadeh; 21 June 2005 against George Hawi; 12 July 2005 against Elias El-Murr)
 - The **Merhi case** (STL-13-04) — joined with the main case
 - The **STL-18-10 case** — Ayyash on related attacks (El-Murr, Hamadeh, Hawi) tried separately after the main judgment
-- The **contempt cases** — STL-14-05 (Akhbar Beirut S.A.L. and Al-Amin), STL-14-06 (New TV S.A.L. and Al-Khayat)
+- The **contempt cases** — STL-14-05 (New TV S.A.L. and Al-Khayat), STL-14-06 (Akhbar Beirut S.A.L. and Al-Amin)
 - The **2011 Interlocutory Decision on the Applicable Law** (STL-11-01/I/AC/R176bis) — the famous standalone Appeals Chamber decision
 
 The case identifier matters. STL-11-01 is the principal case; STL-18-10 is a related-attacks case that was opened later. Confusing them corrupts everything downstream.
@@ -89,8 +89,8 @@ STL citations are precise. Two pieces matter for every case-specific citation:
    - `STL-11-01` — Ayyash et al. (main case)
    - `STL-13-04` — Merhi (joined with main case in 2014)
    - `STL-18-10` — Ayyash et al. (connected attacks of El-Murr, Hawi, Hamadeh)
-   - `STL-14-05` — Akhbar Beirut S.A.L. and Al-Amin (contempt)
-   - `STL-14-06` — New TV S.A.L. and Al-Khayat (contempt)
+   - `STL-14-05` — New TV S.A.L. and Al-Khayat (contempt)
+   - `STL-14-06` — Akhbar Beirut S.A.L. and Al-Amin (contempt)
 
 2. **The Document Reference** — `STL-[YY]-[NN]/[Phase]/[Chamber]` followed by a filing number. Phase suffixes:
    - `I` — Pre-Trial / Interlocutory

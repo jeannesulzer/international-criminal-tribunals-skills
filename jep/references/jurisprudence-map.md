@@ -59,7 +59,7 @@ Cada macrocaso ha producido numerosos **autos** de determinación de hechos y co
 
 **Sanciones:**
 - **Sanciones propias** de **5 a 8 años** de restricción efectiva de libertades y derechos
-- **TOAR específicos** — programas de medio ambiente, naturaleza y territorio (₹13.634 millones); proyecto "Huellas por la memoria, Macrocaso 01" (₹10.587 millones); Acción Integral Contra Minas / AICMA (₹5.829 millones); búsqueda de personas desaparecidas (₹5.712 millones); total ₹35.762 millones de pesos en componente restaurativo
+- **TOAR específicos** — programas de medio ambiente, naturaleza y territorio ($13.634 millones); proyecto "Huellas por la memoria, Macrocaso 01" ($10.587 millones); Acción Integral Contra Minas / AICMA ($5.829 millones); búsqueda de personas desaparecidas ($5.712 millones); total $35.762 millones de pesos en componente restaurativo
 - **Sin prisión** — restricción efectiva de libertades con residencia controlada, prohibición de participar en política sin compatibilización judicial, otras restricciones
 
 **Importancia jurisprudencial:**
@@ -76,7 +76,7 @@ Cada macrocaso ha producido numerosos **autos** de determinación de hechos y co
 **Hechos:**
 - **135 ejecuciones extrajudiciales** ("falsos positivos") cometidas por el Batallón "La Popa" del Ejército Nacional en Valledupar (Cesar) y zonas aledañas de la Costa Caribe
 - Civiles asesinados en estado de indefensión, presentados como bajas en combate con guerrilla
-- Período: aproximadamente 2002-2008
+- Período: aproximadamente enero de 2002 a julio de 2005 (Batallón La Popa)
 
 **Comparecientes condenados:** **12 exintegrantes del Batallón "La Popa"**, incluyendo oficiales y suboficiales que reconocieron responsabilidad ante la Sala de Reconocimiento.
 
@@ -87,7 +87,7 @@ Cada macrocaso ha producido numerosos **autos** de determinación de hechos y co
 
 **Sanciones:**
 - **Sanciones propias** de **5 a 8 años** de restricción efectiva de libertades y derechos
-- **TOAR específicos** — total ₹86.096 millones de pesos en componente restaurativo (búsqueda de personas desaparecidas, reparación a víctimas, infraestructura, memoria, contribución a no repetición)
+- **TOAR específicos** — total $86.096 millones de pesos en componente restaurativo (búsqueda de personas desaparecidas, reparación a víctimas, infraestructura, memoria, contribución a no repetición)
 
 **Importancia jurisprudencial:**
 - **Primera sentencia del Caso 03** y primera sentencia contra agentes del Estado
@@ -99,7 +99,7 @@ Cada macrocaso ha producido numerosos **autos** de determinación de hechos y co
 - **Páginas combinadas:** **1.247 páginas**
 - **Comparecientes condenados:** 7 ex-Secretariado FARC-EP + 12 ex-Batallón La Popa = 19 individuos
 - **Víctimas reconocidas:** 21.936 (Caso 01) + 135 ejecutadas (Caso 03 Subcaso Costa Caribe)
-- **Componente restaurativo total:** más de ₹121.858 millones de pesos en TOAR
+- **Componente restaurativo total:** más de $121.858 millones de pesos en TOAR (las cifras exactas en pesos y el número de páginas de las sentencias deben verificarse contra el texto de cada sentencia antes de citarse)
 
 ## 5. Decisiones previas a las sentencias — autos de determinación
 

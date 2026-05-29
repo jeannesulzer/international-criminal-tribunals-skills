@@ -29,7 +29,7 @@ The ICC Legal Tools Database mirrors STL principal decisions. Navigate via "Othe
 
 ### UN sources
 
-- **un.org/sc** for the founding instruments — UN Security Council Resolutions 1644 (15 December 2005), 1664 (29 March 2006), 1686 (15 June 2006), 1748, 1757 (30 May 2007, establishing the STL), and subsequent extension resolutions
+- **un.org/sc** for the founding instruments — UN Security Council Resolutions 1644 (15 December 2005), 1664 (29 March 2006), 1686 (15 June 2006), 1757 (30 May 2007, establishing the STL), and subsequent extension resolutions
 - **un.org/securitycouncil** for the Reports of the Secretary-General on the establishment and operations of the STL (S/2005/203, S/2006/176, S/2006/893, etc.)
 - **UN Audiovisual Library of International Law** (`https://legal.un.org/avl/`) for the introductory note to the Statute (by Sir Daniel Bethlehem or successor commentator)
 

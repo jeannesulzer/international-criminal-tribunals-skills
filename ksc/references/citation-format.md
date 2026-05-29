@@ -29,10 +29,10 @@ How to cite, with worked examples.
 **Worked examples:**
 
 - *Specialist Prosecutor v. Mustafa*, Case No. KSC-BC-2020-05, Trial Judgment (Trial Panel I), 16 December 2022, para. [N].
-- *Specialist Prosecutor v. Mustafa*, Case No. KSC-CA-2022-08, Appeal Judgment (Court of Appeals Panel), 14 December 2023, para. [N].
+- *Specialist Prosecutor v. Mustafa*, Case No. KSC-CA-2023-02, Appeal Judgment (Court of Appeals Panel), 14 December 2023, para. [N].
 - *Specialist Prosecutor v. Shala*, Case No. KSC-BC-2020-04, Trial Judgment (Trial Panel I), 16 July 2024, para. [N].
 - *Specialist Prosecutor v. Shala*, Case No. KSC-BC-2020-04, Reparation Order (Trial Panel I), 29 November 2024.
-- *Specialist Prosecutor v. Shala*, Case No. KSC-CA-2024-09, Appeal Judgment (Court of Appeals Panel), 14 July 2025.
+- *Specialist Prosecutor v. Shala*, Case No. KSC-CA-2024-09, Appeal Judgment (Court of Appeals Panel), 14 July 2025. (Confirm the `KSC-CA` appeal case number against scp-ks.org before citing — the judgment date is 2025, so the registry stem may differ; the underlying trial case is `KSC-BC-2020-04`.)
 - *Specialist Prosecutor v. Thaçi, Veseli, Selimi and Krasniqi*, Case No. KSC-BC-2020-06 (trial ongoing as of 2026).
 - *Specialist Prosecutor v. Gucati and Haradinaj*, Case No. KSC-BC-2020-07, Trial Judgment (Trial Panel I), 18 May 2022.
 
@@ -57,7 +57,7 @@ For the Thaçi et al. case, the indictment was initially confirmed on **26 Octob
 | **KSC-BC-2020-04** | *Specialist Prosecutor v. Pjetër Shala* | Concluded; Trial Judgment 16 July 2024; Reparation Order €208,000 on 29 November 2024; Appeal Judgment 14 July 2025 (sentence reduced from 18 to 13 years) |
 | **KSC-BC-2020-05** | *Specialist Prosecutor v. Salih Mustafa* | Concluded; Trial Judgment 16 December 2022; Appeal Judgment 14 December 2023 |
 | **KSC-BC-2020-06** | *Specialist Prosecutor v. Hashim Thaçi, Kadri Veseli, Rexhep Selimi, Jakup Krasniqi* | **Trial in progress** — opening statements 3 April 2023; SPO closed case 15 April 2025; Defence case 15 September 2025 – 2 December 2025; closing statements 9-18 February 2026; **awaiting judgment** |
-| **KSC-BC-2020-07** | *Specialist Prosecutor v. Hysni Gucati and Nasim Haradinaj* | Concluded; Trial Judgment 18 May 2022 (contempt — obstruction of justice, intimidation, violation of secrecy); Appeal Judgment 2 February 2023 (sentences reduced to four-and-a-half years and four years respectively) |
+| **KSC-BC-2020-07** | *Specialist Prosecutor v. Hysni Gucati and Nasim Haradinaj* | Concluded; Trial Judgment 18 May 2022 (contempt — obstruction of justice, intimidation, violation of secrecy); Appeal Judgment 2 February 2023 (sentences reduced to four years and three months' imprisonment each) |
 | **KSC-BC-2023-10** | *Specialist Prosecutor v. Sabit Januzi, Ismet Bahtijari, Haxhi Shala* | Concluded; guilty pleas to counts 2 and 3 on 18 and 19 December 2024 |
 | **KSC-BC-2024-11** | *Specialist Prosecutor v. Thaçi, Smakaj, Kilaj, Fazliu, Kuçi* (administration of justice) | Pre-trial / early trial — arrests December 2024; trial commenced 27 February 2026; SPO closed case 13 March 2026 |
 
