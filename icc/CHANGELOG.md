@@ -3,11 +3,18 @@
 All notable changes to the `icc/` skill. Versions follow the suite-level
 versioning indicated in the top-level `README.md`.
 
+## v1.1.1 — 2026-05-30
+
+Editorial consistency pass (suite-wide review); no substantive changes.
+
+- Corrected the content-file count in the v1.0 and v1.1 notes (six files, not seven).
+- Replaced tick and cross check-mark symbols in `verification-workflow.md` and the examples with plain-text markers, to match the suite's no-symbol house style.
+
 ## v1.1 — 2026-05-27
 
 Reorganisation into the standard skill layout.
 
-- Moved the seven existing ICC content files from the repository root into
+- Moved the six existing ICC content files from the repository root into
   `icc/references/` and `icc/examples/`.
 - Added `icc/SKILL.md` as the skill entry point, gathering the core
   discipline, when-to-use guidance, workflow summary, pointers to the
@@ -19,7 +26,7 @@ this revision.
 
 ## v1.0 — initial
 
-Initial content of the ICC skill, authored as seven Markdown files:
+Initial content of the ICC skill, authored as six Markdown files:
 
 - `authoritative-sources.md` — source hierarchy and icc-cpi.int fallback
   ladder.

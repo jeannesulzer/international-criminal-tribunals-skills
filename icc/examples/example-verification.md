@@ -67,9 +67,9 @@ web_search("Ntaganda Appeals Chamber 15 June 2017 jurisdiction counts 6 and 9")
 ```
 
 **Levels achieved:**
-- Level A (document, title, number, date, chamber): ✓ via the icc-cpi.int press release
-- Level B (holding in substance): ✓ via the press release and ORIL
-- Level C (paragraph-specific): ✗ — full text not retrieved in this conversation
+- Level A (document, title, number, date, chamber): confirmed via the icc-cpi.int press release
+- Level B (holding in substance): confirmed via the press release and ORIL
+- Level C (paragraph-specific): not reached — full text not retrieved in this conversation
 
 ### Output structure
 

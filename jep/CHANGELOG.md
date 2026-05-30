@@ -1,5 +1,10 @@
 # Changelog — JEP skill
 
+## [1.0.1] — 2026-05-30
+
+### Fixed
+- Corrected the description of `Auto 033 de 2021` in `references/jurisprudence-map.md`: it is the Caso 03 **prioritisation** auto (12 February 2021, prioritising six subcasos), not a "determinación de hechos y conductas, Subcaso Antioquia". Added dates to the Caso 03 autos and confirmed `Auto 128 de 2021` (Costa Caribe, Batallón La Popa) against jep.gov.co.
+
 ## [1.0.0] — initial release
 
 ### Added

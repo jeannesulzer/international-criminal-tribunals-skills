@@ -109,8 +109,8 @@ Antes de las sentencias de septiembre de 2025, la JEP había emitido numerosos *
 - **Auto 19 de 2021** — Sala de Reconocimiento — auto de determinación de hechos y conductas en el Caso 01, imputación al último Secretariado de las FARC-EP
 
 **Caso 03:**
-- **Auto 033 de 2021** — Sala de Reconocimiento — auto de determinación de hechos y conductas, Subcaso Antioquia
-- **Auto 128 de 2021** — Sala de Reconocimiento — auto de determinación de hechos y conductas, Subcaso Costa Caribe
+- **Auto 033 de 2021** (12 de febrero de 2021) — Sala de Reconocimiento — auto de priorización del Caso 03: hizo pública la estrategia de priorización interna y priorizó seis subcasos (Antioquia, Costa Caribe, Norte de Santander, Huila, Casanare, Meta)
+- **Auto 128 de 2021** (7 de julio de 2021) — Sala de Reconocimiento — auto de determinación de hechos y conductas, Subcaso Costa Caribe (Batallón "La Popa")
 
 Estos autos **no son sentencias** — son decisiones procesales previas al juicio. Una citación que los caracterice como "sentencias" es inexacta (véase Trampa 5 en el verification-workflow).
 
