@@ -86,9 +86,9 @@ Repeat for the AJ.
 The `[verified]` placeholders are filled from the actual retrieved content. If retrieval stopped at level 4, the draft instead says: "The Trial Chamber articulated effective control as requiring the material ability to prevent or repress crimes (TJ paragraph references to be confirmed against the full text)."
 
 **Step 4 — self-audit.**
-- TJ exists, content matches, paragraphs verified: ✓
-- AJ exists, content matches, paragraphs verified: ✓
-- Article 28(1) used (not "28(a)") because the Statute's numbering applies: ✓
+- TJ exists, content matches, paragraphs verified: yes
+- AJ exists, content matches, paragraphs verified: yes
+- Article 28(1) used (not "28(a)") because the Statute's numbering applies: yes
 
 ## What this discipline buys and costs
 

@@ -29,7 +29,7 @@ The draft contains, among others:
 
    > I've audited the citations in the draft:
    >
-   > 1. **OTP statement** — verified on icc-cpi.int. ✓
+   > 1. **OTP statement** — verified on icc-cpi.int.
    > 2. **Bemba Trial Chamber judgment** — document exists, but the cited proposition is a problem. The draft uses Bemba for the *civilian* superior responsibility standard (Article 28(2)), but Bemba is a *military* command responsibility case (Article 28(1)). The paragraph cited addresses 28(1). Two options: (a) recharacterise the citation as 28(1) and address whether the reasoning transfers; or (b) substitute a case that actually addresses 28(2) — but I would need to identify and verify one. Which would you prefer?
    > 3. **Underspecified Pre-Trial decision** — I can't tell which decision is meant from the draft's description. Could you point me to the document number or a closer description?
 

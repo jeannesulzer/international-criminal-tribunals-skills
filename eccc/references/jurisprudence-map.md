@@ -153,7 +153,7 @@ Aggravating factors catalogued (Digest 6.3.5) including gravity, position of aut
 
 ---
 
-## 7. Civil Party action (Digest ch. 7) ★
+## 7. Civil Party action (Digest ch. 7)
 
 The chapter most directly relevant to ECCC civil-party practitioners. Three sections:
 

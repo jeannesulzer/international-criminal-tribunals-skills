@@ -81,9 +81,9 @@ If only existence and broad content (not paragraph) were verified:
 
 For each sentence in the draft, the model asks: does this trace to project knowledge or to a successful retrieval in this conversation?
 
-- "The Trial Chamber held that the Cham constituted a protected group" — traces to the Trial Judgment, paragraph 3422, retrieved in Step 2. ✓
-- "as both a religious and an ethnic group" — same paragraph. ✓
-- "The specific intent to destroy the Cham as such was established" — traces to the Trial Judgment, paragraphs 3445–3450, retrieved in Step 2. ✓
+- "The Trial Chamber held that the Cham constituted a protected group" — traces to the Trial Judgment, paragraph 3422, retrieved in Step 2.
+- "as both a religious and an ethnic group" — same paragraph.
+- "The specific intent to destroy the Cham as such was established" — traces to the Trial Judgment, paragraphs 3445–3450, retrieved in Step 2.
 
 If any sentence does not trace, it comes out, or it is softened to what the retrieval supports.
 

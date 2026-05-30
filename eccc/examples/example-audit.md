@@ -45,7 +45,7 @@ For each, record the verification level: existence / content / paragraph.
 ### Step 3 — Output the audit
 
 Return the audit as a numbered list mirroring the user's footnotes. For each:
-- **Verified ✓** — when document, date, chamber, and paragraph are all confirmed and the proposition is supported.
+- **Verified** — when document, date, chamber, and paragraph are all confirmed and the proposition is supported.
 - **Existence verified; content not confirmed** — when the document is real but the cited proposition could not be confirmed in this session. Recommend the user open the document at the cited paragraph before filing.
 - **Discrepancy** — when verification surfaces a mismatch. Examples:
   - The citation gives "Case 002/01" but the document number E465 is the Case 002/02 Trial Judgment.

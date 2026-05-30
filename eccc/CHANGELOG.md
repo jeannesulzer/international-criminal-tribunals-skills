@@ -4,6 +4,14 @@ All notable changes to the `eccc` skill are documented in this file.
 
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this skill adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.2.1] — 2026-05-30
+
+### Changed
+- Editorial consistency pass (suite-wide review): removed a decorative star from a `jurisprudence-map.md` heading and replaced tick check-marks in the examples with plain text, to match the suite's no-symbol house style.
+
+### Fixed
+- Corrected the example-file paths in the [1.2.0] entry (`examples/`, not `references/`).
+
 ## [1.2.0] — integrated the Court's canonical authorities table and added a jurisprudence map
 
 ### Added
@@ -43,8 +51,8 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 - `references/citation-format.md` — Case File Number anatomy, document-number letter-prefix system (A/B/C/D/E/F), accused-name convention (SURNAME first, in capitals), severance handling (Case 002, 002/01, 002/02), Internal Rules revision discipline
 - `references/verification-workflow.md` — step-by-step procedure, fallback ladder, partial-verification handling, Khmer/French/English language discipline
 - `references/foundational-texts.md` — the UN-Cambodia Agreement, the ECCC Law (as amended), the Internal Rules (Rev. 10 and earlier)
-- `references/example-verification.md` — end-to-end verification of a representative ECCC citation
-- `references/example-audit.md` — working-draft audit and finalised-record audit, worked through on representative ECCC documents
+- `examples/example-verification.md` — end-to-end verification of a representative ECCC citation
+- `examples/example-audit.md` — working-draft audit and finalised-record audit, worked through on representative ECCC documents
 
 ### Skill scope at v1.0.0
 - Covers all four cases on the ECCC docket: Case 001 (KAING Guek Eav alias Duch), Case 002 (NUON Chea, KHIEU Samphan, IENG Sary, IENG Thirith), with the severance into Case 002/01 and Case 002/02; Case 003 (MEAS Muth); Case 004 (IM Chaem, AO An, YIM Tith)
