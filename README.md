@@ -17,7 +17,6 @@ A suite of [Claude Skills](https://docs.claude.com/en/docs/build-with-claude/ski
 | [`cps-rca/`](./cps-rca/) | v1.0 | Special Criminal Court of the Central African Republic (Cour Pénale Spéciale, CPS) |
 | [`jep/`](./jep/) | v1.0.1 | Special Jurisdiction for Peace, Colombia (Jurisdicción Especial para la Paz, JEP) |
 
-Future tribunals (IIIM, IIMM, UNITAD, other hybrid mechanisms) and regional human rights courts (ECtHR, IACtHR, ACtHPR) will be added one at a time as separate skills, with the same methodology and structure.
 
 ## Methodology
 
