@@ -1,5 +1,10 @@
 # Changelog — JEP skill
 
+## [1.0.2] — 2026-06-02
+
+### Changed
+- Softened the over-confident reliability claim in `SKILL.md` ("retrieval to jep.gov.co succeeds reliably") to acknowledge that direct fetch can fail (HTTP 403, timeout, non-rendering PDF) and that such failure is structural, not fatal — pointing to the fallback ladder rather than treating a successful fetch as guaranteed. Aligns the JEP skill with the repository-wide direct-fetch-failure posture (`CLAUDE.md` §3).
+
 ## [1.0.1] — 2026-05-30
 
 ### Fixed
