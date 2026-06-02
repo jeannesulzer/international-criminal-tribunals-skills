@@ -2,7 +2,7 @@
 
 A suite of [Claude Skills](https://docs.claude.com/en/docs/build-with-claude/skills) for research, drafting, and analysis involving international criminal tribunals. Each skill teaches Claude a **verification-first** methodology: no case-law citation appears in an output until it has been verified against an authoritative primary source in the conversation that produced it.
 
-Nine skills span the major international military tribunals, the UN ad hoc tribunals and their residual mechanism, and a range of hybrid and transitional-justice courts — from Nuremberg and Tokyo to the ICC, the Kosovo Specialist Chambers, and Colombia's Special Jurisdiction for Peace.
+Thirteen skills span the major international military tribunals, the UN ad hoc tribunals and their residual mechanism, and a range of hybrid, internationalised, and transitional-justice courts — from Nuremberg and Tokyo to the ICC, the East Timor Special Panels, the Hissène Habré trial in Senegal, and Colombia's Special Jurisdiction for Peace.
 
 ## Skills in this suite
 
@@ -17,6 +17,10 @@ Nine skills span the major international military tribunals, the UN ad hoc tribu
 | [`ksc/`](./ksc/) | v1.0 | Kosovo Specialist Chambers and Specialist Prosecutor's Office (KSC / SPO) |
 | [`cps-rca/`](./cps-rca/) | v1.0 | Special Criminal Court of the Central African Republic (Cour Pénale Spéciale, CPS) |
 | [`jep/`](./jep/) | v1.0.1 | Special Jurisdiction for Peace, Colombia (Jurisdicción Especial para la Paz, JEP) |
+| [`special-panels-timor-leste/`](./special-panels-timor-leste/) | v1.0 | Special Panels for Serious Crimes, Dili District Court, Timor-Leste (SPSC, under UNTAET) |
+| [`eac-habre/`](./eac-habre/) | v1.0 | Extraordinary African Chambers in the Courts of Senegal (CAE / EAC — the Hissène Habré case) |
+| [`reg-64-kosovo/`](./reg-64-kosovo/) | v1.0 | UNMIK Regulation 64 Panels, Kosovo district courts (2000–2008/09) |
+| [`wcc-bih/`](./wcc-bih/) | v1.0 | War Crimes Chamber, Court of Bosnia and Herzegovina (Section I, State Court of BiH) |
 
 
 ## Methodology
@@ -89,6 +93,10 @@ international-criminal-tribunals-skills/
 ├── ksc/                 # verification-workflow, foundational-texts,
 ├── cps-rca/             # jurisprudence-map}, examples/{verification, audit})
 ├── jep/
+├── special-panels-timor-leste/
+├── eac-habre/
+├── reg-64-kosovo/
+├── wcc-bih/
 ├── docs/
 │   └── expert-review/    # one-page practitioner review sheet per skill
 └── [future tribunal skills]/

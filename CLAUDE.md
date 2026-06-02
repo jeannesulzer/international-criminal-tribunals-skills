@@ -70,11 +70,16 @@ icty-ictr-irmct/
 └── examples/
     ├── example-verification.md
     └── example-audit.md
-scsl-rscsl/   ┐ each of these five follows the same standard layout:
-stl/          │ SKILL.md, CHANGELOG.md,
-ksc/          │ references/{authoritative-sources, citation-format,
-cps-rca/      │ verification-workflow, foundational-texts, jurisprudence-map},
-jep/          ┘ examples/{example-verification, example-audit}
+scsl-rscsl/                  ┐ each of these nine follows the same standard
+stl/                         │ layout: SKILL.md, CHANGELOG.md,
+ksc/                         │ references/{authoritative-sources,
+cps-rca/                     │ citation-format, verification-workflow,
+jep/                         │ foundational-texts, jurisprudence-map},
+special-panels-timor-leste/  │ examples/{example-verification,
+eac-habre/                   │ example-audit}
+reg-64-kosovo/               │
+wcc-bih/                     ┘
+docs/expert-review/            # one-page practitioner review sheet per skill
 ```
 
 Each tribunal folder is a self-contained Claude Skill: `SKILL.md` is the entry
@@ -358,6 +363,72 @@ themes (Caso 01 = FARC kidnappings; Caso 03 = "falsos positivos"; etc.),
 the restorative **sanciones propias** (max 8 years) and **TOAR**, and the
 two first restorative sentences of September 2025 (Caso 01, 16 Sept;
 Caso 03, 18 Sept). Use the peso sign (`$`/COP), not other currency symbols.
+
+### Special Panels for Serious Crimes (Timor-Leste) skill
+
+`special-panels-timor-leste/` — the Special Panels for Serious Crimes of the
+Dili District Court (SPSC), the hybrid panels (two international + one Timorese
+judge) created by **UNTAET Regulation 2000/15** and operating 2000–2006, with
+the Serious Crimes Unit (SCU) as prosecutor. Standard seven-file backbone.
+Founding instruments are administrative law (UNTAET Regulations 1999/1,
+2000/11, 2000/15, 2000/30), **not** a UN Security Council resolution. Landmark
+cases: Joni Marques et al. (Los Palos, Case No. 09/2000, 30 indictees, judgment
+11 December 2001), Lolotoe, Cardoso, Joseph Leki; the Wiranto indictment was
+never tried. The disciplines to keep intact (seven traps in the skill): the
+SPSC is **distinct from** the Indonesian Ad Hoc Human Rights Court on East
+Timor (which sat in Jakarta) and from the proposed-but-never-established
+international tribunal; the structural impunity at senior level (only ~85 of
+~800 indictees tried); the SCIT successor (2008–2012, investigative only);
+the CAVR truth commission as separate from the criminal process; UN-mission
+acronym discipline (UNAMET / INTERFET / UNTAET / UNMISET / UNOTIL / UNMIT);
+and "East Timor" (pre-independence) vs "Timor-Leste" (post-2002).
+
+### Extraordinary African Chambers (Habré) skill
+
+`eac-habre/` — the Chambres Africaines Extraordinaires au sein des juridictions
+sénégalaises (CAE / EAC), written in a French/English register (French-language
+decisions control). Standard seven-file backbone. Established by the **Accord
+African Union–Senegal of 22 August 2012**; tried one accused — Hissène Habré,
+former President of Chad (1982–1990) — in the first prosecution of an African
+former Head of State by African institutions and the first universal-
+jurisdiction trial in Africa to reach judgment. The four load-bearing
+documents: Trial Judgment **30 May 2016**, Reparations Decision **29 July
+2016**, Appeals Judgment **27 April 2017** (which fixed reparations at
+**82.290 billion CFA francs** for **7,396** named victims), and the
+investigative-phase indictment of 13 February 2015. Keep intact: the
+antecedent jurisprudence (ECOWAS Court 18 Nov 2010; ICJ *Belgium v. Senegal*
+20 July 2012); Habré's death on 24 August 2021 closing the criminal phase
+while reparations (now under the AU Trust Fund for Victims) remain open; and
+the archive note — `chambresafricaines.org` is intermittently down, so the
+`forumchambresafricaines.org` mirror and legal-tools.org are the Tier 1
+fallbacks. Use the CFA franc, not other currency symbols.
+
+### Regulation 64 Panels (Kosovo) skill
+
+`reg-64-kosovo/` — the "Reg. 64 Panels" of the Kosovo district courts
+(Pristina, Mitrovica, Peja/Peć, Prizren, Gjilan/Gnjilane), the international-
+judges-and-prosecutors mechanism created by **UNMIK Regulation 2000/64** under
+UNSC Resolution 1244 (1999), operating 2000–2008/09. Standard seven-file
+backbone. The single most important discipline: the Reg. 64 Panels are
+**distinct from the Kosovo Specialist Chambers (KSC, 2015–present)**, which is
+a separate relocated tribunal at The Hague with its own `ksc/` skill — do not
+conflate them. Keep intact: the IJP-programme genesis in the February 2000
+Mitrovica violence; the abandoned Kosovo War and Ethnic Crimes Court (KWECC,
+dropped autumn 2000); the applicable-law shift from the Yugoslav Federal
+Criminal Code to the Provisional Codes (UNMIK Regulations 2003/25 and 2003/26);
+and the post-2008 transition to EULEX (Joint Action 2008/124/CFSP).
+
+### War Crimes Chamber (Bosnia and Herzegovina) skill
+
+`wcc-bih/` — formally **Section I (War Crimes) of the Criminal Division of the
+Court of Bosnia and Herzegovina** (*Sud Bosne i Hercegovine*), the largest
+national war-crimes prosecution apparatus in the former Yugoslavia and the
+principal complement to the ICTY Completion Strategy. Standard seven-file
+backbone. Keep intact: the **Rule 11 bis** referral mechanism from the ICTY
+(distinguish ICTY-referred cases from locally-initiated ones); the hybrid
+phase with international judges and prosecutors winding down to a fully
+domestic bench; and the State-Court-of-BiH structure (Section I as part of the
+national court, not an international tribunal).
 
 ## House style for edits
 
