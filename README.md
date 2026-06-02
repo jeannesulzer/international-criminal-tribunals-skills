@@ -1,11 +1,12 @@
-==========================================================
 # International Criminal Tribunals — Claude Skills
 
-A suite of [Claude Skills](https://docs.claude.com/en/docs/build-with-claude/skills) for research, drafting, and analysis involving international criminal tribunals. Each skill enforces a **verification-first** methodology: no citation appears in an output until it has been verified against an authoritative primary source.
+A suite of [Claude Skills](https://docs.claude.com/en/docs/build-with-claude/skills) for research, drafting, and analysis involving international criminal tribunals. Each skill teaches Claude a **verification-first** methodology: no case-law citation appears in an output until it has been verified against an authoritative primary source in the conversation that produced it.
+
+Nine skills span the major international military tribunals, the UN ad hoc tribunals and their residual mechanism, and a range of hybrid and transitional-justice courts — from Nuremberg and Tokyo to the ICC, the Kosovo Specialist Chambers, and Colombia's Special Jurisdiction for Peace.
 
 ## Skills in this suite
 
-| Skill | Status | Scope |
+| Skill | Version | Scope |
 |---|---|---|
 | [`icc/`](./icc/) | v1.1.1 | International Criminal Court (Rome Statute system) |
 | [`eccc/`](./eccc/) | v1.2.1 | Extraordinary Chambers in the Courts of Cambodia (Khmer Rouge Tribunal) |
@@ -88,17 +89,23 @@ international-criminal-tribunals-skills/
 ├── ksc/                 # verification-workflow, foundational-texts,
 ├── cps-rca/             # jurisprudence-map}, examples/{verification, audit})
 ├── jep/
+├── docs/
+│   └── expert-review/    # one-page practitioner review sheet per skill
 └── [future tribunal skills]/
 ​```
 
-## Installation
+## Using a skill
 
-Each skill folder is a self-contained Claude Skill. To use:
+Each folder is a self-contained Claude Skill. There are two ways to use one, and the difference matters:
 
-- Upload the folder to a Claude Project, or
-- Install as a user-level Skill (see Anthropic's [skills documentation](https://docs.claude.com/en/docs/build-with-claude/skills)).
+- **As an installed Skill (recommended).** Install the folder as a Skill (see Anthropic's [Agent Skills documentation](https://docs.claude.com/en/docs/build-with-claude/skills)). Claude then loads it automatically, triggered by the `SKILL.md` frontmatter, whenever the relevant tribunal comes up.
+- **As Project knowledge.** Upload the folder (or its zip) to a Claude Project. Claude reads the files as reference documents and will follow them when asked, but they are not auto-triggered the way an installed Skill is — so prompt Claude to use the skill explicitly.
 
-The foundational treaty texts (e.g. Rome Statute, ECCC Law, UN-Cambodia Agreement, Internal Rules) are not bundled in this repository — they are publicly available on the respective Court websites. Add them to a Project alongside the relevant skill if you want them cited directly without a `web_fetch`.
+The foundational treaty texts (e.g. Rome Statute, ECCC Law, UN-Cambodia Agreement, Internal Rules) are not bundled here — they are publicly available on the respective Court websites. Add them to a Project alongside the relevant skill if you want them cited directly without a `web_fetch`.
+
+## Documentation
+
+`docs/expert-review/` holds a one-page review sheet per skill — load-bearing facts, dates, case numbers, citation conventions, and the "traps" each skill guards against — intended for a quick practitioner sanity-check.
 
 ## What these skills are not
 
@@ -114,7 +121,10 @@ Issues, error reports, and corrections are welcome. Please open an issue with th
 
 [Jeanne Sulzer](https://impactlitigation.fr) — International human rights lawyer (Paris Bar & ICC list of counsel), Founding Partner at [Impact Litigation](https://impactlitigation.fr), Lecturer at Sciences Po (Law & PSIA) and Paris II Panthéon-Assas, Head of the International Justice Commission at Amnesty France.
 
+## How to cite
+
+> Jeanne Sulzer, *International Criminal Tribunals — Claude Skills* (open-source skill suite), 2026, https://github.com/jeannesulzer/international-criminal-tribunals-skills.
+
 ## License
 
-[To be determined by maintainer — recommend permissive open-source license, e.g. MIT or Apache-2.0.]
-==========================================================
+This work is licensed under a [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/). You are free to share and adapt the material for any purpose, including commercially, provided you give appropriate credit. See the [`LICENSE`](./LICENSE) file for the full text.
