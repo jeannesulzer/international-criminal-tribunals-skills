@@ -21,23 +21,23 @@ The draft contains, among others:
 
 1. **Inventory** every ICC citation in the draft, with its document number, date, and the proposition it is being cited for.
 
-2. **Spot-check on its face.** Citation 2 is a red flag immediately — Bemba was a military command-responsibility case (Article 28(1)), not civilian (Article 28(2)). The draft uses it for a 28(2) point. An audit catches this before any web_fetch.
+2. **Spot-check on its face.** Citation 2 is a red flag immediately — Bemba was a military command-responsibility case (Article 28(a)), not civilian (Article 28(b)). The draft uses it for a 28(b) point. An audit catches this before any web_fetch.
 
-3. **Verify the rest** via the verification workflow. For Bemba, fetch the TJ and read the cited paragraph to confirm whether it actually addresses 28(2) or 28(1). For the OTP statement, locate it on icc-cpi.int. For the underspecified Pre-Trial decision, ask the user for clarification — do not guess.
+3. **Verify the rest** via the verification workflow. For Bemba, fetch the TJ and read the cited paragraph to confirm whether it actually addresses 28(b) or 28(a). For the OTP statement, locate it on icc-cpi.int. For the underspecified Pre-Trial decision, ask the user for clarification — do not guess.
 
 4. **Report to the user before expanding.** Do not silently fix, do not silently propagate.
 
    > I've audited the citations in the draft:
    >
    > 1. **OTP statement** — verified on icc-cpi.int.
-   > 2. **Bemba Trial Chamber judgment** — document exists, but the cited proposition is a problem. The draft uses Bemba for the *civilian* superior responsibility standard (Article 28(2)), but Bemba is a *military* command responsibility case (Article 28(1)). The paragraph cited addresses 28(1). Two options: (a) recharacterise the citation as 28(1) and address whether the reasoning transfers; or (b) substitute a case that actually addresses 28(2) — but I would need to identify and verify one. Which would you prefer?
+   > 2. **Bemba Trial Chamber judgment** — document exists, but the cited proposition is a problem. The draft uses Bemba for the *civilian* superior responsibility standard (Article 28(b)), but Bemba is a *military* command responsibility case (Article 28(a)). The paragraph cited addresses 28(a). Two options: (i) recharacterise the citation as 28(a) and address whether the reasoning transfers; or (ii) substitute a case that actually addresses 28(b) — but I would need to identify and verify one. Which would you prefer?
    > 3. **Underspecified Pre-Trial decision** — I can't tell which decision is meant from the draft's description. Could you point me to the document number or a closer description?
 
 5. **Proceed only after the user resolves the flags.** Any new citation introduced during expansion follows the standard verification workflow, with verification levels reported.
 
 ### What this catches
 
-- Mis-categorised authorities (Bemba for 28(2))
+- Mis-categorised authorities (Bemba for 28(b))
 - Stale paragraph references that no longer match the current public-redacted version
 - Citations to confidential or under-seal filings the drafter cannot lawfully see
 - Citations that exist only in secondary summaries but not in any Court record

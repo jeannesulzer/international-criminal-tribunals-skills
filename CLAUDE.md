@@ -106,7 +106,8 @@ alongside (e.g. ECCC has `case-documents-quick-reference.md` and
   icc-cpi.int 403s.
 - `icc/references/citation-format.md` — exact citation formats for the Rome
   Statute, EoC, RPE, Regulations, decisions, warrants, OTP statements, ASP
-  documents. The Article 28 shorthand-vs-Statute discussion lives here.
+  documents. The Article 28 numbering discipline (the Statute uses
+  `28(a)`/`28(b)`, not the non-statutory `28(1)/(2)`) lives here.
 - `icc/references/verification-workflow.md` — the operational procedure:
   three-level verification gradient (Existence / Content / Paragraph), the
   fallback ladder, the standard workflow (identify → list → verify → draft →
@@ -230,7 +231,7 @@ defendants keep their German spellings (Göring, Seyß-Inquart, Heß);
 IMTFE defendants keep the macrons in romanised Japanese (Tōjō, Tōgō,
 Mutō), and the skill flags that the Pritchard-Zaide and JACAR
 romanisations differ. The four classic traps are the Nuremberg + Tokyo
-analogue of the ICC Article 28 shorthand discipline and the ECCC
+analogue of the ICC Article 28 numbering discipline and the ECCC
 severance discipline — keep them intact if you touch this skill.
 
 ### ICTY + ICTR + IRMCT skill
@@ -444,7 +445,7 @@ deliberate and consistent across both skills.
 - **Tables for source tiers and verification levels**; bullets for ladders
   and checklists; prose for reasoning.
 - **Inline code** for document numbers, URLs, file paths, and exact
-  citation strings: `ICC-01/05-01/08-3343`, `-Red`, `Article 28(1)`.
+  citation strings: `ICC-01/05-01/08-3343`, `-Red`, `Article 28(a)`.
 - **Bold for the operative verb** in a procedural step (`**Step 0 —
   Identify the document.**`).
 - **Worked examples are concrete.** Real case names, real document numbers,
@@ -474,11 +475,14 @@ enforce. Edits that weaken them are bugs.
    ECCC: eccc.gov.kh latency, partial PDFs, Khmer-only versions. Any new
    content that touches retrieval must respect this and offer the
    fallback ladder rather than treating failure as fatal.
-4. **Instrument numbering wins over practitioner shorthand.** ICC:
-   Article 28(1)/(2) vs. "28(a)/(b)" (see `icc/references/citation-format.md`).
-   ECCC: ECCC Law `Article 29 new` rather than `Article 29`; Internal
-   Rules revision stated explicitly (see `eccc/references/citation-format.md`).
-   Keep these sections intact if you touch them.
+4. **Instrument numbering wins over half-remembered forms.** ICC: the
+   Rome Statute's Article 28 uses `Article 28(a)` (military commanders) and
+   `Article 28(b)` (other superiors) — it has no numbered paragraphs, so
+   the `28(1)/(2)` form is non-statutory and must not be used (see
+   `icc/references/citation-format.md`). ECCC: ECCC Law `Article 29 new`
+   rather than `Article 29`; Internal Rules revision stated explicitly
+   (see `eccc/references/citation-format.md`). Keep these sections intact
+   if you touch them.
 5. **Public-redacted only.** ICC `-Conf` / `-Conf-Exp` and ECCC
    `-Confidential` / `-Strictly Confidential` filings are not citable
    from a public output, ever. Don't add carve-outs.

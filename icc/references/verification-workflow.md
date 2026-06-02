@@ -81,14 +81,14 @@ Repeat for the AJ.
 
 **Step 3 — draft.**
 
-> Under Article 28(1) of the Rome Statute, a military commander incurs criminal responsibility for crimes committed by forces under his effective command and control. The Trial Chamber in *Bemba* articulated effective control as requiring the material ability to prevent or repress crimes [*Prosecutor v. Bemba*, Trial Chamber III, "Judgment pursuant to Article 74 of the Statute", ICC-01/05-01/08-3343, 21 March 2016, paras [verified]]. **This judgment was set aside on appeal.** The Appeals Chamber acquitted Mr Bemba by majority, finding errors in the Trial Chamber's assessment of the measures he took to prevent and repress crimes by the MLC contingent in the CAR [*Prosecutor v. Bemba*, Appeals Chamber, ICC-01/05-01/08-3636-Red, 8 June 2018, paras [verified]].
+> Under Article 28(a) of the Rome Statute, a military commander incurs criminal responsibility for crimes committed by forces under his effective command and control. The Trial Chamber in *Bemba* articulated effective control as requiring the material ability to prevent or repress crimes [*Prosecutor v. Bemba*, Trial Chamber III, "Judgment pursuant to Article 74 of the Statute", ICC-01/05-01/08-3343, 21 March 2016, paras [verified]]. **This judgment was set aside on appeal.** The Appeals Chamber acquitted Mr Bemba by majority, finding errors in the Trial Chamber's assessment of the measures he took to prevent and repress crimes by the MLC contingent in the CAR [*Prosecutor v. Bemba*, Appeals Chamber, ICC-01/05-01/08-3636-Red, 8 June 2018, paras [verified]].
 
 The `[verified]` placeholders are filled from the actual retrieved content. If retrieval stopped at level 4, the draft instead says: "The Trial Chamber articulated effective control as requiring the material ability to prevent or repress crimes (TJ paragraph references to be confirmed against the full text)."
 
 **Step 4 — self-audit.**
 - TJ exists, content matches, paragraphs verified: yes
 - AJ exists, content matches, paragraphs verified: yes
-- Article 28(1) used (not "28(a)") because the Statute's numbering applies: yes
+- Article 28(a) used (not the non-statutory "28(1)"), matching the Statute's numbering: yes
 
 ## What this discipline buys and costs
 
