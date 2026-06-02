@@ -29,7 +29,7 @@
 6. **L'espagnol fait foi** ; traductions anglaises non officielles.
 
 ## 5. À confirmer en priorité
-1. Les **11 macrocasos** (numéros ↔ thèmes), surtout Caso 01, 03, 06, 07.
+1. Les **macrocasos** : **11 aujourd'hui** (depuis 2022-2023, avec l'ouverture des Casos 08-11) — **7 à l'origine** (2018-2019). Vérifier numéros ↔ thèmes, surtout Caso 01, 03, 06, 07.
 2. La convention de citation §3 (usage académique/praticien colombien).
 3. Les dates et chiffres §2.
 4. Neutralité de la formulation sur les *sanciones propias* (sensibilité politique).
