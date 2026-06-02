@@ -22,6 +22,10 @@ the sheets exist precisely so a human expert can confirm them.
 | [`fiche-expert-ksc.md`](./fiche-expert-ksc.md) | `ksc/` |
 | [`fiche-expert-cps-rca.md`](./fiche-expert-cps-rca.md) | `cps-rca/` |
 | [`fiche-expert-jep.md`](./fiche-expert-jep.md) | `jep/` |
+| [`fiche-expert-special-panels-timor-leste.md`](./fiche-expert-special-panels-timor-leste.md) | `special-panels-timor-leste/` |
+| [`fiche-expert-eac-habre.md`](./fiche-expert-eac-habre.md) | `eac-habre/` |
+| [`fiche-expert-reg-64-kosovo.md`](./fiche-expert-reg-64-kosovo.md) | `reg-64-kosovo/` |
+| [`fiche-expert-wcc-bih.md`](./fiche-expert-wcc-bih.md) | `wcc-bih/` |
 
 Open items flagged for the reviewer (as of writing): the Shala appeal
 case number at the KSC (`KSC-CA-2024-09`, to be confirmed against
