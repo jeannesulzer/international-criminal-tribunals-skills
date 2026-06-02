@@ -15,7 +15,7 @@
 | Ntaganda — jugement / arrêt | TC 8 juil. 2019 ; appel 30 mars 2021 | | 18 chefs |
 | Lubanga — arrêt d'appel | `ICC-01/04-01/06-3121-Red` | 1 déc. 2014 | Condamnation initiale 14 mars 2012 |
 | Katanga — Jugement art. 74 | `ICC-01/04-01/07-3436-tENG` | 7 mars 2014 | TC II, original français |
-| Abd-Al-Rahman (Darfour) | situation `02/05`, affaire `01/20` | Jugement 6 oct. 2025 ; peine `-1281-Red` 9 déc. 2025 | |
+| Abd-Al-Rahman (Darfour) | situation `02/05`, affaire `01/20` | Jugement 6 oct. 2025 ; peine `-1281-Red` 9 déc. 2025 | **Chambre de 1re instance I** (Korner) ; 27 chefs ; 20 ans |
 | Al Bashir — mandat d'arrêt | `ICC-02/05-01/09-1` | 4 mars 2009 | PTC I |
 
 ## 3. Convention de citation

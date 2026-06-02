@@ -52,7 +52,7 @@ The accurate characterisation: **hybrid court created by AU-Senegal Accord, inte
 
 ### Trap 2 — Trial Chamber (30 May 2016) vs Appeals Chamber (27 April 2017) — substantive differences
 
-The Trial Chamber convicted Habré on **all charges** including direct commission of rape of **Khadija Hassan Zidane**. The Appeals Chamber **acquitted Habré of the direct commission of rape of Khadija Hassan Zidane** while upholding the overall conviction for crimes against humanity (including sexual violence committed by others under Habré's responsibility).
+The Trial Chamber convicted Habré on **all charges** including direct commission of rape of **Khadidja Hassan Zidane**. The Appeals Chamber **acquitted Habré of the direct commission of rape of Khadidja Hassan Zidane** while upholding the overall conviction for crimes against humanity (including sexual violence committed by others under Habré's responsibility).
 
 **This nuance is frequently lost** in summary citations. Care:
 - The overall convictions for crimes against humanity, war crimes, and torture **stand**

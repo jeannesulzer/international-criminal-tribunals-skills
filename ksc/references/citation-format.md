@@ -32,7 +32,7 @@ How to cite, with worked examples.
 - *Specialist Prosecutor v. Mustafa*, Case No. KSC-CA-2023-02, Appeal Judgment (Court of Appeals Panel), 14 December 2023, para. [N].
 - *Specialist Prosecutor v. Shala*, Case No. KSC-BC-2020-04, Trial Judgment (Trial Panel I), 16 July 2024, para. [N].
 - *Specialist Prosecutor v. Shala*, Case No. KSC-BC-2020-04, Reparation Order (Trial Panel I), 29 November 2024.
-- *Specialist Prosecutor v. Shala*, Case No. KSC-CA-2024-09, Appeal Judgment (Court of Appeals Panel), 14 July 2025. (Confirm the `KSC-CA` appeal case number against scp-ks.org before citing — the judgment date is 2025, so the registry stem may differ; the underlying trial case is `KSC-BC-2020-04`.)
+- *Specialist Prosecutor v. Shala*, Appeal Judgment (Court of Appeals Panel), 14 July 2025 (trial case `KSC-BC-2020-04`; sentence reduced from 18 to 13 years). The `KSC-CA` appeal registry number is **not yet verified against scp-ks.org and is therefore omitted** — cite this judgment by the trial case number and the judgment date, and add the appeal registry number only once it has been confirmed.
 - *Specialist Prosecutor v. Thaçi, Veseli, Selimi and Krasniqi*, Case No. KSC-BC-2020-06 (trial ongoing as of 2026).
 - *Specialist Prosecutor v. Gucati and Haradinaj*, Case No. KSC-BC-2020-07, Trial Judgment (Trial Panel I), 18 May 2022.
 

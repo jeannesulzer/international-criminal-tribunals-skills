@@ -33,7 +33,7 @@ This is **universal jurisdiction with treaty anchoring and AU institutional supp
 **Citation:** *Ministère Public v. Hissein Habré*, Chambre Africaine Extraordinaire d'Assises, Jugement, 30 mai 2016.
 
 **Conviction for crimes against humanity** (Statute Art. 5):
-- Rape and sexual slavery (including direct commission of rape against Khadija Hassan Zidane — **subsequently reversed on appeal** for this one specific count)
+- Rape and sexual slavery (including direct commission of rape against Khadidja Hassan Zidane — **subsequently reversed on appeal** for this one specific count)
 - Murder
 - Summary executions
 - Kidnapping followed by enforced disappearance
@@ -50,7 +50,7 @@ This is **universal jurisdiction with treaty anchoring and AU institutional supp
 **Conviction for torture** (Statute Art. 7) — independent of the crimes against humanity characterisation of torture.
 
 **Modes of liability:**
-- **Direct perpetration** (for the one direct rape count of Khadija Hassan Zidane — reversed on appeal)
+- **Direct perpetration** (for the one direct rape count of Khadidja Hassan Zidane — reversed on appeal)
 - **Command/superior responsibility** for crimes committed by the DDS and other state organs under his effective control
 - **Joint criminal enterprise** (the EAC's application of JCE doctrine to an authoritarian state apparatus is a doctrinal innovation — see Sarah Williams, *JICJ* 2013 and subsequent commentary)
 
@@ -75,7 +75,7 @@ This is **universal jurisdiction with treaty anchoring and AU institutional supp
 
 **Confirmation of conviction** for crimes against humanity, war crimes, and torture — life imprisonment upheld.
 
-**Reversal on one count:** Habré **acquitted of the direct commission of rape of Khadija Hassan Zidane**. The Appeals Chamber found the direct-commission evidence insufficient, while maintaining Habré's command/superior responsibility for sexual violence committed by DDS agents.
+**Reversal on one count:** Habré **acquitted of the direct commission of rape of Khadidja Hassan Zidane**. The Appeals Chamber found the direct-commission evidence insufficient, while maintaining Habré's command/superior responsibility for sexual violence committed by DDS agents.
 
 **Reparations confirmation:**
 - **Total amount fixed at 82.290 milliards de francs CFA** (~125 million EUR / ~145 million USD)

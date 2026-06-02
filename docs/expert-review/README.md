@@ -27,6 +27,9 @@ the sheets exist precisely so a human expert can confirm them.
 | [`fiche-expert-reg-64-kosovo.md`](./fiche-expert-reg-64-kosovo.md) | `reg-64-kosovo/` |
 | [`fiche-expert-wcc-bih.md`](./fiche-expert-wcc-bih.md) | `wcc-bih/` |
 
-Open items flagged for the reviewer (as of writing): the Shala appeal
-case number at the KSC (`KSC-CA-2024-09`, to be confirmed against
-scp-ks.org).
+Open items flagged for the reviewer (as of writing): none outstanding.
+(Resolved: the speculative KSC *Shala* appeal registry number
+`KSC-CA-2024-09` was unconfirmed and has been removed from the skill;
+cite *Pjetër Shala* by its trial case number `KSC-BC-2020-04` and the
+appeal date of 14 July 2025 until an appeal registry number is verified
+against scp-ks.org.)
