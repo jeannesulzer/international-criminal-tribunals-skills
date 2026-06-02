@@ -82,9 +82,9 @@ At least one of the following must be present:
 
 **This criterion excludes** purely national prosecutions of international crimes with no international element of any kind — though such cases may be the subject of dedicated future skills (notably the universal-jurisdiction practice of France, Germany, and other States, where structuring international elements arise from the substantive law applied rather than from institutional composition).
 
-### Criterion 3 — Temporally and materially limited competence
+### Criterion 3 — Temporally and materially bounded competence
 
-The jurisdiction has competence over a **specific conflict, regime, or set of events** — limited in time and material scope. It is not an ordinary criminal court applying its general competence.
+The jurisdiction has competence over a **specific conflict, regime, or set of events** — bounded in time and material scope. It is not an ordinary criminal court applying its general competence.
 
 **This criterion includes** every jurisdiction covered by this library.
 
@@ -110,7 +110,7 @@ The contribution of each included jurisdiction is summarised in the table below.
 
 ## 3. Application to the 16 jurisdictions covered
 
-| # | Jurisdiction | C1 Crimes | C2 Int. element | C3 Limited | C4 Docs | C5 Contribution | Inclusion |
+| # | Jurisdiction | C1 Crimes | C2 Int. element | C3 Bounded | C4 Docs | C5 Contribution | Inclusion |
 |---|---|:-:|:-:|:-:|:-:|:-:|:-:|
 | 1 | IMT Nuremberg | ✅ | ✅ London Charter | ✅ | ✅ Avalon | Foundational | ✅ |
 | 2 | IMTFE Tokyo | ✅ | ✅ proclamation | ✅ | ✅ UVA Library | Foundational | ✅ |
