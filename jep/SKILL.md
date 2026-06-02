@@ -13,7 +13,7 @@ For any case-specific document — auto, providencia, resolución, sentencia, li
 
 ## Verification is gradient, not binary
 
-In practice, retrieval to jep.gov.co succeeds reliably. The JEP publishes extensively and the website is **actively maintained**. Three levels:
+The JEP publishes extensively and the website is **actively maintained**, so jep.gov.co is the right first stop. But do not treat a successful fetch as guaranteed: direct retrieval can fail — an HTTP 403, a timeout, or a PDF that will not render — and that failure is **structural, not a dead end**. When it happens, walk the fallback ladder in `references/verification-workflow.md` rather than abandoning verification or citing from memory. Three levels:
 
 - **Existence verified.** Macrocaso, document type, date, organ confirmed.
 - **Content verified.** The fetched text confirms the proposition in substance.

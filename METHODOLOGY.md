@@ -78,7 +78,7 @@ At least one of the following must be present:
 - **International component in the composition** — international judges, prosecutors, or experts participating in the institutional structure
 - **Substantial application of international law** — Rome Statute, the four Geneva Conventions and Additional Protocols, customary international law, international human rights law
 
-**This criterion includes the JEP** on three converging grounds: its founding act, the *Acuerdo Final* of 24 November 2016, was endorsed by United Nations Security Council Resolution 2261 (2016) and placed under UN verification through the UN Verification Mission in Colombia; its normative framework substantially incorporates the Rome Statute (non-amnestiability of international crimes, command responsibility, modes of individual criminal responsibility); and international experts participate at various stages of its work.
+**This criterion includes the JEP** on three converging grounds: the Colombian peace process is anchored in the UN Security Council — Resolution 2261 (25 January 2016) established the United Nations Mission in Colombia to monitor the ceasefire, and the implementation of the *Acuerdo Final* of 24 November 2016, including the JEP, is verified by the UN Verification Mission in Colombia established by Resolution 2366 (2017); its normative framework substantially incorporates the Rome Statute (non-amnestiability of international crimes, command responsibility, modes of individual criminal responsibility); and international experts participate at various stages of its work.
 
 **This criterion excludes** purely national prosecutions of international crimes with no international element of any kind — though such cases may be the subject of dedicated future skills (notably the universal-jurisdiction practice of France, Germany, and other States, where structuring international elements arise from the substantive law applied rather than from institutional composition).
 
@@ -127,7 +127,7 @@ The contribution of each included jurisdiction is summarised in the table below.
 | 13 | WCC-BiH | ✅ | ✅ Office HR mandate | ✅ | ✅ | Transfer from ICTY to national jurisdiction | ✅ |
 | 14 | EAC (Chambres africaines extraordinaires) | ✅ | ✅ AU-Senegal Agreement | ✅ | ✅ | First African Union prosecution of an African Head of State | ✅ |
 | 15 | CPS-RCA | ✅ | ✅ Law + MINUSCA MoU | ✅ | ✅ | Command responsibility for sexual violence in ongoing conflict | ✅ |
-| 16 | JEP | ✅ | ✅ Acuerdo Final + UNSC 2261 + Rome Statute | ✅ | ✅ | **Restorative-justice model applied to non-amnestiable crimes** | ✅ |
+| 16 | JEP | ✅ | ✅ Acuerdo Final + UNSC 2261/2366 + Rome Statute | ✅ | ✅ | **Restorative-justice model applied to non-amnestiable crimes** | ✅ |
 
 All 16 jurisdictions satisfy all five criteria. The methodology is internally consistent and externally defensible.
 
@@ -141,7 +141,7 @@ The JEP is, on the structural taxonomy, the **most national** of the 16 jurisdic
 
 Three considerations justify its inclusion:
 
-**First,** the JEP's founding act — the *Acuerdo Final* of 24 November 2016 — was internationally endorsed in two formal acts: (i) it was annexed to United Nations Security Council Resolution 2261 of 25 January 2016 (adopted unanimously), which welcomed the peace process and authorised the establishment of the United Nations Mission in Colombia; and (ii) implementation has been continuously monitored by the UN Verification Mission, which reports to the Security Council. This is not the structural hybridity of the ECCC or the KSC, but it is a substantial international anchor.
+**First,** the JEP is embedded in an international architecture built by the UN Security Council around the Colombian peace process in two successive steps: (i) Resolution 2261 of 25 January 2016 (adopted unanimously) welcomed the peace process and established the United Nations Mission in Colombia to monitor the bilateral ceasefire and the laying down of arms; and (ii) following the signature of the *Acuerdo Final* on 24 November 2016, the implementation of the agreement — including the JEP's sanctions and the *régimen de condicionalidad* — is verified by the UN Verification Mission in Colombia, established by Resolution 2366 (2017), which reports to the Security Council. This is not the structural hybridity of the ECCC or the KSC, but it is a substantial international anchor.
 
 **Second,** the JEP's normative framework substantially incorporates the Rome Statute and international human rights and humanitarian law. The non-amnestiability of war crimes, crimes against humanity, genocide, hostage-taking, torture, forced disappearance, sexual violence and recruitment of children is grounded in international obligations. Command responsibility, applied in the JEP's first sentences of September 2025, is derived directly from Article 28 of the Rome Statute and from customary international law.
 

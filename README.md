@@ -21,7 +21,7 @@ Skills are an open standard adopted by Anthropic in October 2025 and are portabl
 The 16 jurisdictions are organised by structural and historical category:
 
 ### Post-1945 heritage
-- **Nuremberg–Tokyo** — International Military Tribunal (IMT, 1945–1946), the twelve Nuremberg Military Tribunals (NMT, 1946–1949), and the International Military Tribunal for the Far East (IMTFE, 1946–1948)
+- **Nuremberg–Tokyo** — International Military Tribunal (IMT, 1945–1946), the twelve Nuremberg Military Tribunals (NMT, 1946–1949), and the International Military Tribunal for the Far East (IMTFE, 1946–1948). *Delivered as a single skill, the IMT and the IMTFE count as two of the sixteen jurisdictions.*
 
 ### Ad hoc UN tribunals
 - **ICTY** — International Criminal Tribunal for the former Yugoslavia (1993–2017)
@@ -101,10 +101,10 @@ Every skill in this library shares the same architecture:
 The library covers three working languages:
 
 - **English** — for ICC, ICTY/ICTR/IRMCT, ECCC, SCSL/RSCSL, STL, KSC, Special Panels Timor-Leste, Reg. 64 Kosovo, WCC-BiH, IMT/NMT/IMTFE
-- **French** — for CPS-RCA (the procedural language of the court)
+- **French** — bilingual French/English for EAC (Chambres Africaines Extraordinaires, Hissène Habré case) and for CPS-RCA (the procedural language of the court)
 - **Spanish** — for JEP (the procedural language of the court)
 
-Additional languages will be added when relevant: the EAC Habré skill (currently in development) will be bilingual French/English.
+Additional languages will be added when relevant as new skills are developed.
 
 ---
 
@@ -141,7 +141,7 @@ Contributions are welcome — corrections, additions, translations, new skills. 
 3. For new skills: confirm in the Issue that the proposed jurisdiction satisfies the five criteria in [METHODOLOGY.md](METHODOLOGY.md)
 4. Submit a Pull Request
 
-All skills are licensed under a permissive open source licence (see `LICENSE`).
+All content in this repository is licensed under the **Creative Commons Attribution 4.0 International licence (CC BY 4.0)** — see [`LICENSE`](LICENSE). You are free to share and adapt the material, including commercially, provided you give appropriate credit.
 
 ---
 
