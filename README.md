@@ -12,7 +12,7 @@ This repository hosts a library of **Skills** for Claude AI (Anthropic) covering
 
 Each skill encodes a **verification-first discipline**: no case-law citation, indictment, decision, or judgment reference appears in any output without being verified against an authoritative source (the official tribunal website, the ICC Legal Tools Database, or other Tier 1 institutional sources). The skills are designed to make AI-assisted research in international criminal law **rigorous, reproducible, and reliable** — for students, practitioners, NGOs, journalists, and researchers.
 
-Skills are an open standard adopted by Anthropic in October 2025 and are portable across major AI platforms (Claude, ChatGPT, Cursor, Gemini).
+Skills are an open, documented format introduced by Anthropic in October 2025. Because each skill is plain Markdown, its methodology can be used as reference material with any capable AI assistant; the `SKILL.md` packaging is natively supported by Claude.
 
 ---
 
