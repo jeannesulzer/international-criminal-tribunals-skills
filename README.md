@@ -76,7 +76,7 @@ Each skill is a self-contained directory:
 │   ├── authoritative-sources.md   — Tier 1 and Tier 2 source hierarchy
 │   ├── citation-format.md         — citation conventions and worked examples
 │   ├── verification-workflow.md   — fallback ladder and jurisdiction-specific traps
-│   └── jurisprudence-map.md       — topical map of principal holdings
+│   └── jurisprudence-map.md       — topical map of principal holdings (most skills)
 └── examples/
     ├── example-verification.md    — verifying one citation end to end
     └── example-audit.md           — auditing user-supplied documents
