@@ -46,7 +46,7 @@ The SCSL had its seat in **Freetown**. The **Taylor trial was relocated to The H
 
 ### Trap 3 — Head-of-State immunity
 
-The **31 May 2004 Appeals Chamber Decision on Immunity from Jurisdiction** in *Taylor* (Case No. SCSL-03-01-I) rejected Taylor's argument that he enjoyed immunity as the (then-sitting) head of State of Liberia. The decision relies on:
+The **31 May 2004 Appeals Chamber Decision on Immunity from Jurisdiction** in *Taylor* (Case No. SCSL-03-01-I) rejected Taylor's argument that he enjoyed immunity as a head of State (the status he held at the indictment of 7 March 2003; by this 31 May 2004 decision he had already left office, in exile since August 2003). The decision relies on:
 - SCSL Statute Art. 6(2) (no immunity for heads of State)
 - The character of the SCSL as an international tribunal acting on behalf of the international community
 - The customary international law position on individual criminal responsibility

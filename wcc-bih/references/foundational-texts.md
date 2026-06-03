@@ -6,12 +6,14 @@
 **Originally promulgated by:** OHR Decision of 12 November 2000 (under the OHR's "Bonn powers"); subsequently adopted by Parliament.
 **Official Gazette of BiH:** consolidated text 49/09 (with subsequent amendments).
 
-**Function:** establishes the Court of BiH as a state-level court. Creates three sections within the Criminal Division:
+**Function:** establishes the Court of BiH as a state-level court. Its Criminal Division is organised into three sections:
 - **Section I — War Crimes**
 - **Section II — Organized Crime, Economic Crime and Corruption**
 - **Section III — General Crime**
 
 Establishes the Appellate Division with corresponding sections. Provides for international judges during the transition period (programmed phase-out by 2009/2012).
+
+**Note on the three-section structure:** Section I (War Crimes) was **not** part of the original 2002 Law — it was introduced by the **amendment of December 2004** (the Registry for Section I was established on 1 December 2004), which is why the War Crimes Chamber only began operations on **9 March 2005**.
 
 ## 2. Law on the Prosecutor's Office of Bosnia and Herzegovina
 
@@ -79,7 +81,7 @@ Internal court rules supplementing the Criminal Procedure Code. Address case-man
 **Rule 11 bis cases referred to BiH:**
 - *Stanković* (referred 2005, tried at WCC-BiH)
 - *Janković* (referred 2005, tried at WCC-BiH)
-- *Mejakić et al.* (referred 2006, tried at WCC-BiH)
+- *Mejakić et al.* (referral ordered 20 July 2005, transferred 2006, tried at WCC-BiH)
 - *Trbić* (referred 2007, tried at WCC-BiH)
 - *Rašević and Todović* (referred 2006, tried at WCC-BiH)
 - *Lukić and Lukić* (referred 2007, **referral revoked 2007**, returned to ICTY)

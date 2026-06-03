@@ -21,7 +21,7 @@ Cuando un trabajo discute la **constitucionalidad** del marco JEP, las sentencia
 
 ## 3. Los 11 macrocasos — apertura y priorización
 
-La JEP estableció los **siete macrocasos iniciales** en sus primeras decisiones de priorización (2018-2019). Los **cuatro macrocasos adicionales** (Casos 08, 09, 10, 11) fueron abiertos en **2022**, completando el universo de 11 macrocasos.
+La JEP estableció los **siete macrocasos iniciales** en sus primeras decisiones de priorización (2018-2019). Los **cuatro macrocasos adicionales** (Casos 08, 09, 10, 11) fueron abiertos en **2022-2023** (Casos 08-10 en 2022; Caso 11 en septiembre de 2023), completando el universo de 11 macrocasos.
 
 **Casos temáticos / nacionales:**
 - Caso 01 — Secuestros FARC-EP

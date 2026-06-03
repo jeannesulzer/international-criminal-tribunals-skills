@@ -57,7 +57,7 @@ A proposed international tribunal for East Timor was discussed at the UN in 1999
 
 ### Trap 3 — Structural impunity at senior commander level
 
-The SPSC tried approximately **85 defendants out of approximately 800 indictees**. The vast majority of indictees — particularly senior Indonesian military commanders — remained in Indonesia and were not extradited. The Indonesia-UNTAET MOU of April 2000 was **never effectively operationalised**.
+The SPSC tried approximately **88 defendants out of 391 persons indicted** (across 95 indictments). The vast majority of indictees — particularly senior Indonesian military commanders, some 339 in all — remained in Indonesia and were not extradited. The Indonesia-UNTAET MOU of April 2000 was **never effectively operationalised**.
 
 **Common error:** characterising the SPSC's case law as "the comprehensive judicial response to the 1999 violence". It is not. The SPSC's record is one of **partial accountability primarily at the lower ranks**, with **structural impunity at the senior commander level**. Any substantive analysis of SPSC jurisprudence should acknowledge this institutional reality.
 

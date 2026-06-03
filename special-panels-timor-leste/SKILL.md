@@ -13,7 +13,7 @@ For any case-specific document — judgment, decision, indictment, filing — ve
 
 ## Verification is gradient, not binary
 
-The SPSC produced approximately **55 judgments** in approximately **95 trials**, with approximately **85 convictions and 3 acquittals** (out of approximately **800 persons indicted** — the vast majority of whom remained in Indonesia and never stood trial). Three levels:
+The SPSC held approximately **55 trials** involving approximately **88 accused**, resulting in **84 convictions and 4 acquittals** (out of **391 persons indicted** across **95 indictments** — the vast majority, some **339 accused**, remained in Indonesia and never stood trial). Three levels:
 
 - **Existence verified.** Case name, date, panel and document type confirmed against an authoritative source.
 - **Content verified.** The fetched text confirms the proposition in substance.
@@ -86,7 +86,7 @@ If not in project knowledge, retrieve from legal-tools.org or UN UNTAET archives
   - **First hybrid criminal jurisdiction created internally by a UN transitional administration** — institutionally unique; created by UNTAET Regulation (administrative law) rather than by treaty or Security Council resolution alone
   - **Integrated within the national judicial system** of (future) Timor-Leste — not a separate tribunal
   - **Operated under conditions of severe under-resourcing** — limited defense capacity, limited library resources, limited witness protection, limited Indonesia cooperation
-  - **Caseload structure:** approximately **800 persons indicted** by the SCU, of whom only approximately **80-95** were tried — the vast majority remained in Indonesia (notably General Wiranto, indicted in 2003, never tried). This **structural impunity** is one of the SPSC's defining institutional features
+  - **Caseload structure:** **391 persons indicted** by the SCU (across 95 indictments), of whom only approximately **88** were tried — some **339 remained at large** in Indonesia (notably General Wiranto, indicted in 2003, never tried). This **structural impunity** is one of the SPSC's defining institutional features
   - **Parallel CAVR Community Reconciliation Procedures** for lesser crimes (community-based reconciliation hearings for "less serious" offences not warranting prosecution)
 
 ## Source hierarchy
@@ -129,7 +129,7 @@ SPSC citations follow a hybrid of Timorese civil-law conventions and internation
 
 - *Prosecutor v. José Cardoso Fereira*, Special Panels for Serious Crimes, Dili District Court, Judgment, Case No. 04/2001, 5 April 2003. (Sexual offences and torture.)
 
-- *Prosecutor v. Wiranto et al.*, SCU Indictment, 22 February 2003. (The indictment of former General Wiranto — Indonesian Minister of Defense in 1999. Wiranto never stood trial.)
+- *Prosecutor v. Wiranto et al.*, SCU Indictment, 24 February 2003. (The indictment of former General Wiranto — Indonesian Minister of Defense in 1999. Wiranto never stood trial.)
 
 See `references/citation-format.md` for the full convention.
 
@@ -170,7 +170,7 @@ For each, verify the specific decision through the workflow.
 
 The 1999 post-referendum violence in Timor-Leste (August-October 1999) produced approximately **1,400 deaths** and over **400,000 displaced persons**, in addition to the broader toll of the Indonesian occupation (1975-1999) which the CAVR estimated at approximately **102,800 conflict-related deaths**. The SPSC's findings are historically authoritative for the cases it tried.
 
-The **structural impunity** of senior commanders (Indonesian military leadership) is the defining institutional feature of the Serious Crimes process. Approximately **800 indictees** were named; approximately **80-95** stood trial. The remainder — including the most senior — remained in Indonesia. **Indonesia did not effectively cooperate** with the SPSC despite the April 2000 MOU. This is the **central political fact** of the SPSC and should be acknowledged in any substantive output.
+The **structural impunity** of senior commanders (Indonesian military leadership) is the defining institutional feature of the Serious Crimes process. Some **391 persons** were indicted (across 95 indictments); approximately **88** stood trial. The remainder — some **339**, including the most senior — remained in Indonesia. **Indonesia did not effectively cooperate** with the SPSC despite the April 2000 MOU. This is the **central political fact** of the SPSC and should be acknowledged in any substantive output.
 
 Sensitive topics include:
 - Sexual violence against Timorese women during the Indonesian occupation and 1999 violence (substantial SPSC jurisprudence)

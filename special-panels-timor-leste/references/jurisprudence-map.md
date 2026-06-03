@@ -37,7 +37,7 @@ The SPSC applied **command/superior responsibility under Section 15 of UNTAET Re
 
 The most institutionally significant **indictment** under command responsibility was:
 
-- **Wiranto et al. Indictment** — SCU Indictment of 22 February 2003. Indicted General Wiranto (former Indonesian Minister of Defense in 1999), Major General Zacky Anwar Makarim, and other senior Indonesian military commanders for crimes against humanity under command/superior responsibility. **Wiranto was never tried** — he remained in Indonesia. The indictment is significant for its **doctrinal articulation of command responsibility** in the specific factual configuration of the 1999 violence, but it produced no judgment.
+- **Wiranto et al. Indictment** — SCU Indictment of 24 February 2003. Indicted General Wiranto (former Indonesian Minister of Defense in 1999), Major General Zacky Anwar Makarim, and other senior Indonesian military commanders for crimes against humanity under command/superior responsibility. **Wiranto was never tried** — he remained in Indonesia. The indictment is significant for its **doctrinal articulation of command responsibility** in the specific factual configuration of the 1999 violence, but it produced no judgment.
 
 ## 4. Joint criminal enterprise (JCE)
 
@@ -65,9 +65,9 @@ UNTAET Regulation 2000/15 set the **maximum sentence at 25 years' imprisonment**
 
 This is distinct from the Indonesian Penal Code's available sentencing range and reflects UNTAET's transitional administration prerogative.
 
-## 9. The Wiranto Indictment of 22 February 2003 — a notable non-trial
+## 9. The Wiranto Indictment of 24 February 2003 — a notable non-trial
 
-**SCU Indictment of 22 February 2003** against General Wiranto and six others for crimes against humanity under command/superior responsibility. The indictment is the **most prominent unrealized prosecution** in the Serious Crimes process — Wiranto, former Indonesian Minister of Defense, never stood trial. The indictment is institutionally significant as a documented record of the senior-level command structure responsible for the 1999 violence, even though it produced no judicial finding.
+**SCU Indictment of 24 February 2003** against General Wiranto and six others for crimes against humanity under command/superior responsibility. The indictment is the **most prominent unrealized prosecution** in the Serious Crimes process — Wiranto, former Indonesian Minister of Defense, never stood trial. The indictment is institutionally significant as a documented record of the senior-level command structure responsible for the 1999 violence, even though it produced no judicial finding.
 
 In 2004, the SPSC reportedly issued **arrest warrants** for Wiranto and others, but Indonesia did not execute them. Wiranto subsequently ran in Indonesian presidential elections and held senior Indonesian government positions.
 

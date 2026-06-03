@@ -47,7 +47,7 @@ For every verified citation:
 
 | | Reg. 64 Panels | Kosovo Specialist Chambers (KSC) |
 |---|---|---|
-| **Founding instrument** | UNMIK Regulation 2000/64 (administrative law) | Law 04/L-274 of August 2015 (Kosovo statute) + Constitutional Amendment + Council of EU Joint Action 2014/685/CFSP |
+| **Founding instrument** | UNMIK Regulation 2000/64 (administrative law) | Law No. 05/L-053 of August 2015 (Kosovo statute) + Constitutional Amendment + Council of EU Joint Action 2014/685/CFSP |
 | **Period** | 2000-2008 (UNMIK era); EULEX continuation 2008-2018 | 2015-present |
 | **Seat** | **Within Kosovo district courts** (Pristina, Mitrovica, etc.) | **The Hague**, Netherlands (relocated outside Kosovo) |
 | **Institutional nature** | Panels integrated within ordinary national courts | Separate relocated tribunal with own staff and premises |
