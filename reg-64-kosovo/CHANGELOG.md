@@ -6,6 +6,9 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and 
 
 ## [1.0.0-draft] — 2026-06-02
 
+### Fixed
+- `references/verification-workflow.md` (Trap 1): corrected the KSC founding-instrument number to **Law No. 05/L-053** (was "04/L-274").
+
 ### Added
 
 - Initial draft of the `reg-64-kosovo` skill — thirteenth skill in the Skills for International Justice series

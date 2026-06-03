@@ -1,5 +1,11 @@
 # Changelog — Special Panels Timor-Leste skill
 
+## [1.0.1] — 2026-06-02
+
+### Fixed
+- Corrected the SCU caseload figures throughout: **391 persons indicted** across 95 indictments (not "~800"), ~88 tried in ~55 trials, **84 convictions and 4 acquittals**, ~339 remaining at large. Verified against the UN Commission of Experts report and ICTJ.
+- Corrected the **Wiranto** SCU indictment date to **24 February 2003** (was 22 February).
+
 ## [1.0.0] — initial release
 
 ### Added

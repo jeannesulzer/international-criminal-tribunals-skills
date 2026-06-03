@@ -4,6 +4,11 @@ All notable changes to the `eccc` skill are documented in this file.
 
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this skill adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.2.2] — 2026-06-02
+
+### Fixed
+- Internal Rules revision table (`references/foundational-texts.md`): the 12 June 2007 original was mislabelled "Rev. 1"; renamed it "Original (unnumbered)" and inserted the genuine **Rev. 1 (1 February 2008)**. Verified against the ECCC legal-framework revision history.
+
 ## [1.2.1] — 2026-05-30
 
 ### Changed

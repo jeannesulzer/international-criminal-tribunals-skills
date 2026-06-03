@@ -1,5 +1,10 @@
 # Changelog — JEP skill
 
+## [1.0.3] — 2026-06-02
+
+### Fixed
+- `references/jurisprudence-map.md`: the four additional macrocasos (08-11) opened in **2022-2023** (Caso 11 in September 2023), not "2022".
+
 ## [1.0.2] — 2026-06-02
 
 ### Changed
