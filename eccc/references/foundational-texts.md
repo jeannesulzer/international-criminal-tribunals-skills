@@ -82,7 +82,8 @@ Available at `https://www.eccc.gov.kh/sites/default/files/legal-documents/Addend
 
 | Revision | Date adopted |
 |---|---|
-| Rev. 1 | 12 June 2007 (initial adoption) |
+| Original (unnumbered) | 12 June 2007 (initial adoption) |
+| Rev. 1 | 1 February 2008 |
 | Rev. 2 | 5 September 2008 |
 | Rev. 3 | 6 March 2009 |
 | Rev. 4 | 11 September 2009 |

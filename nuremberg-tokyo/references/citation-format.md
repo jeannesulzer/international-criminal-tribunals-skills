@@ -131,7 +131,7 @@ Never present Pal's dissenting view as "the Tribunal said".
 | Kōichi Kido | Lord Keeper of the Privy Seal | Life imprisonment |
 | Kuniaki Koiso | Prime Minister | Life imprisonment |
 | Jirō Minami | General | Life imprisonment |
-| Takasumi Oka | Admiral | Life imprisonment |
+| Takasumi Oka | Vice Admiral | Life imprisonment |
 | Hiroshi Ōshima | Ambassador to Germany | Life imprisonment |
 | Kenryō Satō | General | Life imprisonment |
 | Shigetarō Shimada | Admiral, Navy Minister | Life imprisonment |

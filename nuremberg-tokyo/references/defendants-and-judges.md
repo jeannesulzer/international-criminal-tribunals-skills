@@ -82,7 +82,7 @@ Convictions and acquittals are count by count.
 | Kōichi Kido | Lord Keeper of the Privy Seal (closest civilian to the Emperor) | Life imprisonment |
 | Kuniaki Koiso | Prime Minister 1944-45; General | Life imprisonment |
 | Jirō Minami | General; Governor-General of Korea | Life imprisonment |
-| Takasumi Oka | Admiral | Life imprisonment |
+| Takasumi Oka | Vice Admiral | Life imprisonment |
 | Hiroshi Ōshima | Ambassador to Germany | Life imprisonment |
 | Kenryō Satō | General; military bureau chief | Life imprisonment |
 | Shigetarō Shimada | Admiral; Navy Minister | Life imprisonment |
