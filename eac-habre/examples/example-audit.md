@@ -16,8 +16,8 @@ A draft article states:
 
 A characteristic Trial vs Appeals Chamber confusion (Trap 2):
 
-1. **The Trial Chamber (30 May 2016)** convicted Habré on all charges including the **direct commission of rape against Khadija Hassan Zidane** (one specific named victim).
-2. **The Appeals Chamber (27 April 2017)** **acquitted Habré of the direct commission of rape against Khadija Hassan Zidane** — finding the direct-commission evidence insufficient against the standard of proof beyond reasonable doubt.
+1. **The Trial Chamber (30 May 2016)** convicted Habré on all charges including the **direct commission of rape against Khadidja Hassan Zidane** (one specific named victim).
+2. **The Appeals Chamber (27 April 2017)** **acquitted Habré of the direct commission of rape against Khadidja Hassan Zidane** — finding the direct-commission evidence insufficient against the standard of proof beyond reasonable doubt.
 3. The Appeals Chamber **upheld** the overall conviction for **crimes against humanity (including sexual violence committed by others under Habré's responsibility), war crimes, and torture**, and **upheld the life sentence**.
 4. Habré therefore remained convicted on appeal for sexual violence under **command/superior responsibility** for crimes committed by DDS agents — but **not** for direct personal commission of rape.
 
@@ -25,7 +25,7 @@ The statement "convicted on all charges, including direct rape" is **accurate fo
 
 **Suggested redraft:**
 
-> "The EAC Trial Chamber convicted Habré on 30 May 2016 of crimes against humanity (rape, sexual slavery, murder, summary executions, enforced disappearance, torture, other inhumane acts), war crimes, and torture, sentencing him to life imprisonment. On 27 April 2017, the Appeals Chamber upheld the conviction and the life sentence but acquitted him of one specific direct rape count (Khadija Hassan Zidane), while maintaining his command/superior responsibility for sexual violence committed by Direction de la Documentation et de la Sécurité agents."
+> "The EAC Trial Chamber convicted Habré on 30 May 2016 of crimes against humanity (rape, sexual slavery, murder, summary executions, enforced disappearance, torture, other inhumane acts), war crimes, and torture, sentencing him to life imprisonment. On 27 April 2017, the Appeals Chamber upheld the conviction and the life sentence but acquitted him of one specific direct rape count (Khadidja Hassan Zidane), while maintaining his command/superior responsibility for sexual violence committed by Direction de la Documentation et de la Sécurité agents."
 
 ---
 

@@ -1,6 +1,6 @@
 # ICC citation format
 
-ICC citations are precise. Replicate the format the Court itself uses on the document being cited; do not invent. The most important rule, expressed differently: **anchor every citation to the actual numbering scheme of the instrument**, not to popularised practitioner shorthand. The two diverge in real cases (see Article 28 below); when they do, the instrument wins.
+ICC citations are precise. Replicate the format the Court itself uses on the document being cited; do not invent. The most important rule, expressed differently: **anchor every citation to the actual numbering scheme of the instrument**, not to a half-remembered or popularised form. Article 28 is the classic trap (see below): it does not follow the numbered-paragraph pattern of the other articles, and a non-statutory `28(1)/(2)` form is widely seen — always follow the Statute's own numbering.
 
 ## Rome Statute
 
@@ -17,20 +17,18 @@ Examples:
 - `Rome Statute, Article 25(3)(c)` — aiding and abetting
 - `Rome Statute, Article 25(3)(d)` — contribution to group crime
 
-### Article 28 — special note on shorthand
+### Article 28 — special note on numbering
 
-Article 28 is a common source of citation confusion. The Statute's own structure is:
+Article 28 is a common source of citation confusion because, unlike Articles 7, 8 and 25, it does **not** follow the numbered-paragraph pattern. It has **no numbered paragraphs**: after an opening chapeau, it runs straight to two lettered subparagraphs, each subdivided by roman numerals.
 
-- **Article 28(1)** — military commanders or persons effectively acting as military commanders. Subparagraphs (a) and (b) are the mental element and the failure-to-act element.
-- **Article 28(2)** — superior-subordinate relationships not described in paragraph (1). The civilian-superior regime. Subparagraphs (a), (b), and (c) are the mental element, the effective-responsibility-and-control nexus, and the failure-to-act element.
+- **Article 28(a)** — military commanders or persons effectively acting as military commanders. Sub-elements: `28(a)(i)` (the mental element — knew or, owing to the circumstances, should have known) and `28(a)(ii)` (the failure-to-act element).
+- **Article 28(b)** — superior-subordinate relationships not described in subparagraph (a): the civilian / non-military-superior regime. Sub-elements: `28(b)(i)` (knew, or consciously disregarded information), `28(b)(ii)` (the effective-responsibility-and-control nexus), and `28(b)(iii)` (the failure-to-act element).
 
-Practitioners and some commentary write "Article 28(a)" to mean the military regime and "Article 28(b)" to mean the civilian regime. This is a near-universal shorthand that nonetheless conflicts with the Statute's actual numbering, where `28(a)` and `28(b)` are subparagraphs *within* paragraph (1) (the mental element and the failure-to-act element of the military regime). The shorthand is therefore genuinely ambiguous.
+So `Article 28(a)` is the military-commander regime and `Article 28(b)` is the other-superior (civilian) regime — this **is** the Statute's own numbering, not a shorthand.
 
-**For any output that will be filed with the Court, will be read by judges or counsel, or that quotes the Statute:** use `Article 28(1)` and `Article 28(2)`, matching the Statute's text.
+**The trap to avoid:** writing `Article 28(1)` / `Article 28(2)`. That numbering does **not** appear in the Rome Statute; it sometimes surfaces in secondary commentary or in national implementing legislation that renumbers the provision. For any output that quotes or cites the Rome Statute, use `Article 28(a)` and `Article 28(b)`, matching the Statute's text, and cite sub-elements as `28(a)(ii)`, `28(b)(iii)`, and so on.
 
-**For informal practitioner-to-practitioner discussion** where the shorthand is clearly understood: it is widespread enough to use, but flag at first reference. For example: "Article 28(b) (i.e. the civilian-superior regime under Article 28(2) of the Statute)".
-
-When in doubt, prefer the Statute's numbering. The reason: in a written output it is impossible to recover from a `28(a)` that the reader interprets as "subparagraph (a)" when the writer meant "the military regime."
+The substantive distinction that must never be blurred is **military command responsibility (`28(a)`, the *Bemba* regime) versus other / civilian-superior responsibility (`28(b)`)** — the two regimes have different mental-element and nexus requirements.
 
 ## Elements of Crimes
 

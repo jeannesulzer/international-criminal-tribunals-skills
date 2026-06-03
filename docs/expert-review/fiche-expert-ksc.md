@@ -22,7 +22,7 @@
 - **Les numéros d'appel `KSC-CA` ne suivent pas toujours le numéro de première instance** — toujours vérifier le numéro d'appel sur **scp-ks.org** avant citation.
 
 ## 4. À CONFIRMER en priorité
-1. **N° d'appel Shala** : le skill porte `KSC-CA-2024-09` **avec une mise en garde** (l'arrêt est de 2025, le stem registre peut différer). → **à valider sur scp-ks.org.**
+1. **N° d'appel Pjetër Shala — RÉGLÉ** : le numéro spéculatif `KSC-CA-2024-09` **n'est pas confirmé** et a été **retiré** du skill ; citer l'affaire au numéro de 1re instance `KSC-BC-2020-04` + la date de l'arrêt (**14 juil. 2025**, peine ramenée de **18 à 13 ans**), et n'ajouter un n° d'appel `KSC-CA` qu'une fois vérifié sur scp-ks.org. ⚠️ Ne pas confondre **Pjetër Shala** (`KSC-BC-2020-04`) avec **Haxhi Shala** (affaire jointe `KSC-BC-2023-10`, plaidoyers de culpabilité déc. 2024).
 2. La saga des peines Mustafa (26 → 22 → 15 ans) et les dates.
 3. Peines d'appel Gucati & Haradinaj (4 ans 3 mois chacun).
 4. Ordre de succession des Procureurs spécialisés.

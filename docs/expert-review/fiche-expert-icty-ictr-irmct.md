@@ -21,8 +21,8 @@
 | Furundžija | `IT-95-17/1` | 10 déc. 1998 | Torture (jus cogens) |
 | Čelebići | `IT-96-21` | 1998/2001 | Responsabilité du supérieur |
 | Kambanda | `ICTR-97-23` | 4 sept. 1998 | 1er chef de gouvernement plaidant coupable de génocide |
-| Karadžić | `IT-95-5/18` → `MICT-13-55-A` | appel 20 mars 2019 | |
-| Mladić | `IT-09-92` → `MICT-13-56-A` | appel 8 juin 2021 | |
+| Karadžić | `IT-95-5/18` → `MICT-13-55-A` | appel 20 mars 2019 | Appel : peine **portée à la perpétuité** (40 ans en 1re instance) |
+| Mladić | `IT-09-92` → `MICT-13-56-A` | appel 8 juin 2021 | **Perpétuité confirmée** |
 | Kabuga | `ICTR-98-44B` / `MICT-13-38` | procédure close (décès, mai 2026) | Fonction résiduelle/fugitifs |
 
 ## 3. Pièges porteurs encodés

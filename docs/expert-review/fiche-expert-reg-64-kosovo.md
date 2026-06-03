@@ -23,7 +23,7 @@
 - Transition **post-2008 vers EULEX** (Joint Action **2008/124/CFSP**, 4 fév. 2008 ; **Law 2008/03-L053**, 13 mars 2008) — cadre juridique différent, citer « EULEX » et non « Reg. 64 ».
 
 ## 5. À confirmer en priorité
-1. Le Reg. 2000/64 impose-t-il une **majorité de juges internationaux** sur le panel (objet de l'exemple du skill) — vérifier la **disposition exacte**.
+1. **Composition des panels — précisé :** le Reg. 2000/64 **n'impose pas** de plein droit une majorité de juges internationaux ; il **permet** au RSSG de **désigner** au cas par cas un panel à **majorité internationale** (3 juges, dont **au moins 2 internationaux**) pour les affaires « importantes ou sensibles ». → reformuler tout passage du skill disant « impose / exige / composition requirement » en « permet / sur désignation du RSSG » (disposition exacte à recouper sur le texte du règlement).
 2. Les **numéros/dates d'affaires concrètes** (le skill ne fournit que des gabarits).
 3. La date des Codes provisoires (Regs **2003/25 / 2003/26, 6 juil. 2003**) et la bascule depuis le Code RSFY.
 

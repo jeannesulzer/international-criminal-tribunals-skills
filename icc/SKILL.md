@@ -72,9 +72,10 @@ above.
   source hierarchy; the icc-cpi.int 403 fallback ladder.
 - `references/citation-format.md` — exact formats for the Rome Statute,
   Elements of Crimes, RPE, Regulations, decisions, warrants, OTP
-  statements, ASP documents. Includes the Article 28(1)/(2) vs.
-  practitioner-shorthand "28(a)/(b)" discussion — the Statute's numbering
-  wins.
+  statements, ASP documents. Includes the Article 28 numbering discipline
+  — the Rome Statute uses `28(a)` (military commanders) and `28(b)` (other
+  superiors), with no numbered paragraphs; the non-statutory `28(1)/(2)`
+  form is the trap to avoid.
 - `references/verification-workflow.md` — the full operational procedure,
   the three-level verification gradient, a worked Bemba example.
 - `references/foundational-texts.md` — the four foundational texts and
@@ -110,10 +111,10 @@ skill.
    filings (`-Conf`, `-Conf-Exp`) are not citable from a public output,
    ever — even when the user has lawful access to the confidential version,
    cite the `-Red` counterpart.
-3. The Statute's numbering wins over practitioner shorthand. In particular,
-   `Article 28(1)` and `Article 28(2)` — not `28(a)` and `28(b)` — in
-   anything that will be filed, read by judges or counsel, or quote the
-   Statute.
+3. The Statute's own numbering governs. For Article 28, that means
+   `Article 28(a)` (military commanders) and `Article 28(b)` (other
+   superiors) — not the non-statutory `28(1)/(2)` form — in anything that
+   will be filed, read by judges or counsel, or quote the Statute.
 4. Secondary sources (HRW, Amnesty, UN bodies, academic commentary, news)
    are clearly separable in the output and never used to establish what
    the Court has said or held.

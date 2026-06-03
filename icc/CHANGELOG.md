@@ -3,6 +3,21 @@
 All notable changes to the `icc/` skill. Versions follow the suite-level
 versioning indicated in the top-level `README.md`.
 
+## v1.1.2 — 2026-06-02
+
+Substantive correction following an expert verification pass.
+
+- **Corrected the Article 28 numbering throughout the skill.** The Rome
+  Statute's Article 28 uses lettered subparagraphs — `28(a)` (military
+  commanders) and `28(b)` (other superiors), each with roman-numeral
+  sub-elements — and has no numbered paragraphs. Earlier versions wrongly
+  presented `Article 28(1)/(2)` as the Statute's numbering and `28(a)/(b)`
+  as practitioner shorthand; this was inverted. Updated
+  `references/citation-format.md`, `SKILL.md`,
+  `references/verification-workflow.md`, and both examples to use `28(a)`
+  (the *Bemba* military regime) and `28(b)` (the civilian / other-superior
+  regime). The top-level `CLAUDE.md` constraint was corrected to match.
+
 ## v1.1.1 — 2026-05-30
 
 Editorial consistency pass (suite-wide review); no substantive changes.

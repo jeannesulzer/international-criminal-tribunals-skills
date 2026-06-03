@@ -52,6 +52,8 @@ Formas cortas: *Estatutaria de la JEP*, art. [N]; o *Ley Estatutaria*, art. [N].
 
 ### 3. Los 11 macrocasos
 
+*(7 macrocasos abiertos en 2018-2019; ampliados a 11 con la apertura de los Casos 08-11 en 2022-2023.)*
+
 | Macrocaso | Tema |
 |---|---|
 | **Caso 01** | Toma de rehenes, graves privaciones de la libertad y otros crímenes (secuestros por las FARC-EP) |

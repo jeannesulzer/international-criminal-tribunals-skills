@@ -112,7 +112,7 @@ This designation is **not** the formal title used by the EAC itself; the EAC cri
 - Convicted at first instance **30 May 2016** — sentenced to life imprisonment for crimes against humanity (including rape, sexual slavery, murder, summary executions, kidnapping followed by enforced disappearance, torture, inhumane acts), war crimes (murder, torture, inhumane treatment, unlawful detention), and torture
 - Reparations decision **29 July 2016**
 - Appeals hearings **9-12 January 2017**
-- Final judgment **27 April 2017** — conviction upheld in most respects; **acquitted on appeal of one direct rape count** (the direct rape of Khadija Hassan Zidane); total reparations fixed
+- Final judgment **27 April 2017** — conviction upheld in most respects; **acquitted on appeal of one direct rape count** (the direct rape of Khadidja Hassan Zidane); total reparations fixed
 - **Died 24 August 2021** in Dakar — the criminal sentence is therefore extinguished as a matter of personal execution; the EAC's substantive findings remain authoritative and the reparations obligation transferred to the Trust Fund continues
 
 ## When the citation cannot be completed
