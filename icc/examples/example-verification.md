@@ -32,7 +32,7 @@ Both at level C.
 
 ### Draft
 
-> Under Article 28(a) of the Rome Statute, a military commander incurs criminal responsibility for crimes committed by forces under his "effective command and control". The Trial Chamber in *Bemba* held that effective control turns on the material ability to prevent or repress the commission of crimes; de jure authority is one factor but not determinative — the inquiry is one of fact, to be assessed in light of all the circumstances [Bemba TJ, paras. [X]–[Y]]. **This judgment was set aside on appeal.** The Appeals Chamber found, by majority, that the Trial Chamber erred in its assessment of the measures Bemba took to prevent and repress crimes by the MLC contingent in the CAR, and acquitted the accused [Bemba AJ, paras. [X]–[Y]].
+> Under Article 28(a) of the Rome Statute, a military commander incurs criminal responsibility for crimes committed by forces under his "effective command and control". The Trial Chamber in *Bemba* held that effective control turns on the material ability to prevent or repress the commission of crimes; de jure authority is one factor but not determinative — the inquiry is one of fact, to be assessed in light of all the circumstances [Bemba TJ, paras. [X]–[Y]]. **This judgment was set aside on appeal.** The Appeals Chamber found, by majority, that the Trial Chamber erred on two grounds — convicting Bemba for criminal acts outside the scope of the confirmed charges, and in its assessment of the measures he took to prevent and repress crimes by the MLC contingent in the CAR — and acquitted the accused [Bemba AJ, paras. [X]–[Y]].
 
 Full citations (first occurrence):
 - *Prosecutor v. Bemba*, Trial Chamber III, "Judgment pursuant to Article 74 of the Statute", ICC-01/05-01/08-3343, 21 March 2016.

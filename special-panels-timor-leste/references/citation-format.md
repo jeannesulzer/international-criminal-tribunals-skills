@@ -42,7 +42,7 @@ Short forms: *UNTAET Reg. 2000/15*, Section [N]; *UNTAET Reg. 2000/30*, Section 
 
 - *Prosecutor v. José Cardoso Fereira*, Special Panels for Serious Crimes, Dili District Court, Judgment, Case No. 04/2001, 5 April 2003.
 
-- *Prosecutor v. Wiranto et al.*, Serious Crimes Unit Indictment, 22 February 2003. (Indictment only — never tried.)
+- *Prosecutor v. Wiranto et al.*, Serious Crimes Unit Indictment, 24 February 2003. (Indictment only — never tried.)
 
 ### 3. CAVR materials
 
@@ -89,7 +89,7 @@ Short forms: *UNTAET Reg. 2000/15*, Section [N]; *UNTAET Reg. 2000/30*, Section 
 | First SPSC judgments | 2001 |
 | UNTAET Regulation 2001/10 (CAVR established) | 13 July 2001 |
 | Timor-Leste independence | 20 May 2002 |
-| Wiranto et al. SCU Indictment | 22 February 2003 |
+| Wiranto et al. SCU Indictment | 24 February 2003 |
 | Three SPSC panels operational | 2003 |
 | CAVR Final Report ("Chega!") | October 2005 |
 | Report of the UN Commission of Experts on Serious Crimes (Galuh report) | 26 May 2005 |
@@ -98,12 +98,13 @@ Short forms: *UNTAET Reg. 2000/15*, Section [N]; *UNTAET Reg. 2000/30*, Section 
 
 ## Number of SPSC outcomes (approximate)
 
-- Indictees named by SCU: **~800**
-- Indictees tried by SPSC: **~80-95**
-- Convictions: **~85**
-- Acquittals: **~3**
+- Persons indicted by SCU: **391** (across **95 indictments**)
+- Accused tried by SPSC: **~88** (in approximately **55 trials**)
+- Convictions: **84** (24 on guilty plea)
+- Acquittals: **4**
+- Accused remaining at large: **~339**
 
-The disparity between ~800 indictees and ~85 tried reflects the **non-cooperation of Indonesia** with the SPSC's arrest warrants — the vast majority of indictees, particularly senior Indonesian military commanders, remained beyond the SPSC's reach.
+The disparity between the 391 persons indicted and the ~88 tried reflects the **non-cooperation of Indonesia** with the SPSC's arrest warrants — the vast majority of indictees, particularly senior Indonesian military commanders, remained beyond the SPSC's reach.
 
 ## When the citation cannot be completed
 

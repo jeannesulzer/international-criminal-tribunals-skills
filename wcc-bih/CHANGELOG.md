@@ -1,5 +1,10 @@
 # Changelog — WCC-BiH skill
 
+## [1.0.1] — 2026-06-02
+
+### Fixed
+- `references/foundational-texts.md`: noted that **Section I (War Crimes)** was introduced by the **December 2004 amendment** (Registry for Section I established 1 December 2004), not the original 2002 Law — hence operations beginning 9 March 2005. Harmonised the *Mejakić* referral/transfer dates.
+
 ## [1.0.0] — initial release
 
 ### Added

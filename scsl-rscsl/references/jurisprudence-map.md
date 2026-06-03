@@ -6,7 +6,7 @@ A topic-by-topic map of the SCSL's principal landmark holdings.
 
 **Decision on Immunity from Jurisdiction**, *Prosecutor v. Charles Ghankay Taylor*, Case No. SCSL-03-01-I, Appeals Chamber, **31 May 2004**.
 
-The Appeals Chamber rejected Taylor's challenge to the SCSL's jurisdiction on the ground that he enjoyed sovereign immunity as the (then-sitting) head of State of Liberia. The Chamber relied on:
+The Appeals Chamber rejected Taylor's challenge to the SCSL's jurisdiction — he had argued he enjoyed sovereign immunity as a sitting head of State of Liberia (the status he held when the indictment was confirmed on 7 March 2003; by the date of this decision, 31 May 2004, he had already left office, having gone into exile in August 2003). The Chamber relied on:
 - SCSL Statute Art. 6(2) (no immunity for heads of State, modelled on ICTY Art. 7(2), ICTR Art. 6(2), and Rome Statute Art. 27)
 - The character of the SCSL as an "international tribunal" acting on behalf of the international community (a contested characterisation given the SCSL is treaty-based, not Chapter VII)
 - Customary international law authorising the prosecution of heads of State for international crimes

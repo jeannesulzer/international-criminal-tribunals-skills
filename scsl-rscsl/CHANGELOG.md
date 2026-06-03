@@ -1,5 +1,11 @@
 # Changelog — SCSL/RSCSL skill
 
+## [1.0.1] — 2026-06-02
+
+### Fixed
+- `references/foundational-texts.md` (Art. 19): the SCSL Statute provides **no life imprisonment** — fixed-term sentences only (Taylor's 50 years was the longest); corrected a note that wrongly stated the maximum was life.
+- Clarified the *Taylor* head-of-State immunity chronology in `references/jurisprudence-map.md` and `references/verification-workflow.md` (sitting head of State at the 7 March 2003 indictment; out of office by the 31 May 2004 immunity decision).
+
 ## [1.0.0] — initial release
 
 ### Added

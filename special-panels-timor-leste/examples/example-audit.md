@@ -12,7 +12,7 @@ A draft article states:
 
 Multiple errors (Trap 1):
 
-1. **General Wiranto was NEVER tried at the SPSC.** He was **indicted** by the SCU on 22 February 2003, but he remained in Indonesia and Indonesia did not extradite him. **No SPSC trial took place.**
+1. **General Wiranto was NEVER tried at the SPSC.** He was **indicted** by the SCU on 24 February 2003, but he remained in Indonesia and Indonesia did not extradite him. **No SPSC trial took place.**
 
 2. The statement may confuse two separate processes:
 - **SPSC** at the Dili District Court (Timor-Leste) — indicted Wiranto in 2003; he was never tried
@@ -22,7 +22,7 @@ Multiple errors (Trap 1):
 
 ### Suggested redraft
 
-> "General Wiranto, former Indonesian Minister of Defense in 1999, was indicted by the Serious Crimes Unit (SCU) on 22 February 2003 for crimes against humanity under command/superior responsibility for the 1999 East Timor violence (*Prosecutor v. Wiranto et al.*, SCU Indictment, 22 February 2003). He never stood trial — Indonesia did not effectively cooperate with the Special Panels for Serious Crimes (SPSC) at the Dili District Court, and Wiranto remained in Indonesia. Parallel proceedings before the Indonesian Ad Hoc Human Rights Court on East Timor (Central Jakarta District Court) addressed crimes by other Indonesian military and police officials; most convictions in those Jakarta proceedings were reversed on appeal."
+> "General Wiranto, former Indonesian Minister of Defense in 1999, was indicted by the Serious Crimes Unit (SCU) on 24 February 2003 for crimes against humanity under command/superior responsibility for the 1999 East Timor violence (*Prosecutor v. Wiranto et al.*, SCU Indictment, 24 February 2003). He never stood trial — Indonesia did not effectively cooperate with the Special Panels for Serious Crimes (SPSC) at the Dili District Court, and Wiranto remained in Indonesia. Parallel proceedings before the Indonesian Ad Hoc Human Rights Court on East Timor (Central Jakarta District Court) addressed crimes by other Indonesian military and police officials; most convictions in those Jakarta proceedings were reversed on appeal."
 
 ---
 

@@ -40,7 +40,7 @@
 - **Article 12 — Composition of the Chambers.** Trial Chamber (international and Sierra Leonean judges) and Appeals Chamber.
 - **Article 14 — Rules of Procedure and Evidence.** The judges of the Special Court adopt the RPE.
 - **Article 17 — Rights of the accused.**
-- **Article 19 — Penalties.** Imprisonment for a specified number of years; **no death penalty**; the maximum penalty has been life imprisonment.
+- **Article 19 — Penalties.** Imprisonment for a specified number of years; **no death penalty and no life imprisonment** — fixed-term sentences only (the longest imposed was Charles Taylor's 50 years).
 
 ## 4. Rules of Procedure and Evidence of the SCSL
 

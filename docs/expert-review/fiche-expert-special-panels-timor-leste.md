@@ -13,12 +13,12 @@
 | **Joseph Leki** | `05/2000` | Jugement **11 juin 2001** |
 | **Joni Marques et al.** (Los Palos) | `09/2000` | Jugement **11 décembre 2001** — premier grand jugement **crimes contre l'humanité** |
 | **José Cardoso Fereira** | `04/2001` | Jugement **5 avril 2003** |
-| **Wiranto et al.** | acte d'accusation SCU | **22 février 2003** — *inculpation seulement, jamais jugé* |
+| **Wiranto et al.** | acte d'accusation SCU | **24 février 2003** — *inculpation seulement, jamais jugé* |
 
 ## 3. Apports doctrinaux porteurs
 - Premier mécanisme **hybride** de crimes graves administré par l'ONU au sein d'un système judiciaire national.
 - Jurisprudence sur les **crimes contre l'humanité** dans le contexte des violences de 1999.
-- Expérience institutionnelle marquée par une **impunité structurelle** au sommet (≈ **85 inculpés jugés sur ≈ 800**).
+- Expérience institutionnelle marquée par une **impunité structurelle** au sommet : **391 inculpés** (95 actes d'accusation), mais seulement **~88 jugés** (84 condamnations, 4 acquittements) ; quelque **339 sont restés en Indonésie**.
 
 ## 4. Points de vigilance (7 pièges du skill)
 1. SPSC ≠ **Cour ad hoc indonésienne des droits de l'homme pour le Timor oriental** (siégeait à **Jakarta**).
@@ -32,6 +32,6 @@
 ## 5. À confirmer en priorité
 1. Les numéros/dates du tableau §2 (Los Palos `09/2000`, 11 déc. 2001 ; Leki `05/2000` ; Cardoso `04/2001`).
 2. La date du Reg. 2000/15 (**6 juin 2000**) et la clôture (**20 mai 2006**).
-3. Le ratio d'impunité (**≈ 85 / ≈ 800**).
+3. Les chiffres du §3 : **391 inculpés / ~88 jugés / 84 condamnations / 4 acquittements / ~339 en fuite** (et non « ≈ 85 sur ≈ 800 »).
 
 *Vérifié contre JSMP / UC Berkeley Human Rights Center / archives ONU / legal-tools.org ; validation praticien souhaitée.*
