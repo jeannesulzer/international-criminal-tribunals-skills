@@ -1,177 +1,107 @@
-# Open Source Skills for International Criminal Law Research
+# Skills for International Justice
 
-**A library of verification-first methodologies for AI-assisted research on 16 international and internationalised criminal jurisdictions.**
+**An open-source library of 13 skills for AI-assisted research in international criminal law.**
 
-Hosted by [Impact Litigation Lab](https://impactlitigation.fr) — French nonprofit (association loi 1901, in formation).
+Built by [Jeanne Sulzer](https://www.linkedin.com/in/jeannesulzer/) — Avocate au Barreau de Paris, ICC List of Counsel, Founding Partner of [Impact Litigation](https://www.impactlitigation.fr/), Head of the Legal Commission of Amnesty International France, Lecturer at Sciences Po Paris (PSIA) and Université Paris II Panthéon-Assas.
+
+This project provides a curated library of Claude skills covering 16 international and internationalised jurisdictions that have shaped international criminal law, from Nuremberg (1945) to Colombia's JEP (first judgments September 2025).
 
 ---
 
 ## What this is
 
-This repository hosts a library of **Skills** for Claude AI (Anthropic) covering 16 international and internationalised criminal jurisdictions, from the Nuremberg International Military Tribunal (1945) to Colombia's Jurisdicción Especial para la Paz (first sentences September 2025).
-
-Each skill encodes a **verification-first discipline**: no case-law citation, indictment, decision, or judgment reference appears in any output without being verified against an authoritative source (the official tribunal website, the ICC Legal Tools Database, or other Tier 1 institutional sources). The skills are designed to make AI-assisted research in international criminal law **rigorous, reproducible, and reliable** — for students, practitioners, NGOs, journalists, and researchers.
-
-Skills are an open, documented format introduced by Anthropic in October 2025. Because each skill is plain Markdown, its methodology can be used as reference material with any capable AI assistant; the `SKILL.md` packaging is natively supported by Claude.
+A library of 13 skills, each encoding the doctrinal map, source hierarchy, and verification workflow for one or more international jurisdictions. The skills do not contain scraped data. They encode a methodology that instructs Claude to consult the tribunals' own official archives — judgments, decisions, indictments — before producing any citation.
 
 ---
 
-## Jurisdictions covered
+## The 13 skills
 
-The 16 jurisdictions are organised by structural and historical category:
+| # | Skill | Jurisdictions covered | Official source |
+|---|---|---|---|
+| 1 | **ICC** | International Criminal Court | [icc-cpi.int](https://www.icc-cpi.int) |
+| 2 | **ECCC** | Extraordinary Chambers in the Courts of Cambodia | [eccc.gov.kh](https://www.eccc.gov.kh) |
+| 3 | **ICTY / ICTR / IRMCT** | ICTY, ICTR, and International Residual Mechanism | [irmct.org](https://www.irmct.org) |
+| 4 | **Nuremberg / Tokyo** | IMT (Nuremberg, 1945–46) and IMTFE (Tokyo, 1946–48) | [legal-tools.org](https://www.legal-tools.org) |
+| 5 | **STL** | Special Tribunal for Lebanon | [stl-tsl.org](https://www.stl-tsl.org) / [legal-tools.org](https://www.legal-tools.org) |
+| 6 | **KSC** | Kosovo Specialist Chambers | [scp-ks.org](https://www.scp-ks.org) |
+| 7 | **SCSL / RSCSL** | Special Court for Sierra Leone and its Residual Mechanism | [rscsl.org](https://www.rscsl.org) |
+| 8 | **CPS-RCA** | Cour Pénale Spéciale (Central African Republic) | [cpsrca.cf](https://www.cpsrca.cf) |
+| 9 | **JEP** | Jurisdicción Especial para la Paz (Colombia) | [jep.gov.co](https://www.jep.gov.co) |
+| 10 | **EAC (Habré)** | Extraordinary African Chambers, Hissein Habré case | [legal-tools.org](https://www.legal-tools.org) |
+| 11 | **WCC-BiH** | War Crimes Chamber, Court of Bosnia and Herzegovina | [sudbih.gov.ba](https://www.sudbih.gov.ba) |
+| 12 | **Special Panels Timor-Leste** | UNTAET Serious Crimes Panels (Dili District Court) | [legal-tools.org](https://www.legal-tools.org) |
+| 13 | **Reg. 64 Kosovo** | UNMIK Regulation 64 Panels (Kosovo district courts) | [legal-tools.org](https://www.legal-tools.org) |
 
-### Post-1945 heritage
-- **Nuremberg–Tokyo** — International Military Tribunal (IMT, 1945–1946), the twelve Nuremberg Military Tribunals (NMT, 1946–1949), and the International Military Tribunal for the Far East (IMTFE, 1946–1948). *Delivered as a single skill, the IMT and the IMTFE count as two of the sixteen jurisdictions.*
-
-### Ad hoc UN tribunals
-- **ICTY** — International Criminal Tribunal for the former Yugoslavia (1993–2017)
-- **ICTR** — International Criminal Tribunal for Rwanda (1994–2015)
-- **IRMCT** — International Residual Mechanism for Criminal Tribunals (since 2010/2012)
-
-### Permanent international jurisdiction
-- **ICC** — International Criminal Court (since 2002)
-
-### Hybrid tribunals (2000s–2010s)
-- **ECCC** — Extraordinary Chambers in the Courts of Cambodia (2003–2022)
-- **SCSL / RSCSL** — Special Court for Sierra Leone (2002–2013) and its Residual Special Court (since 2013)
-- **STL** — Special Tribunal for Lebanon (2007–2023)
-
-### Internationalised national chambers and hybrid courts
-- **Special Panels Timor-Leste** — Special Panels for Serious Crimes (UNTAET, 2000–2006)
-- **Reg. 64 Kosovo Panels** — UNMIK Regulation 64 Panels (2000–2008)
-- **WCC-BiH** — War Crimes Chamber of the Court of Bosnia and Herzegovina (since 2005)
-- **EAC** — Chambres Africaines Extraordinaires (Hissène Habré case, 2013–2017)
-
-### Modern hybrid and transitional jurisdictions
-- **KSC** — Kosovo Specialist Chambers and Specialist Prosecutor's Office (since 2015)
-- **CPS-RCA** — Cour Pénale Spéciale de la République Centrafricaine (since 2015, operational since 2018)
-- **JEP** — Jurisdicción Especial para la Paz, Colombia (since 2017, first sentences September 2025)
+**Total: 13 skills, 16 jurisdictions.** Two skills are composite: ICTY/ICTR/IRMCT covers three jurisdictions, and Nuremberg/Tokyo covers two (the IMT and the IMTFE).
 
 ---
 
-## Selection methodology
+## How to install and use
 
-The selection of these 16 jurisdictions — and the deliberate exclusion of others — follows **five cumulative criteria**:
+Installation requires no coding.
 
-1. **Jurisdiction over international crimes** — competence over crimes against humanity, genocide, war crimes, aggression, or crimes defined by reference to these categories
-2. **Structuring international or internationalised element** — international legal basis, international component in composition, or substantial application of international law
-3. **Temporally and materially bounded competence** — specific conflict, regime, or set of events
-4. **Structured public documentation** — judgments and decisions available in an official archive
-5. **Substantial doctrinal contribution to international criminal law** — innovation, precedent, or institutional experience of broader relevance
+1. **Download** the skill matching the jurisdiction you are working on from this repository.
+2. **Drop it** into a [Claude project](https://claude.ai) as a knowledge document. Each skill is a `.zip` archive containing a `SKILL.md` file and reference materials.
+3. **Ask your question** in a conversation within that project. Claude reads the instructions encoded in the skill, consults the tribunal's official archives to verify any reference, and produces an answer grounded in verified sources.
 
-The full methodological document — including discussion of borderline cases (the JEP, the CPS-RCA, the EAC Habré) and jurisdictions deliberately not yet included (national universal-jurisdiction prosecutions, truth and reconciliation commissions) — is available in **[METHODOLOGY.md](METHODOLOGY.md)**.
+A skill, once uploaded, persists across all conversations within the project. You can upload multiple skills to the same project if you are working across several jurisdictions.
 
 ---
 
-## Repository structure
+## Methodology: verification-first
 
-Each skill is a self-contained directory:
+Each skill encodes a non-negotiable requirement: **no case-law citation is produced without having been verified against the official archives**.
 
-```
-[jurisdiction]/
-├── SKILL.md                       — main entry point and discipline
-├── CHANGELOG.md                   — version history
-├── references/
-│   ├── foundational-texts.md      — statutes, agreements, rules of procedure
-│   ├── authoritative-sources.md   — Tier 1 and Tier 2 source hierarchy
-│   ├── citation-format.md         — citation conventions and worked examples
-│   ├── verification-workflow.md   — fallback ladder and jurisdiction-specific traps
-│   └── jurisprudence-map.md       — topical map of principal holdings (most skills)
-└── examples/
-    ├── example-verification.md    — verifying one citation end to end
-    └── example-audit.md           — auditing user-supplied documents
-```
+Each skill contains:
+- A `SKILL.md` file with the methodological instructions
+- Five reference files: `foundational-texts.md`, `authoritative-sources.md`, `citation-format.md`, `verification-workflow.md`, `jurisprudence-map.md`
+- Two pedagogical example files
+- A `CHANGELOG.md`
+
+The skills themselves do not contain pre-stored case-law data. They contain methodological instructions and pointers to the official archives that the tribunals publish for public consultation. Judicial transparency is constitutive of our field: judgments are made public to enable analysis, critique, and the construction of international law.
 
 ---
 
-## Methodological principles
+## Next steps
 
-Every skill in this library shares the same architecture:
+A planned next step is to explore the transposition of this methodology to domain-specific small language models (SLMs) and local Retrieval-Augmented Generation (RAG) architectures. The discipline will remain, the tools will evolve.
 
-- **Step 0 — Identify the document.** Before anything else, the skill distinguishes the case, the chamber, the document type, and the procedural posture.
-- **Three-tier verification gradient.** Existence verified / content verified / paragraph verified — the output never claims a higher level than was actually achieved.
-- **Source hierarchy.** Tier 1 (official tribunal websites, ICC Legal Tools, institutional archives) is authoritative; Tier 2 (academic commentary, trial monitoring NGOs, quality journalism) is labelled when used; nothing else is authoritative.
-- **Jurisdiction-specific traps.** Each skill maps 5 to 7 recurrent errors specific to that jurisdiction (for example: confusing the Trial Chamber with the Appeals Chamber, misattributing a doctrine to the wrong decision, conflating connected cases).
-- **Audit mode.** A distinct workflow for auditing user-supplied documents — useful for reviewing student work, briefs, or research notes.
+Contributions from practitioners, NGOs, researchers, national jurisdictions, and developers interested in SLMs and RAG are welcome.
 
 ---
 
-## Working languages
+## On the structural concerns raised by generative AI
 
-The library covers three working languages:
+I am fully aware of the structural concerns raised by generative AI today. The report *[Unlawful by Design: Exposing the Human Rights Costs of Generative AI](https://www.amnesty.org/en/documents/pol40/0996/2026/en/)* (POL 40/0996/2026, May 2026) published by Amnesty International anchors its analysis in international human rights law and documents the issues of mass data collection, structural biases, and disproportionate environmental impact of standalone generative AI systems, with respect to the protections guaranteed in particular by the International Covenant on Civil and Political Rights, the International Convention on the Elimination of All Forms of Racial Discrimination, and the Convention on the Rights of the Child.
 
-- **English** — for ICC, ICTY/ICTR/IRMCT, ECCC, SCSL/RSCSL, STL, KSC, Special Panels Timor-Leste, Reg. 64 Kosovo, WCC-BiH, IMT/NMT/IMTFE
-- **French** — bilingual French/English for EAC (Chambres Africaines Extraordinaires, Hissène Habré case) and for CPS-RCA (the procedural language of the court)
-- **Spanish** — for JEP (the procedural language of the court)
-
-Additional languages will be added when relevant as new skills are developed.
+This report deserves to be read in full by everyone practising in our field.
 
 ---
 
-## How to use a skill
+## License
 
-Each skill is designed to be used with Claude AI either:
-
-- **As a project knowledge file** — upload the relevant directory or `.zip` into a Claude project, then ask your question
-- **As a system prompt module** — extract the `SKILL.md` content and use it as part of a system prompt for your AI assistant
-- **As a research methodology reference** — read the markdown files directly; they are designed to be useful even without an AI assistant
-
-A worked example for each skill is provided in `examples/example-verification.md`.
-
----
-
-## Roadmap
-
-Currently in development:
-
-- **Universal jurisdiction (France)** — in collaboration with Zacharie Laik (Legal Data Hunter)
-- **Universal jurisdiction (Germany)** — Generalbundesanwalt practice
-- **Updated treatment of proposed and emerging jurisdictions** — Special Tribunal for the Crime of Aggression against Ukraine, when operational
-
-Suggestions, contributions, and proposals for new skills are welcome via GitHub Issues.
+This project is released under a permissive license. See `LICENSE` file for details.
 
 ---
 
 ## Contributing
 
-Contributions are welcome — corrections, additions, translations, new skills. The contribution workflow:
+Issues, pull requests, and discussions are welcome. Suggested contributions include:
+- Additional skills for jurisdictions not yet covered
+- Translations of skill documentation
+- Improvements to the verification workflow
+- Experimentation with SLM and RAG transposition
 
-1. Open a GitHub Issue describing the proposed change
-2. For corrections to existing skills: include the verified Tier 1 source supporting the correction
-3. For new skills: confirm in the Issue that the proposed jurisdiction satisfies the five criteria in [METHODOLOGY.md](METHODOLOGY.md)
-4. Submit a Pull Request
-
-All content in this repository is licensed under the **Creative Commons Attribution 4.0 International licence (CC BY 4.0)** — see [`LICENSE`](LICENSE). You are free to share and adapt the material, including commercially, provided you give appropriate credit.
-
----
-
-## About Impact Litigation Lab
-
-**Impact Litigation Lab** is a French nonprofit (association loi 1901, in formation) hosted under [impactlitigation.fr](https://impactlitigation.fr). Its mission is to develop open source methodologies and tools at the intersection of international criminal law, victims' rights, and artificial intelligence — for the benefit of students, practitioners, NGOs, journalists, and researchers worldwide.
-
-This library is the inaugural project of Impact Litigation Lab.
-
----
-
-## Acknowledgements
-
-This library is the product of collective work. Particular thanks to the practitioners, scholars, and colleagues who reviewed, tested, and challenged earlier drafts. Errors and omissions remain my own.
-
----
-
-## About the author
-
-**Jeanne Sulzer** is an international human rights lawyer admitted to the Paris Bar and on the List of Counsel of the International Criminal Court. She is Head of the International Justice Commission at Amnesty International France, lectures at Sciences Po Paris School of International Affairs (PSIA) and at Université Paris-Panthéon-Assas, and previously served at the Extraordinary Chambers in the Courts of Cambodia (Civil Party Lead Co-Lawyers' Section and Office of the Co-Investigating Judges, 2008–2013).
+Contact: through [LinkedIn](https://www.linkedin.com/in/jeannesulzer/) or via the Issues tab on this repository.
 
 ---
 
 ## Citation
 
-If you use this library in academic work, please cite as:
+If you use these skills in research or practice, please cite as:
 
-> Jeanne Sulzer, *Open Source Skills for International Criminal Law Research*, Impact Litigation Lab, 2026. Available at: github.com/jeannesulzer
+> Sulzer, Jeanne. *Skills for International Justice — An Open-Source Library for AI-Assisted Research in International Criminal Law.* Impact Litigation Lab, 2026. github.com/jeannesulzer
 
 ---
 
-*Impact Litigation Lab — June 2026*
-*[impactlitigation.fr](https://impactlitigation.fr) · [github.com/jeannesulzer](https://github.com/jeannesulzer)*
+© 2026 Jeanne Sulzer / Impact Litigation Lab. Released under a permissive open-source license.
