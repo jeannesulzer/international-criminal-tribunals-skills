@@ -80,7 +80,7 @@ This report deserves to be read in full by everyone practising in our field.
 
 ## License
 
-This project is released under a permissive license. See `LICENSE` file for details.
+This project is released under the **Creative Commons Attribution 4.0 International licence (CC BY 4.0)**. You are free to share and adapt the material, including commercially, provided you give appropriate credit. See the [`LICENSE`](LICENSE) file for details.
 
 ---
 
@@ -104,4 +104,4 @@ If you use these skills in research or practice, please cite as:
 
 ---
 
-© 2026 Jeanne Sulzer / Impact Litigation Lab. Released under a permissive open-source license.
+© 2026 Jeanne Sulzer / Impact Litigation Lab. Released under the Creative Commons Attribution 4.0 International licence (CC BY 4.0).
