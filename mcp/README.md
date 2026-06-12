@@ -4,6 +4,8 @@ A [Model Context Protocol](https://modelcontextprotocol.io) server that
 exposes the `international-criminal-tribunals-skills` suite to any MCP client
 (Claude Desktop, Claude Code, or another host).
 
+This is the first MCP server from the Impact Litigation Lab.
+
 It reads the tribunal skill folders in this repository live — it does not
 duplicate their content — and surfaces four capability areas that map onto the
 suite's verification-first methodology:
