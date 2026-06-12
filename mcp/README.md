@@ -10,10 +10,10 @@ suite's verification-first methodology:
 
 | Area | Tool / resource |
 |---|---|
-| Expose the skills | `list_tribunals`, `get_skill_file`, `skill://…` resources |
+| Expose the skills | `list_tribunals`, `get_skill_file`, `get_foundational_texts`, `skill://…` resources |
 | Verify citations | `verify_citation` |
 | Search the case law | `search_jurisprudence` |
-| Retrieve documents | `fetch_document` |
+| Retrieve documents | `fetch_document` (with PDF text extraction) |
 
 The server never authorises citing case law from memory. `verify_citation`
 returns the *guidance* to verify a citation against a Tier 1 source; it does
@@ -40,6 +40,12 @@ Space-separated terms are ANDed. `scope` is one of `all`, `jurisprudence`,
 `citation`, `sources`, `examples`, `skill`. Results are documentation
 pointers — still verify before citing.
 
+### `get_foundational_texts(tribunal)`
+Returns the tribunal's `foundational-texts.md` — the constitutive instruments
+(statute, rules, regulations) that are the *only* texts citable from project
+knowledge without a fresh fetch, plus the amendment/revision discipline and
+what is explicitly not foundational.
+
 ### `verify_citation(citation, tribunal="")`
 Detects the tribunal from a raw citation (number scheme + key terms) and
 returns, for that tribunal, the citation-format rules, the authoritative-source
@@ -48,8 +54,9 @@ hierarchy, and the verification workflow (including the fallback ladder). Pass
 
 ### `fetch_document(url, tribunal="")`
 Fetches a primary source over HTTP with a browser-like User-Agent. On a 403 /
-block it returns the relevant fallback ladder rather than failing. PDFs are
-reported (size/type) rather than parsed.
+block it returns the relevant fallback ladder rather than failing. PDFs have
+their text extracted (via `pypdf`); scanned/image-only PDFs are reported as
+not machine-readable rather than returning empty output.
 
 ## Resources
 

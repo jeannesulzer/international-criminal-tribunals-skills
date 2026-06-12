@@ -475,6 +475,43 @@ def verify_citation(citation: str, tribunal: str = "") -> str:
 
 
 @mcp.tool()
+def get_foundational_texts(tribunal: str) -> str:
+    """Return a tribunal's foundational instruments — the only texts citable from memory.
+
+    Every tribunal has a small set of constitutive instruments (its statute,
+    rules of procedure and evidence, and regulations / equivalents) that, under
+    the suite's methodology, MAY be cited from project knowledge without a
+    fresh fetch — provided they are present in the conversation. Everything else
+    (judgments, decisions, warrants, filings, statements) must be verified
+    against a Tier 1 source first.
+
+    This returns the tribunal's `foundational-texts.md`, which names exactly
+    which instruments qualify, the revision/amendment discipline that applies
+    (e.g. ECCC Law "Article 29 new", the in-force RPE revision), and what is
+    explicitly NOT foundational. Use it to decide whether a given instrument
+    citation needs verification or not.
+    """
+    trib = _resolve_tribunal(tribunal)
+    if trib is None:
+        return _unknown_tribunal_message(tribunal)
+    path = _safe_md_path(trib, "references/foundational-texts.md")
+    if path is None:
+        return (
+            f"No foundational-texts.md for '{trib.slug}'. Foundational instruments "
+            "are the only texts citable from project knowledge; without this file, "
+            "treat every instrument citation as requiring verification."
+        )
+    return (
+        f"# {trib.slug} — foundational texts (citable from project knowledge "
+        "only when present in the conversation)\n\n"
+        + path.read_text(encoding="utf-8").strip()
+        + "\n\n---\nReminder: these instruments are the ONLY exception to "
+        "verify-before-citing, and only when actually present. All case-specific "
+        "documents (judgments, decisions, filings) still require a Tier 1 fetch."
+    )
+
+
+@mcp.tool()
 async def fetch_document(url: str, tribunal: str = "") -> str:
     """Fetch a primary-source document over HTTP, honouring the suite's discipline.
 
@@ -530,13 +567,7 @@ async def fetch_document(url: str, tribunal: str = "") -> str:
 
     ctype = resp.headers.get("content-type", "")
     if "pdf" in ctype.lower() or url.lower().endswith(".pdf"):
-        size = len(resp.content)
-        return (
-            f"Retrieved a PDF from {url} ({size} bytes, content-type: {ctype}).\n"
-            "This server returns text, not parsed PDF. Capture the document "
-            "number, date, chamber, title, and the paragraph(s) you cite from "
-            "the PDF itself. If you have a PDF-reading tool, use it on this URL."
-        )
+        return _extract_pdf_text(url, resp.content, ctype)
 
     text = resp.text
     body = _strip_html(text) if "html" in ctype.lower() else text
@@ -653,6 +684,62 @@ def _fallback_ladder_note(slug: str) -> str:
         "Call list_tribunals then get_skill_file(<slug>, 'verification-workflow') "
         "for the tribunal-specific ladder."
     )
+
+
+def _extract_pdf_text(url: str, data: bytes, ctype: str) -> str:
+    """Extract text from a fetched PDF, with graceful degradation.
+
+    Court PDFs are the primary-source format for most tribunals, so pull the
+    text where possible. Scanned/image-only PDFs yield little or no text — in
+    that case say so plainly rather than returning an empty result.
+    """
+    size = len(data)
+    try:
+        from pypdf import PdfReader  # type: ignore
+    except ModuleNotFoundError:
+        return (
+            f"Retrieved a PDF from {url} ({size} bytes, content-type: {ctype}).\n"
+            "Text extraction is unavailable because `pypdf` is not installed "
+            "(see mcp/pyproject.toml). Capture the document number, date, "
+            "chamber, title, and cited paragraph(s) from the PDF directly."
+        )
+
+    import io
+
+    try:
+        reader = PdfReader(io.BytesIO(data))
+    except Exception as exc:
+        return (
+            f"Retrieved a PDF from {url} ({size} bytes) but could not parse it: "
+            f"{exc}\nIt may be encrypted or malformed. Open the source directly "
+            "and capture the document number, date, chamber, and paragraphs."
+        )
+
+    pages = reader.pages
+    chunks: list[str] = []
+    for i, page in enumerate(pages, start=1):
+        try:
+            chunks.append(page.extract_text() or "")
+        except Exception:
+            chunks.append("")
+    text = "\n\n".join(c.strip() for c in chunks if c.strip())
+
+    header = (
+        f"Retrieved PDF from {url} ({size} bytes, {len(pages)} page(s)).\n"
+        "Verify the document number, date, chamber, and the exact paragraph "
+        "numbering against this text before citing — extracted layout can drop "
+        "or reflow paragraph markers.\n\n"
+    )
+    if not text.strip():
+        return (
+            header
+            + "No extractable text — this is likely a scanned/image-only PDF. "
+            "Treat it as not machine-readable: confirm the citation from the "
+            "source document itself or via the tribunal's fallback ladder."
+        )
+    if len(text) > 60_000:
+        text = text[:60_000] + "\n\n…[truncated; refine to the relevant pages/section]"
+    return header + text
 
 
 _TAG_RE = re.compile(r"(?is)<(script|style)\b.*?</\1>")

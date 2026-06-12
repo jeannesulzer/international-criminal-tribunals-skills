@@ -74,6 +74,21 @@ def test_infer_tribunal_from_url():
     assert server._infer_tribunal_from_url("https://example.com") == ""
 
 
+def test_foundational_texts():
+    out = server.get_foundational_texts("icc")
+    assert "Rome Statute" in out
+    assert "ONLY exception" in out
+    assert "Unknown tribunal" in server.get_foundational_texts("not-a-tribunal")
+
+
+def test_pdf_extraction_handles_garbage():
+    # Non-PDF bytes should be reported as unparseable, not crash.
+    out = server._extract_pdf_text("https://x/doc.pdf", b"not a real pdf", "application/pdf")
+    assert "doc.pdf" in out
+    assert ("could not parse" in out or "No extractable text" in out
+            or "pypdf` is not installed" in out)
+
+
 def _run_all():
     fns = [v for k, v in sorted(globals().items()) if k.startswith("test_") and callable(v)]
     failures = 0
