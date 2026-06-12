@@ -13,14 +13,19 @@ tribunals. Each skill teaches Claude a **verification-first** methodology:
 every case-law citation in an output must be verified against an authoritative
 primary source in the conversation that produces it.
 
-There is no code, no build system, no tests, no package manifest. Everything
-is Markdown. Edits are content edits.
+The skill content is documentation-only: no build system, and everything in
+the tribunal folders is Markdown, so edits there are content edits. The one
+exception is `mcp/` — a small Python Model Context Protocol server that reads
+the skill content live and exposes it as tools (it has its own dependencies
+and smoke tests). See `mcp/README.md`. Unless you are working on the server,
+treat the repo as Markdown.
 
 ## Layout
 
 ```
 README.md
 CLAUDE.md
+mcp/                  # Model Context Protocol server (Python; see mcp/README.md)
 icc/
 ├── SKILL.md          # entry point; core discipline, when-to-use, workflow, hard rules
 ├── CHANGELOG.md
@@ -540,7 +545,9 @@ in `references/`, not in their own folder.
   push to `main` without explicit instruction.
 - Commits should be small and descriptive. Match the existing log style
   (sentence-case summary, focus on *what changed and why*).
-- No pre-commit hooks. No CI. No tests to run. Verification is editorial.
+- No pre-commit hooks. No CI. Verification of the skill content is editorial —
+  there are no tests for it. The `mcp/` server has its own smoke tests
+  (`python mcp/test_server.py`); run them if you touch the server.
 - Don't create a pull request unless the user asks for one.
 
 ## What to do when an instruction is unclear

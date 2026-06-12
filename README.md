@@ -48,6 +48,16 @@ A skill, once uploaded, persists across all conversations within the project. Yo
 
 ---
 
+## Also available: an MCP server
+
+For users working in an MCP-capable client (Claude Desktop, Claude Code), the repository also ships a [Model Context Protocol](https://modelcontextprotocol.io) server in [`mcp/`](mcp/). Where the skills above are dropped into a Claude project as knowledge documents, the MCP server exposes the same suite as tools the model can call directly — the same verification-first discipline, made available programmatically.
+
+It provides six tools: list the tribunals, read any skill file, fetch a tribunal's foundational texts, verify a citation (the server detects the tribunal from the citation and returns its authoritative sources and verification workflow), search the jurisprudence, and retrieve a primary-source document (with PDF text extraction, and the fallback ladder when an official site blocks a direct fetch). No tool produces a citation from memory.
+
+The server reads the skill folders live, so it always reflects the current content of the suite. Setup and client-registration instructions are in [`mcp/README.md`](mcp/README.md). This is an optional, advanced path — using the skills requires no coding at all.
+
+---
+
 ## Methodology: verification-first
 
 Each skill encodes a non-negotiable requirement: **no case-law citation is produced without having been verified against the official archives**.
