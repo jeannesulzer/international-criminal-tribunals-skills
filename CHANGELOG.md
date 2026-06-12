@@ -11,6 +11,14 @@ project aims to follow semantic versioning at the suite level.
 ## [Unreleased]
 
 ### Added
+- `mcp/` — a Model Context Protocol server exposing the suite to MCP-capable
+  clients (Claude Desktop, Claude Code). Six tools: list the tribunals, read
+  any skill file, fetch a tribunal's foundational texts, verify a citation
+  (with tribunal auto-detection), search the jurisprudence, and retrieve a
+  primary-source document (PDF text extraction and fallback-ladder handling),
+  plus `skill://` resources. Discovers tribunals dynamically from the folder
+  layout and preserves the verification-first discipline — no tool produces a
+  citation from memory. Python, with a stdlib-runnable smoke-test suite.
 - Four new skills: `special-panels-timor-leste/` (Special Panels for Serious
   Crimes, Dili District Court), `eac-habre/` (Extraordinary African Chambers,
   Habré case), `reg-64-kosovo/` (UNMIK Regulation 64 Panels), and `wcc-bih/`
