@@ -86,6 +86,8 @@ I am fully aware of the structural concerns raised by generative AI today. The r
 
 This report deserves to be read in full by everyone practising in our field.
 
+The Lab's response is a set of standing commitments — grounded solely in international human rights law, and answering the briefing's recommendations point by point — published in [`COMMITMENTS.md`](COMMITMENTS.md).
+
 ---
 
 ## License
