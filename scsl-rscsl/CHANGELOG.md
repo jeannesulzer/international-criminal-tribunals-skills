@@ -1,5 +1,10 @@
 # Changelog — SCSL/RSCSL skill
 
+## [1.0.2] — 2026-07-06
+
+### Fixed
+- Shortened the `SKILL.md` frontmatter `description` below the 1024-character limit enforced by Claude Skills (reported by a user during installation). The triggering function is preserved — institutions, flagship cases, founding instruments, and the verification-first rule remain; the exhaustive enumerations live on in the skill body and references.
+
 ## [1.0.1] — 2026-06-02
 
 ### Fixed

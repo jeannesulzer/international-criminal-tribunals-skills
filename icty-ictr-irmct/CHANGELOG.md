@@ -4,6 +4,11 @@ All notable changes to the `icty-ictr-irmct` skill are documented in this file.
 
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this skill adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.1] — 2026-07-06
+
+### Fixed
+- Shortened the `SKILL.md` frontmatter `description` below the 1024-character limit enforced by Claude Skills (reported by a user during installation). The triggering function is preserved — institutions, flagship cases, founding instruments, and the verification-first rule remain; the exhaustive enumerations live on in the skill body and references.
+
 ## [1.0.0] — initial release
 
 ### Added
