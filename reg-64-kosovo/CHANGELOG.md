@@ -69,3 +69,8 @@ This skill follows the verification-first methodology defined in the parent repo
 
 - v1.1 candidates: add structured case-table of high-profile Reg. 64 prosecutions (Mitrovica venue-change cases, March 2004 riot prosecutions); deeper treatment of EULEX continuation cases
 - v2.0 candidates: integrate post-2018 EULEX Strengthening Mission and full transition to national judiciary; integrate verified academic citations from Cerone, Reidy, Cohen with paragraph-level accuracy
+
+## [1.0.1] — 2026-07-06
+
+### Fixed
+- Shortened the `SKILL.md` frontmatter `description` below the 1024-character limit enforced by Claude Skills (reported by a user during installation). The triggering function is preserved — institutions, flagship cases, founding instruments, and the verification-first rule remain; the exhaustive enumerations live on in the skill body and references.
