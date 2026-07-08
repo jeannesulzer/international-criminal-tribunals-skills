@@ -29,8 +29,16 @@ project aims to follow semantic versioning at the suite level.
   for all sixteen jurisdictions, and the specific inclusion discussions.
 - `LICENSE` — Creative Commons Attribution 4.0 International (CC BY 4.0).
 - `docs/expert-review/` — one-page practitioner review sheet per skill.
+- `INSTALL.md` — a plain-language walkthrough of the three ways to use the
+  suite with Claude (a project, the Skills upload, the MCP server), written
+  after user reports that the developer-oriented instructions were hard to
+  follow.
 
 ### Changed
+- `mcp/README.md`: added an "Installation for non-developers (Claude
+  Desktop)" section — six steps, plus the warning that the local server
+  registers through Settings → Developer, not Settings → Connectors (the
+  mistake an installation report showed users actually make).
 - Rewrote `README.md` for publication under the Impact Litigation Lab framing.
 - Softened the JEP skill's claim that retrieval to jep.gov.co "succeeds
   reliably" to acknowledge that direct fetch can fail and that the fallback
