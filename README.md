@@ -46,6 +46,8 @@ Installation requires no coding.
 
 A skill, once uploaded, persists across all conversations within the project. You can upload multiple skills to the same project if you are working across several jurisdictions.
 
+A step-by-step walkthrough of the three ways in — a Claude project (no installation), the Skills upload, and the MCP server — is in [`INSTALL.md`](INSTALL.md).
+
 ---
 
 ## Also available: an MCP server

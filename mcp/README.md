@@ -66,6 +66,38 @@ Every skill markdown file is available as a resource at
 `skill://<slug>/<relative-path>`, e.g. `skill://icc/SKILL.md` or
 `skill://eccc/references/citation-format.md`.
 
+## Installation for non-developers (Claude Desktop)
+
+The rest of this README is written for developers. If you simply want the
+server running in Claude Desktop, these six steps are the whole job — and one
+warning saves most of the confusion: **do not use Settings → Connectors** in
+the Claude app. That section is for remote servers on the public internet;
+this server runs locally on your machine and registers through
+**Settings → Developer** instead.
+
+1. **Install Python** 3.10 or newer from
+   [python.org/downloads](https://www.python.org/downloads/) if you do not
+   have it.
+2. **Download the repository** (green **Code** button on the repository's
+   front page → **Download ZIP**) and unzip it somewhere permanent. The
+   server reads the skill folders from inside the repository, so do not move
+   it afterwards.
+3. **Install the dependencies.** In a terminal:
+   `pip3 install "mcp[cli]" httpx pypdf`
+4. **Register the server.** In Claude Desktop, open **Settings → Developer →
+   Edit Config**. In the `claude_desktop_config.json` file that opens, add
+   the `mcpServers` block shown under "Register with Claude Desktop" below,
+   replacing the path with wherever you unzipped the repository (on macOS,
+   use `python3` as the command).
+5. **Quit Claude completely and reopen it.** Closing the window is not
+   enough — quit the application.
+6. **Test it.** Ask Claude: *"Which tribunals does the international-justice
+   server cover?"* If it lists thirteen, everything works.
+
+A gentler overview of all the ways to use the suite — including two that
+require no terminal at all — is in the repository's
+[`INSTALL.md`](../INSTALL.md).
+
 ## Running
 
 Requires Python ≥ 3.10.
