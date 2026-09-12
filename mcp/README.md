@@ -94,13 +94,31 @@ this server runs locally on your machine and registers through
 6. **Test it.** Ask Claude: *"Which tribunals does the international-justice
    server cover?"* If it lists thirteen, everything works.
 
+### Troubleshooting
+
+- **"Could not attach to MCP server" or "Error: Request timed out"** on the
+  very first launch, especially with a `uv run …` configuration: the first
+  launch downloads the server's dependencies, and on a slow connection that
+  can exceed the time the Claude app allows a server to start. Pre-warm it
+  once: open a terminal, paste the same command your configuration runs
+  (everything after `"command":` and inside `"args"`, joined as one line),
+  wait until it sits quietly, press Ctrl+C, and restart Claude. Every later
+  launch uses the cache and starts in about a second.
+- **The server starts but knows no tribunals** (an old failure mode): update
+  to the current `server.py` — the server now reads the skill content
+  directly from this repository on GitHub whenever it is launched without
+  the repository around it, so a standalone copy works.
+- **Crash on a fresh install** (an old failure mode): the MCP Python SDK 2.x
+  renamed the API the server imports. The current `server.py` supports both
+  SDK 1.x and 2.x — update to it rather than pinning.
+
 A gentler overview of all the ways to use the suite — including two that
 require no terminal at all — is in the repository's
 [`INSTALL.md`](../INSTALL.md).
 
 ## Running
 
-Requires Python ≥ 3.10.
+Requires Python ≥ 3.10. Works with the MCP Python SDK 1.x and 2.x.
 
 ```bash
 cd mcp
@@ -129,8 +147,14 @@ Add to `claude_desktop_config.json`:
 }
 ```
 
-The server resolves the repository root as the parent of `mcp/`, so it must
-stay inside this repository to read the skill folders.
+The server prefers the repository around it: launched from inside this repo,
+it reads the skill folders directly from disk. Launched standalone — a single
+downloaded `server.py`, as some published configurations do with
+`uv run … https://raw.githubusercontent.com/…/mcp/server.py` — it detects
+that no skill folders are present and reads the same content from this
+repository on GitHub instead, fetched lazily and cached for the session.
+Discovery is deferred to the first tool call either way, so startup is
+instant.
 
 ## Design notes
 

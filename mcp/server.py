@@ -23,9 +23,17 @@ from __future__ import annotations
 import re
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Iterable
 
-from mcp.server.fastmcp import FastMCP
+try:
+    # MCP Python SDK 1.x
+    from mcp.server.fastmcp import FastMCP
+except ImportError:
+    # SDK 2.x renamed FastMCP to MCPServer; the surface this server uses
+    # (constructor with name + instructions, .tool(), .resource(), .run())
+    # is unchanged. Without this shim, a fresh install of the SDK makes the
+    # server crash at import — which the MCP client reports as a startup
+    # timeout or "could not attach".
+    from mcp.server.mcpserver import MCPServer as FastMCP
 
 # --------------------------------------------------------------------------
 # Repository layout
@@ -188,26 +196,138 @@ def _discover_tribunals() -> dict[str, Tribunal]:
     return found
 
 
-# Discovered once at import; the repo content is static within a session.
-TRIBUNALS: dict[str, Tribunal] = _discover_tribunals()
+# Discovery is lazy (first tool call, not import) so the server attaches to
+# the MCP client instantly — slow startups get killed by client timeouts.
+_TRIBUNALS_CACHE: dict[str, Tribunal] | None = None
+
+
+# --------------------------------------------------------------------------
+# Remote content mode
+# --------------------------------------------------------------------------
+#
+# The server normally reads the skill folders around it (it lives in
+# <repo>/mcp/). But some clients launch server.py standalone — e.g. the
+# published one-line `uv run … https://raw.githubusercontent.com/…/server.py`
+# configuration downloads this single file into a cache directory with no
+# repository around it. In that case the local scan finds nothing, and the
+# server falls back to reading the same content from the repository on
+# GitHub, fetched lazily and cached in memory. Same files, same discipline —
+# only the transport differs.
+
+_GITHUB_REPO = "jeannesulzer/international-criminal-tribunals-skills"
+_GITHUB_BRANCH = "main"
+_RAW_BASE = f"https://raw.githubusercontent.com/{_GITHUB_REPO}/{_GITHUB_BRANCH}/"
+_TREE_URL = (
+    f"https://api.github.com/repos/{_GITHUB_REPO}/git/trees/{_GITHUB_BRANCH}"
+    "?recursive=1"
+)
+
+_REMOTE_MODE = False
+_REMOTE_FILES: dict[str, list[str]] = {}  # slug -> sorted relative .md paths
+_REMOTE_TEXT: dict[str, str] = {}  # "<slug>/<rel>" -> cached file content
+_HTTP_CLIENT = None  # lazy httpx.Client, reused across fetches
+
+
+def _http():
+    global _HTTP_CLIENT
+    if _HTTP_CLIENT is None:
+        import httpx
+
+        _HTTP_CLIENT = httpx.Client(follow_redirects=True, timeout=30.0)
+    return _HTTP_CLIENT
+
+
+def _remote_read(slug: str, rel: str) -> str | None:
+    """Fetch one skill file from the repository on GitHub, with caching."""
+    key = f"{slug}/{rel}"
+    if key in _REMOTE_TEXT:
+        return _REMOTE_TEXT[key]
+    try:
+        resp = _http().get(_RAW_BASE + key)
+    except Exception:
+        return None
+    if resp.status_code != 200:
+        return None
+    _REMOTE_TEXT[key] = resp.text
+    return resp.text
+
+
+def _discover_remote() -> dict[str, Tribunal]:
+    """Discover tribunals from the GitHub repository tree (standalone mode)."""
+    import json
+
+    resp = _http().get(_TREE_URL)
+    resp.raise_for_status()
+    entries = json.loads(resp.text).get("tree", [])
+    md_paths = [
+        e["path"]
+        for e in entries
+        if e.get("type") == "blob" and e.get("path", "").endswith(".md")
+    ]
+    slugs = sorted(
+        {
+            p.split("/", 1)[0]
+            for p in md_paths
+            if "/" in p
+            and p.split("/", 1)[1] == "SKILL.md"
+            and p.split("/", 1)[0] not in _NON_TRIBUNAL_DIRS
+        }
+    )
+    found: dict[str, Tribunal] = {}
+    for slug in slugs:
+        _REMOTE_FILES[slug] = sorted(
+            p.split("/", 1)[1] for p in md_paths if p.startswith(slug + "/")
+        )
+        text = _remote_read(slug, "SKILL.md") or ""
+        fm = _parse_frontmatter(text)
+        found[slug] = Tribunal(
+            slug=slug,
+            name=fm.get("name", slug),
+            description=fm.get("description", ""),
+            path=REPO_ROOT / slug,
+        )
+    return found
+
+
+def _tribunals() -> dict[str, Tribunal]:
+    """Local folders when the repository is present; GitHub otherwise.
+
+    A failed remote discovery (offline, rate-limited) is not cached, so the
+    next tool call retries instead of leaving the server permanently empty.
+    """
+    global _TRIBUNALS_CACHE, _REMOTE_MODE
+    if _TRIBUNALS_CACHE:
+        return _TRIBUNALS_CACHE
+    found = _discover_tribunals()
+    if found:
+        _TRIBUNALS_CACHE = found
+        return found
+    try:
+        found = _discover_remote()
+    except Exception:
+        return {}
+    if found:
+        _REMOTE_MODE = True
+        _TRIBUNALS_CACHE = found
+    return found
 
 
 def _resolve_tribunal(slug_or_name: str) -> Tribunal | None:
     key = slug_or_name.strip().lower()
-    if key in TRIBUNALS:
-        return TRIBUNALS[key]
-    for trib in TRIBUNALS.values():
+    tribunals = _tribunals()
+    if key in tribunals:
+        return tribunals[key]
+    for trib in tribunals.values():
         if trib.name.lower() == key:
             return trib
     return None
 
 
-def _safe_md_path(trib: Tribunal, rel: str) -> Path | None:
-    """Resolve a relative markdown path inside a tribunal folder, safely.
+def _normalize_rel(rel: str) -> str:
+    """Normalise a requested file path inside a tribunal folder.
 
     Accepts forms like "SKILL.md", "references/citation-format.md", or a bare
-    reference name like "citation-format". Rejects traversal outside the
-    tribunal folder.
+    reference name like "citation-format".
     """
     rel = rel.strip().lstrip("/")
     if not rel:
@@ -218,7 +338,15 @@ def _safe_md_path(trib: Tribunal, rel: str) -> Path | None:
             rel = f"references/{rel}.md"
     if not rel.endswith(".md"):
         rel += ".md"
-    candidate = (trib.path / rel).resolve()
+    return rel
+
+
+def _safe_md_path(trib: Tribunal, rel: str) -> Path | None:
+    """Resolve a relative markdown path inside a tribunal folder, safely.
+
+    Rejects traversal outside the tribunal folder. Local mode only.
+    """
+    candidate = (trib.path / _normalize_rel(rel)).resolve()
     try:
         candidate.relative_to(trib.path.resolve())
     except ValueError:
@@ -226,8 +354,32 @@ def _safe_md_path(trib: Tribunal, rel: str) -> Path | None:
     return candidate if candidate.is_file() else None
 
 
-def _iter_md_files(trib: Tribunal) -> Iterable[Path]:
-    yield from sorted(trib.path.rglob("*.md"))
+def _tribunal_files(trib: Tribunal) -> list[str]:
+    """All markdown files of a tribunal, as sorted relative paths."""
+    if _REMOTE_MODE:
+        return list(_REMOTE_FILES.get(trib.slug, []))
+    return sorted(
+        str(p.relative_to(trib.path)) for p in trib.path.rglob("*.md")
+    )
+
+
+def _read_tribunal_file(trib: Tribunal, rel: str) -> tuple[str, str] | None:
+    """Read one tribunal file, local or remote. Returns (normalised rel, text).
+
+    In local mode, path safety comes from `_safe_md_path` (no traversal out of
+    the tribunal folder). In remote mode it comes from membership in the known
+    file list — only paths GitHub's repository tree lists can be fetched.
+    """
+    rel_norm = _normalize_rel(rel)
+    if _REMOTE_MODE:
+        if rel_norm not in _REMOTE_FILES.get(trib.slug, []):
+            return None
+        text = _remote_read(trib.slug, rel_norm)
+        return (rel_norm, text) if text is not None else None
+    path = _safe_md_path(trib, rel_norm)
+    if path is None:
+        return None
+    return rel_norm, path.read_text(encoding="utf-8")
 
 
 def detect_tribunals(text: str) -> list[tuple[str, int]]:
@@ -274,11 +426,21 @@ def list_tribunals() -> str:
     exact slug to pass to the other tools (e.g. "icc", "icty-ictr-irmct",
     "eccc"). One folder per tribunal, each a self-contained Claude Skill.
     """
-    lines = [f"{len(TRIBUNALS)} tribunal skills available:", ""]
-    for trib in TRIBUNALS.values():
+    tribunals = _tribunals()
+    if not tribunals:
+        return (
+            "No tribunal skills found. The server found no skill folders "
+            "locally and could not reach the repository on GitHub "
+            f"(https://github.com/{_GITHUB_REPO}). Check network access and "
+            "call this tool again."
+        )
+    lines = [f"{len(tribunals)} tribunal skills available:", ""]
+    for trib in tribunals.values():
         refs = sorted(
-            p.stem for p in (trib.path / "references").glob("*.md")
-        ) if (trib.path / "references").is_dir() else []
+            f.removeprefix("references/").removesuffix(".md")
+            for f in _tribunal_files(trib)
+            if f.startswith("references/")
+        )
         lines.append(f"## {trib.slug}")
         lines.append(_short(trib.description) or "(no description)")
         if refs:
@@ -304,17 +466,15 @@ def get_skill_file(tribunal: str, file: str = "SKILL.md") -> str:
     trib = _resolve_tribunal(tribunal)
     if trib is None:
         return _unknown_tribunal_message(tribunal)
-    path = _safe_md_path(trib, file)
-    if path is None:
-        available = [
-            str(p.relative_to(trib.path)) for p in _iter_md_files(trib)
-        ]
+    got = _read_tribunal_file(trib, file)
+    if got is None:
+        available = _tribunal_files(trib)
         return (
             f"No file '{file}' in tribunal '{trib.slug}'.\n\n"
             f"Available files:\n- " + "\n- ".join(available)
         )
-    rel = path.relative_to(trib.path)
-    return f"# {trib.slug}/{rel}\n\n" + path.read_text(encoding="utf-8")
+    rel, text = got
+    return f"# {trib.slug}/{rel}\n\n" + text
 
 
 @mcp.tool()
@@ -344,12 +504,12 @@ def search_jurisprudence(
         return "Provide a non-empty query."
 
     scope_filter = {
-        "jurisprudence": lambda p: p.name == "jurisprudence-map.md",
-        "citation": lambda p: p.name == "citation-format.md",
-        "sources": lambda p: p.name == "authoritative-sources.md",
-        "examples": lambda p: p.parent.name == "examples",
-        "skill": lambda p: p.name == "SKILL.md",
-        "all": lambda p: True,
+        "jurisprudence": lambda rel: rel.endswith("jurisprudence-map.md"),
+        "citation": lambda rel: rel.endswith("citation-format.md"),
+        "sources": lambda rel: rel.endswith("authoritative-sources.md"),
+        "examples": lambda rel: rel.startswith("examples/"),
+        "skill": lambda rel: rel == "SKILL.md",
+        "all": lambda rel: True,
     }.get(scope.lower())
     if scope_filter is None:
         return (
@@ -363,23 +523,21 @@ def search_jurisprudence(
             return _unknown_tribunal_message(tribunal)
         search_space = [trib]
     else:
-        search_space = list(TRIBUNALS.values())
+        search_space = list(_tribunals().values())
 
     hits: list[tuple[int, str, int, str]] = []  # (score, "slug/rel", lineno, line)
     for trib in search_space:
-        for path in _iter_md_files(trib):
-            if not scope_filter(path):
+        for rel in _tribunal_files(trib):
+            if not scope_filter(rel):
                 continue
-            try:
-                lines = path.read_text(encoding="utf-8").splitlines()
-            except OSError:
+            got = _read_tribunal_file(trib, rel)
+            if got is None:
                 continue
-            for i, line in enumerate(lines, start=1):
+            for i, line in enumerate(got[1].splitlines(), start=1):
                 low = line.lower()
                 if all(t in low for t in terms):
                     score = sum(low.count(t) for t in terms)
-                    rel = f"{trib.slug}/{path.relative_to(trib.path)}"
-                    hits.append((score, rel, i, line.strip()))
+                    hits.append((score, f"{trib.slug}/{rel}", i, line.strip()))
 
     if not hits:
         return f"No matches for '{query}'" + (f" in {tribunal}" if tribunal else "") + "."
@@ -494,8 +652,8 @@ def get_foundational_texts(tribunal: str) -> str:
     trib = _resolve_tribunal(tribunal)
     if trib is None:
         return _unknown_tribunal_message(tribunal)
-    path = _safe_md_path(trib, "references/foundational-texts.md")
-    if path is None:
+    got = _read_tribunal_file(trib, "references/foundational-texts.md")
+    if got is None:
         return (
             f"No foundational-texts.md for '{trib.slug}'. Foundational instruments "
             "are the only texts citable from project knowledge; without this file, "
@@ -504,7 +662,7 @@ def get_foundational_texts(tribunal: str) -> str:
     return (
         f"# {trib.slug} — foundational texts (citable from project knowledge "
         "only when present in the conversation)\n\n"
-        + path.read_text(encoding="utf-8").strip()
+        + got[1].strip()
         + "\n\n---\nReminder: these instruments are the ONLY exception to "
         "verify-before-citing, and only when actually present. All case-specific "
         "documents (judgments, decisions, filings) still require a Tier 1 fetch."
@@ -590,10 +748,10 @@ def _resource_read(slug: str, rel: str) -> str:
     trib = _resolve_tribunal(slug)
     if trib is None:
         return _unknown_tribunal_message(slug)
-    resolved = _safe_md_path(trib, rel)
-    if resolved is None:
+    got = _read_tribunal_file(trib, rel)
+    if got is None:
         return f"No file '{rel}' in tribunal '{slug}'."
-    return resolved.read_text(encoding="utf-8")
+    return got[1]
 
 
 @mcp.resource("skill://{slug}/SKILL.md")
@@ -626,14 +784,14 @@ def skill_example(slug: str, name: str) -> str:
 
 
 def _read_or_note(trib: Tribunal, rel: str) -> str:
-    path = _safe_md_path(trib, rel)
-    if path is None:
+    got = _read_tribunal_file(trib, rel)
+    if got is None:
         return f"(no {rel} for {trib.slug})"
-    return path.read_text(encoding="utf-8").strip()
+    return got[1].strip()
 
 
 def _unknown_tribunal_message(slug: str) -> str:
-    known = ", ".join(TRIBUNALS)
+    known = ", ".join(_tribunals())
     return f"Unknown tribunal '{slug}'.\n\nKnown slugs: {known}\nCall list_tribunals for descriptions."
 
 
@@ -665,12 +823,12 @@ def _infer_tribunal_from_url(url: str) -> str:
 def _fallback_ladder_note(slug: str) -> str:
     trib = _resolve_tribunal(slug) if slug else None
     if trib is not None:
-        wf = _safe_md_path(trib, "references/verification-workflow.md")
-        if wf is not None:
+        got = _read_tribunal_file(trib, "references/verification-workflow.md")
+        if got is not None:
             return (
                 f"Work the {trib.slug} fallback ladder (from "
                 f"{trib.slug}/references/verification-workflow.md):\n\n"
-                + wf.read_text(encoding="utf-8").strip()
+                + got[1].strip()
             )
     return (
         "Generic fallback ladder:\n"

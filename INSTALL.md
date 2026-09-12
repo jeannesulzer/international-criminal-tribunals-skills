@@ -93,6 +93,15 @@ internet. This server runs locally on your own machine and registers through
 6. **Test it.** Ask Claude: *"Which tribunals does the international-justice
    server cover?"* If it lists thirteen, everything works.
 
+**If the first launch fails with "Request timed out" or "Could not attach":**
+the very first start downloads the server's dependencies, and on a slow
+connection that can take longer than the Claude app is willing to wait.
+Nothing is broken — pre-warm it once: open a terminal, run the same command
+your configuration runs, wait until it sits quietly, press Ctrl+C, and
+restart Claude. Every later launch starts in about a second. More cases are
+covered in the troubleshooting section of
+[`mcp/README.md`](mcp/README.md).
+
 **On Claude Code:**
 
 ```bash
