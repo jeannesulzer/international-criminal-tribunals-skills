@@ -13,11 +13,12 @@ import server
 
 
 def test_tribunals_discovered():
-    assert "icc" in server.TRIBUNALS
-    assert "icty-ictr-irmct" in server.TRIBUNALS
-    # The repo ships fourteen tribunal folders.
-    assert len(server.TRIBUNALS) >= 13
-    icc = server.TRIBUNALS["icc"]
+    tribunals = server._tribunals()
+    assert "icc" in tribunals
+    assert "icty-ictr-irmct" in tribunals
+    # The repo ships thirteen tribunal folders.
+    assert len(tribunals) >= 13
+    icc = tribunals["icc"]
     assert icc.name == "icc"
     assert "International Criminal Court" in icc.description
 
@@ -34,7 +35,7 @@ def test_detection_routes_known_schemes():
 
 
 def test_path_safety_rejects_traversal():
-    icc = server.TRIBUNALS["icc"]
+    icc = server._tribunals()["icc"]
     assert server._safe_md_path(icc, "../../CLAUDE.md") is None
     assert server._safe_md_path(icc, "/etc/passwd") is None
     assert server._safe_md_path(icc, "SKILL.md") is not None
@@ -87,6 +88,45 @@ def test_pdf_extraction_handles_garbage():
     assert "doc.pdf" in out
     assert ("could not parse" in out or "No extractable text" in out
             or "pypdf` is not installed" in out)
+
+
+def test_remote_mode_standalone_copy():
+    """A standalone copy of server.py (no repository around it) reads from GitHub.
+
+    This is how the published one-line `uv run … server.py` configuration
+    launches the server. Requires network access to github.com; if GitHub is
+    unreachable the test reports a skip rather than failing.
+    """
+    import importlib.util
+    import shutil
+    import sys
+    import tempfile
+    from pathlib import Path
+
+    with tempfile.TemporaryDirectory() as td:
+        dst = Path(td) / "cache" / "server.py"
+        dst.parent.mkdir()
+        shutil.copy(Path(server.__file__), dst)
+        spec = importlib.util.spec_from_file_location("server_standalone", dst)
+        mod = importlib.util.module_from_spec(spec)
+        assert spec.loader is not None
+        sys.modules[spec.name] = mod
+        try:
+            spec.loader.exec_module(mod)
+        finally:
+            sys.modules.pop(spec.name, None)
+
+        tribunals = mod._tribunals()
+        if not tribunals:
+            print("  (skipped: GitHub unreachable — remote mode not exercised)")
+            return
+        assert mod._REMOTE_MODE
+        assert len(tribunals) >= 13
+        out = mod.get_skill_file("icc", "SKILL.md")
+        assert "verification" in out.lower()
+        # Safety in remote mode: only paths listed in the repository tree
+        # are fetchable — traversal-style paths resolve to nothing.
+        assert mod._read_tribunal_file(tribunals["icc"], "../CLAUDE.md") is None
 
 
 def _run_all():

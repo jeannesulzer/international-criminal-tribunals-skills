@@ -10,6 +10,23 @@ project aims to follow semantic versioning at the suite level.
 
 ## [Unreleased]
 
+### Fixed
+- `mcp/server.py` now works on a fresh install of the MCP Python SDK: SDK 2.x
+  renamed the `FastMCP` entry point, which made the server crash at import —
+  reported by MCP clients as "Could not attach" or "Request timed out"
+  (user-reported). The server now supports SDK 1.x and 2.x; the smoke tests
+  pass on both.
+- `mcp/server.py` launched standalone (a single downloaded file, as the
+  published `uv run … server.py` configuration does) previously started with
+  zero tribunals, because it reads the skill folders around it. It now falls
+  back to reading the same content from this repository on GitHub, fetched
+  lazily and cached; a smoke test covers the standalone launch. Discovery is
+  also deferred from import to the first tool call, so the server attaches
+  to its client instantly.
+- Documented the first-launch timeout (dependency download exceeding the
+  client's startup allowance) and its pre-warm remedy in `mcp/README.md`
+  and `INSTALL.md`.
+
 ### Added
 - `mcp/` — a Model Context Protocol server exposing the suite to MCP-capable
   clients (Claude Desktop, Claude Code). Six tools: list the tribunals, read
