@@ -16,6 +16,9 @@ suite's verification-first methodology:
 | Verify citations | `verify_citation` |
 | Search the case law | `search_jurisprudence` |
 | Retrieve documents | `fetch_document` (with PDF text extraction) |
+| Resolve citations | `resolve_citation` (form validation against the tribunal's scheme, component extraction, discipline flags) |
+| Verify quotations | `verify_quote` (checks a claimed passage against the authoritative source itself) |
+| Route research queries | `search_sources` (Tier 1 search entry points for the tribunal concerned) |
 
 The server never authorises citing case law from memory. `verify_citation`
 returns the *guidance* to verify a citation against a Tier 1 source; it does

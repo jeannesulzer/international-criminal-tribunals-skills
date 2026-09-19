@@ -92,6 +92,7 @@ _DETECTION_RULES: dict[str, list[tuple[str, int]]] = {
         (r"\bIT-\d", 5),
         (r"\bICTR-\d", 5),
         (r"\b(Tadi[cć]|Krsti[cć]|Akayesu|Karad[zž]i[cć]|Mladi[cć])\b", 3),
+        (r"\bSrebrenica\b", 3),
     ],
     "eccc": [
         (r"/ECCC/", 5),
@@ -732,6 +733,369 @@ async def fetch_document(url: str, tribunal: str = "") -> str:
     if len(body) > 60_000:
         body = body[:60_000] + "\n\n…[truncated; refine to the relevant section]"
     return f"Retrieved {url} (HTTP {resp.status_code}, {ctype}):\n\n{body}"
+
+
+# --------------------------------------------------------------------------
+# Citation resolution and quote verification
+# --------------------------------------------------------------------------
+#
+# These tools mechanise the first rungs of the verification gradient.
+# resolve_citation checks a citation's FORM against the tribunal's documented
+# scheme and extracts its components; verify_quote checks a claimed passage
+# against the authoritative source itself. Neither vouches for anything the
+# source does not support: form-validity is not existence, and existence is
+# not content.
+
+_CASE_FORMS: dict[str, list[tuple[str, str]]] = {
+    # slug -> (label, regex) for the canonical case/document number forms,
+    # mirroring each tribunal's citation-format.md.
+    "icc": [
+        ("document number", r"ICC-\d{2}/\d{2}-\d{2}/\d{2}-[0-9][\w.-]*"),
+        ("case number", r"ICC-\d{2}/\d{2}-\d{2}/\d{2}"),
+        ("situation number", r"ICC-\d{2}/\d{2}"),
+    ],
+    "icty-ictr-irmct": [
+        ("ICTY case number", r"IT-\d{2}-[\dA-Za-z/&-]+"),
+        ("ICTR case number", r"ICTR-\d{2,4}-[\dA-Za-z-]+"),
+        ("Mechanism case number", r"MICT-\d{2}-[\dA-Za-z.-]+"),
+    ],
+    "eccc": [
+        ("case file number", r"00[1-4](?:/0[12])?(?:/\d{2}-\d{2}-\d{4})?[-/]?ECCC[\w/-]*"),
+        ("case designation", r"Case\s+00[1-4](?:/0[12])?"),
+    ],
+    "scsl-rscsl": [("case number", r"SCSL-(?:\d{4}|\d{2})-\d{2}[\w-]*")],
+    "stl": [("case number", r"STL-\d{2}-\d{2}[\w/-]*")],
+    "ksc": [("case number", r"KSC-(?:BC|CA|SC|CC)-\d{4}-\d{2}[\w/-]*")],
+    "special-panels-timor-leste": [("case number", r"\d{1,3}[-/]\d{4}")],
+}
+
+_PARA_RE = re.compile(
+    r"(?:para(?:graph)?s?\.?|§§?)\s*(\d+(?:\s*[-–]\s*\d+)?)", re.IGNORECASE
+)
+_PHASE_SUFFIX_RE = re.compile(r"-(T|A|AR7\d(?:bis)?|S|R|ES|PT|Red\d?|Corr|Conf(?:-Exp)?|Anx[\w.]*)\b")
+
+
+@mcp.tool()
+def resolve_citation(citation: str, tribunal: str = "") -> str:
+    """Parse a citation, validate its form against the tribunal's scheme, and say how to verify it.
+
+    Pass a citation string (e.g. "Prosecutor v. Bemba, ICC-01/05-01/08-3343,
+    para. 188"). The tool detects the tribunal, extracts the components (case
+    or document number, phase or redaction suffixes, paragraph references),
+    checks the number's FORM against the tribunal's documented scheme, and
+    flags citation-discipline problems (confidential-filing suffixes, a
+    Case 002 reference without the 002/01 vs 002/02 severance, IT/MICT
+    pairing).
+
+    Form-validity is NOT existence: a well-formed citation can still be
+    invented. The output ends with the concrete verification route. Use
+    verify_quote to check a quoted passage against the source itself.
+    """
+    text = citation.strip()
+    if not text:
+        return "Provide a citation string."
+
+    if tribunal:
+        trib = _resolve_tribunal(tribunal)
+        if trib is None:
+            return _unknown_tribunal_message(tribunal)
+        slugs = [trib.slug]
+        detection = f"Tribunal set explicitly to '{trib.slug}'."
+    else:
+        ranked = detect_tribunals(text)
+        slugs = [s for s, _ in ranked]
+        detection = (
+            "Detected: " + ", ".join(f"{s} (score {sc})" for s, sc in ranked)
+            if ranked
+            else "No tribunal detected from the citation. Pass `tribunal` explicitly."
+        )
+
+    lines = [f"# Citation analysis: {text}", "", detection, ""]
+
+    matches: list[tuple[str, str, str]] = []  # (slug, label, matched text)
+    for slug in slugs or list(_CASE_FORMS):
+        for label, pattern in _CASE_FORMS.get(slug, []):
+            m = re.search(pattern, text)
+            if m:
+                matches.append((slug, label, m.group(0)))
+        if matches and matches[0][0] == slug:
+            break  # most specific forms of the top-ranked tribunal found
+
+    lines.append("## Components")
+    if matches:
+        slug, label, matched = matches[0]
+        lines.append(f"- **{label}** ({slug}): `{matched}` — form matches the documented scheme.")
+    else:
+        lines.append(
+            "- No canonical case-number form recognised. Either the citation "
+            "is incomplete, or its number does not follow the tribunal's "
+            "documented scheme (see the tribunal's citation-format.md) — "
+            "treat that as a warning sign."
+        )
+
+    paras = _PARA_RE.findall(text)
+    if paras:
+        lines.append(f"- **Paragraph reference(s)**: {', '.join(paras)} — paragraph-level verification required before quoting.")
+
+    suffixes = _PHASE_SUFFIX_RE.findall(text)
+    for s in suffixes:
+        if s.startswith("Conf"):
+            lines.append(
+                f"- **`-{s}` suffix — HARD STOP**: confidential filings are never "
+                "citable from a public output. Use the public redacted version."
+            )
+        elif s.startswith("Red"):
+            lines.append(f"- **`-{s}` suffix**: public redacted version — the correct one to cite publicly.")
+        else:
+            lines.append(f"- **`-{s}` suffix**: phase/annex marker — confirm it matches the document you mean.")
+
+    # Tribunal-specific discipline flags.
+    if any(s == "eccc" for s, _, _ in matches) or re.search(r"\bCase\s+002\b(?!/0[12])", text):
+        if re.search(r"\bCase\s+002\b(?!/0[12])", text):
+            lines.append(
+                "- **ECCC severance**: 'Case 002' without /01 or /02 is ambiguous — "
+                "specify Case 002/01 or Case 002/02 for trial-stage documents."
+            )
+    if re.search(r"\bIT-\d", text) and re.search(r"\b(appeal|appeals judgment)\b", text, re.I):
+        lines.append(
+            "- **IT/MICT pairing**: late ICTY appeals (Karadžić, Mladić, Šešelj) were "
+            "decided under MICT case numbers — confirm which institution issued the "
+            "document you cite."
+        )
+
+    lines += ["", "## Verification route"]
+    primary = _resolve_tribunal(slugs[0]) if slugs else None
+    if primary is not None:
+        lines.append(
+            f"1. Retrieve the document from a Tier 1 source for {primary.slug} "
+            f"(see get_skill_file('{primary.slug}', 'authoritative-sources')) — "
+            "the Legal Tools Database (legal-tools.org) covers most tribunals, "
+            "with a Persistent URL per document."
+        )
+    else:
+        lines.append("1. Identify the tribunal, then retrieve from its Tier 1 source (list_tribunals to orient).")
+    lines += [
+        "2. Confirm existence (number, title, date, chamber), then content, then "
+        "the exact paragraph(s) — match the verification level to the claim.",
+        "3. For any quotation, run verify_quote against the retrieved source.",
+        "",
+        "Form-validity established here is not verification. A citation appears "
+        "in an output only after the source confirms it.",
+    ]
+    return "\n".join(lines)
+
+
+def _normalise_for_match(text: str) -> str:
+    """Normalise typographic variation that legitimately differs between a
+    quote and a source rendering (curly quotes, dashes, whitespace runs)."""
+    import unicodedata
+
+    text = unicodedata.normalize("NFKC", text)
+    for src, dst in (
+        ("“", '"'), ("”", '"'), ("‘", "'"), ("’", "'"),
+        ("–", "-"), ("—", "-"), (" ", " "),
+    ):
+        text = text.replace(src, dst)
+    return re.sub(r"\s+", " ", text).strip()
+
+
+def _match_quote(source_text: str, quote: str) -> tuple[str, float, str]:
+    """Locate a quote in source text. Returns (verdict, score, evidence).
+
+    Verdicts: 'verbatim' (normalised exact substring), 'close' (>= 0.85
+    similarity on the best window), 'partial' (>= 0.60), 'absent'.
+    """
+    import difflib
+
+    src = _normalise_for_match(source_text)
+    q = _normalise_for_match(quote)
+    if not q:
+        return "absent", 0.0, "Empty quote."
+
+    low_src, low_q = src.lower(), q.lower()
+    pos = low_src.find(low_q)
+    if pos != -1:
+        start = max(0, pos - 120)
+        return "verbatim", 1.0, "…" + src[start : pos + len(q) + 120] + "…"
+
+    # Sliding-window fuzzy match over word windows of the quote's length.
+    src_words = src.split()
+    q_len = max(4, len(q.split()))
+    window = int(q_len * 1.3) + 2
+    best_ratio, best_snippet = 0.0, ""
+    step = max(1, q_len // 3)
+    for i in range(0, max(1, len(src_words) - window + 1), step):
+        cand = " ".join(src_words[i : i + window])
+        ratio = difflib.SequenceMatcher(None, low_q, cand.lower()).ratio()
+        if ratio > best_ratio:
+            best_ratio, best_snippet = ratio, cand
+    if best_ratio >= 0.85:
+        return "close", best_ratio, best_snippet
+    if best_ratio >= 0.60:
+        return "partial", best_ratio, best_snippet
+    return "absent", best_ratio, best_snippet
+
+
+@mcp.tool()
+async def verify_quote(url: str, quote: str, paragraph: str = "", tribunal: str = "") -> str:
+    """Check a claimed quotation against the authoritative source document itself.
+
+    Pass the source URL (prefer a Legal Tools Persistent URL or the court's
+    own record), the quoted text as you intend to use it, and optionally the
+    paragraph number claimed. The tool fetches the source (PDF text is
+    extracted), locates the passage, and reports one of:
+
+    - verified (verbatim): the passage appears in the source as quoted;
+    - close match: minor differences — quote from the source, not from memory;
+    - partial similarity / not found: do NOT use the quotation;
+    - source unreachable: the fallback ladder for the tribunal is returned.
+
+    A 'verified' here is verification at content level; pair it with the
+    paragraph check for pinpoint cites. This tool never confirms a quote the
+    source does not contain.
+    """
+    if not quote.strip():
+        return "Provide the quoted text to verify."
+    fetched = await fetch_document(url, tribunal)
+    if fetched.startswith(("Fetch failed", "Blocked", "HTTP ")):
+        return (
+            "## verify_quote: source unreachable\n\n" + fetched
+            + "\n\nThe quote is UNVERIFIED. Work the ladder above or ask the "
+            "user for the document; do not use the quotation until the source "
+            "confirms it."
+        )
+
+    verdict, score, evidence = _match_quote(fetched, quote)
+
+    para_note = ""
+    if paragraph:
+        para_pat = re.compile(
+            r"(?:^|\D)" + re.escape(paragraph.strip()) + r"(?:\.|\)|\s)", re.M
+        )
+        if verdict in ("verbatim", "close") and evidence:
+            anchor = evidence.strip("…").strip()[:60]
+            zone_start = max(0, _normalise_for_match(fetched).find(anchor) - 600)
+            zone = _normalise_for_match(fetched)[zone_start : zone_start + 1200]
+            para_note = (
+                f"\n- Claimed paragraph {paragraph}: marker "
+                + ("FOUND near the passage (best-effort — PDF extraction can reflow numbering)."
+                   if para_pat.search(zone) else
+                   "not confirmed near the passage. PDF extraction often drops "
+                   "paragraph markers; confirm the pinpoint against the document layout.")
+            )
+
+    if verdict == "verbatim":
+        head = "## verify_quote: VERIFIED (verbatim, content level)"
+        advice = "The passage appears in the source as quoted."
+    elif verdict == "close":
+        head = f"## verify_quote: CLOSE MATCH (similarity {score:.2f})"
+        advice = (
+            "The source contains a near-identical passage. Quote the source's "
+            "wording exactly rather than the submitted text."
+        )
+    elif verdict == "partial":
+        head = f"## verify_quote: PARTIAL SIMILARITY ONLY (best {score:.2f})"
+        advice = (
+            "The source does not contain this passage as quoted. Do NOT use "
+            "the quotation; re-read the best-matching passage below."
+        )
+    else:
+        head = f"## verify_quote: NOT FOUND (best similarity {score:.2f})"
+        advice = (
+            "The source does not appear to contain this passage. Do NOT use "
+            "the quotation. If the document is long and truncated, refine the "
+            "fetch to the relevant section and re-run."
+        )
+
+    return "\n".join([
+        head, "",
+        f"Source: {url}",
+        f"Quote submitted: \"{quote.strip()[:300]}\"",
+        advice + (para_note or ""),
+        "",
+        "Best-matching passage in source:",
+        f"> {evidence[:600]}" if evidence else "> (none)",
+        "",
+        "Verification is conversation-bound: this result holds for the "
+        "document as fetched now, at the URL above.",
+    ])
+
+
+def _tier1_section(markdown: str) -> str:
+    """Extract the Tier 1 section of an authoritative-sources file.
+
+    Captures from the heading containing "Tier 1" up to the next heading of
+    the same or higher level; falls back to the file's head if the layout is
+    unexpected.
+    """
+    lines = markdown.splitlines()
+    start = level = None
+    for i, line in enumerate(lines):
+        m = re.match(r"^(#{1,4})\s+.*tier\s*1", line, re.IGNORECASE)
+        if m:
+            start, level = i, len(m.group(1))
+            break
+    if start is None:
+        return markdown[:4000]
+    for j in range(start + 1, len(lines)):
+        m = re.match(r"^(#{1,4})\s", lines[j])
+        if m and len(m.group(1)) <= level:
+            return "\n".join(lines[start:j]).strip()
+    return "\n".join(lines[start:]).strip()
+
+
+@mcp.tool()
+def search_sources(query: str, tribunal: str = "") -> str:
+    """Route a research query to the right Tier 1 search entry points.
+
+    Returns, for the tribunal concerned (detected from the query, or passed
+    explicitly), the Tier 1 section of its authoritative-sources reference:
+    the databases to search, in order of authority, with the suite's guidance
+    on each. Use fetch_document on the entry points to run the search, and
+    verify anything found before citing it.
+
+    This tool does not search a private index: it routes to the courts' own
+    databases, which are the only places a search result counts.
+    """
+    if not query.strip():
+        return "Provide a query."
+    if tribunal:
+        trib = _resolve_tribunal(tribunal)
+        if trib is None:
+            return _unknown_tribunal_message(tribunal)
+        slugs = [trib.slug]
+        note = f"Tribunal set explicitly to '{trib.slug}'."
+    else:
+        ranked = detect_tribunals(query)
+        slugs = [s for s, _ in ranked[:2]]
+        note = (
+            "Detected from query: " + ", ".join(slugs)
+            if slugs
+            else "No tribunal detected — showing the cross-tribunal entry point. "
+            "Pass `tribunal` to get a specific court's source hierarchy."
+        )
+
+    out = [f"# Search routing for: {query}", "", note, ""]
+    for slug in slugs:
+        trib = _resolve_tribunal(slug)
+        if trib is None:
+            continue
+        got = _read_tribunal_file(trib, "references/authoritative-sources.md")
+        if got is None:
+            continue
+        text = got[1]
+        section = _tier1_section(text)
+        out += [f"## {slug} — Tier 1 sources", section, ""]
+    out += [
+        "## Cross-tribunal",
+        "The ICC Legal Tools Database (https://www.legal-tools.org) indexes "
+        "documents across international criminal jurisdictions, with a "
+        "Persistent URL per document.",
+        "",
+        "Results found through any of these entry points are still citations "
+        "to verify: existence, content, paragraph — in that order.",
+    ]
+    return "\n".join(out)
 
 
 # --------------------------------------------------------------------------

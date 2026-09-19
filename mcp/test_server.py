@@ -129,6 +129,50 @@ def test_remote_mode_standalone_copy():
         assert mod._read_tribunal_file(tribunals["icc"], "../CLAUDE.md") is None
 
 
+def test_resolve_citation_parses_and_flags():
+    out = server.resolve_citation("Prosecutor v. Bemba, ICC-01/05-01/08-3343, para. 188")
+    assert "icc" in out
+    assert "ICC-01/05-01/08-3343" in out
+    assert "188" in out
+    assert "form matches" in out.lower() or "form matches the documented scheme" in out
+    # Confidential suffix is a hard stop.
+    out2 = server.resolve_citation("ICC-01/04-01/06-2842-Conf", tribunal="icc")
+    assert "HARD STOP" in out2
+    # ECCC severance discipline.
+    out3 = server.resolve_citation("Case 002 Trial Judgment", tribunal="eccc")
+    assert "002/01" in out3
+    # Garbage citation warns rather than validating.
+    out4 = server.resolve_citation("some vague reference", tribunal="icc")
+    assert "No canonical case-number form recognised" in out4
+
+
+def test_match_quote_levels():
+    src = (
+        "57. The Chamber recalls that \u201ceffective control\u201d is the "
+        "material ability to prevent or repress the commission of the crimes. "
+        "58. This standard has been applied consistently."
+    )
+    v, s, _ = server._match_quote(src, 'the material ability to prevent or repress the commission of the crimes')
+    assert v == "verbatim" and s == 1.0
+    # Curly vs straight quotes normalise away.
+    v2, _, _ = server._match_quote(src, '"effective control" is the material ability')
+    assert v2 == "verbatim"
+    # Paraphrase scores below verbatim.
+    v3, s3, _ = server._match_quote(src, "effective control means being able to stop or punish crimes")
+    assert v3 in ("close", "partial", "absent") and s3 < 1.0
+    # Absent text is not found.
+    v4, _, _ = server._match_quote(src, "the tribunal lacks jurisdiction over corporations entirely")
+    assert v4 in ("partial", "absent")
+
+
+def test_search_sources_routes_to_tier1():
+    out = server.search_sources("effective control command responsibility", tribunal="icc")
+    assert "Tier 1" in out
+    assert "legal-tools" in out.lower()
+    out2 = server.search_sources("Srebrenica genocide appeal")
+    assert "icty-ictr-irmct" in out2
+
+
 def _run_all():
     fns = [v for k, v in sorted(globals().items()) if k.startswith("test_") and callable(v)]
     failures = 0

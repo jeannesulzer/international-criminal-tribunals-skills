@@ -10,6 +10,20 @@ project aims to follow semantic versioning at the suite level.
 
 ## [Unreleased]
 
+### Added
+- Three new MCP tools mechanising the first rungs of the verification
+  gradient: `resolve_citation` (parses a citation, validates its form
+  against the tribunal's documented number scheme, extracts components,
+  and flags discipline problems such as `-Conf` suffixes, ECCC severance
+  ambiguity, and IT/MICT pairing), `verify_quote` (fetches the
+  authoritative source and checks a claimed quotation against it,
+  reporting verbatim / close match / not found — it never confirms a
+  quote the source does not contain), and `search_sources` (routes a
+  research query to the Tier 1 search entry points of the tribunal
+  concerned, reusing the suite's authoritative-sources references).
+  `Srebrenica` added to the ICTY/ICTR/IRMCT detection triggers. Smoke
+  tests cover all three (13/13).
+
 ### Fixed
 - `mcp/server.py` now works on a fresh install of the MCP Python SDK: SDK 2.x
   renamed the `FastMCP` entry point, which made the server crash at import —
