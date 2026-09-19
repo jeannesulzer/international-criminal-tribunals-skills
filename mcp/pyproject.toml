@@ -1,6 +1,6 @@
 [project]
 name = "international-justice-mcp"
-version = "0.1.0"
+version = "0.2.0"
 description = "Model Context Protocol server exposing the international-criminal-tribunals-skills suite: skill content, citation-verification guidance, jurisprudence search, and primary-source retrieval."
 readme = "README.md"
 requires-python = ">=3.10"
