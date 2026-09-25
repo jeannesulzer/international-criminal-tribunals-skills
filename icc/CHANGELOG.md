@@ -3,6 +3,14 @@
 All notable changes to the `icc/` skill. Versions follow the suite-level
 versioning indicated in the top-level `README.md`.
 
+## v1.1.4 — 2026-09-27
+
+### Added
+- `references/authoritative-sources.md`: the ICC Case Law Database
+  (`legal-tools.org/cld`) noted under the Legal Tools entry — the ICC
+  counterpart of the IRMCT Case Law Database the ICTY/ICTR guide already
+  designates. Locating aid; citation and verification unchanged.
+
 ## v1.1.3 — 2026-09-25
 
 ### Added

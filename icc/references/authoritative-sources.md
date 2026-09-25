@@ -34,6 +34,8 @@ Comprehensive collection of ICC documents and related international criminal law
 
 Documents have unique LTD identifiers (e.g. `LTD-12345`). Prefer the ICC document number for citation; you may include the Legal Tools URL as a retrievability aid.
 
+The same platform hosts the **ICC Case Law Database** (`legal-tools.org/cld`) — curated ICC case law with the Court's own document references, the ICC counterpart of the IRMCT's Case Law Database that the ICTY/ICTR guide already designates. Use it to locate a holding and its exact reference; the citation still carries the ICC document number, verified as usual.
+
 ### asp.icc-cpi.int — Assembly of States Parties
 
 Authoritative for:
