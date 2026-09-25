@@ -52,6 +52,7 @@ Useful for context. Never authoritative on what the Court has said. Always in a 
 - **Human Rights Watch**, **Amnesty International** — NGO reports
 - **UN bodies** — Panels of Experts, Commissions of Inquiry, FFMs, OHCHR. Authoritative on facts they investigate; never on ICC findings.
 - **Academic journals** — JICJ, LJIL, EJIL, AJIL, ICLR; OUP commentaries (Schabas, Triffterer/Ambos)
+- **CLICC / Lexsitus** (`cilrap-lexsitus.org`) — CILRAP's free, provision-by-provision commentary on the Rome Statute and the RPE (chief editor Mark Klamberg), with per-article lectures, preparatory works and digests. The natural first stop for an interpretation question on a specific article; cite as doctrine (e.g. "CLICC, Article 75 commentary"), never as a substitute for what the Court itself held — the holding still gets verified against Tier 1.
 - **Mainstream news** — Reuters, AP, AFP, BBC, major broadsheets
 - **Specialist journalism** — IJ-Monitor, Justice Info, Opinio Juris
 - **OUP ORIL** (`opil.ouplaw.com`) — editorially curated case entries with the Court's own document references; useful for confirming citation details when icc-cpi.int isn't reachable.

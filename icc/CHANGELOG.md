@@ -3,6 +3,15 @@
 All notable changes to the `icc/` skill. Versions follow the suite-level
 versioning indicated in the top-level `README.md`.
 
+## v1.1.3 — 2026-09-25
+
+### Added
+- `references/authoritative-sources.md`: CLICC / Lexsitus
+  (`cilrap-lexsitus.org`) added to Tier 2 — CILRAP's free,
+  provision-by-provision commentary on the Rome Statute and the RPE, the
+  natural first stop for interpretation questions on a specific article.
+  Citable as doctrine only; holdings still verify against Tier 1.
+
 ## v1.1.2 — 2026-06-02
 
 Substantive correction following an expert verification pass.
