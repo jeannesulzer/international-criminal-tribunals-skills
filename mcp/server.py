@@ -197,6 +197,33 @@ def _discover_tribunals() -> dict[str, Tribunal]:
     return found
 
 
+# Founding-instrument years, used to list tribunals in the order the
+# institutions were created — the order the field itself tells its history in
+# (Nuremberg first, the Colombian JEP last), rather than alphabetically.
+_FOUNDING_YEAR: dict[str, tuple[int, str]] = {
+    "nuremberg-tokyo": (1945, "London Agreement and IMT Charter; Tokyo Charter 1946"),
+    "icty-ictr-irmct": (1993, "SC Res. 827; ICTR 1994; Mechanism 2010"),
+    "icc": (1998, "Rome Statute; operational 2002"),
+    "reg-64-kosovo": (2000, "UNMIK Regulation 2000/64"),
+    "special-panels-timor-leste": (2000, "UNTAET Regulation 2000/15"),
+    "scsl-rscsl": (2002, "UN–Sierra Leone Agreement; RSCSL 2013"),
+    "eccc": (2003, "UN–Cambodia Agreement; ECCC Law 2001 as amended"),
+    "wcc-bih": (2005, "Section I of the Court of BiH operational"),
+    "stl": (2007, "SC Res. 1757"),
+    "eac-habre": (2012, "AU–Senegal Accord"),
+    "ksc": (2015, "Law No. 05/L-053"),
+    "cps-rca": (2015, "Loi organique n°15.003"),
+    "jep": (2016, "Final Peace Agreement; Acto Legislativo 01/2017"),
+}
+
+
+def _chronological(tribunals: "dict[str, Tribunal]") -> "list[Tribunal]":
+    return sorted(
+        tribunals.values(),
+        key=lambda t: (_FOUNDING_YEAR.get(t.slug, (9999,))[0], t.slug),
+    )
+
+
 # Discovery is lazy (first tool call, not import) so the server attaches to
 # the MCP client instantly — slow startups get killed by client timeouts.
 _TRIBUNALS_CACHE: dict[str, Tribunal] | None = None
@@ -435,14 +462,22 @@ def list_tribunals() -> str:
             f"(https://github.com/{_GITHUB_REPO}). Check network access and "
             "call this tool again."
         )
-    lines = [f"{len(tribunals)} tribunal skills available:", ""]
-    for trib in tribunals.values():
+    lines = [
+        f"{len(tribunals)} tribunal skills available, in the order the "
+        "institutions were founded:",
+        "",
+    ]
+    for trib in _chronological(tribunals):
         refs = sorted(
             f.removeprefix("references/").removesuffix(".md")
             for f in _tribunal_files(trib)
             if f.startswith("references/")
         )
-        lines.append(f"## {trib.slug}")
+        year, note = _FOUNDING_YEAR.get(trib.slug, (None, ""))
+        heading = f"## {trib.slug}" + (f" — {year}" if year else "")
+        lines.append(heading)
+        if note:
+            lines.append(f"*{note}*")
         lines.append(_short(trib.description) or "(no description)")
         if refs:
             lines.append(f"References: {', '.join(refs)}")

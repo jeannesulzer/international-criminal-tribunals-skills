@@ -23,6 +23,14 @@ def test_tribunals_discovered():
     assert "International Criminal Court" in icc.description
 
 
+def test_list_tribunals_chronological():
+    out = server.list_tribunals()
+    order = ["nuremberg-tokyo", "icty-ictr-irmct", "## icc", "scsl-rscsl", "eccc", "stl", "eac-habre", "## jep"]
+    positions = [out.index(k) for k in order]
+    assert positions == sorted(positions), positions
+    assert "1945" in out and "founded" in out
+
+
 def test_detection_routes_known_schemes():
     assert server.detect_tribunals("ICC-01/05-01/08-3343")[0][0] == "icc"
     assert server.detect_tribunals("Prosecutor v. Krstić IT-98-33-T")[0][0] == "icty-ictr-irmct"
