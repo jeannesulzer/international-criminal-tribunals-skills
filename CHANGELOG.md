@@ -24,6 +24,12 @@ project aims to follow semantic versioning at the suite level.
   `Srebrenica` added to the ICTY/ICTR/IRMCT detection triggers. Smoke
   tests cover all three (13/13).
 
+### Changed
+- `list_tribunals` now lists the tribunals in the order the institutions
+  were founded (Nuremberg 1945 first, the Colombian JEP last), each with
+  its founding year and instrument, instead of alphabetically — the order
+  the field itself tells its history in.
+
 ### Fixed
 - `mcp/server.py` now works on a fresh install of the MCP Python SDK: SDK 2.x
   renamed the `FastMCP` entry point, which made the server crash at import —
