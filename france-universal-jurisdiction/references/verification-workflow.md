@@ -68,3 +68,43 @@ Légifrance and courdecassation.fr are generally reachable and reliable. Some
 official court pages and the PNAT site can be slow or return errors; when a
 direct fetch fails, that is structural — work the ladder (Tier-2 trackers carry
 most assises outcomes) rather than treating failure as fatal.
+
+---
+
+## Reading the source document directly (the top of the ladder)
+
+The most reliable verification is reading the **actual document**, not a
+website's search snippet. Put this above everything else — and it matters more
+here than for any other skill, because first-instance *cour d'assises*
+judgments are frequently non-public:
+
+**Rung 0 — work from the document itself when it is available.** Official
+French court portals can be slow or unavailable, and most assises judgments are
+not published at all. The two ways to reach the text anyway:
+
+- **The user supplies it** — an uploaded PDF or pasted pages (a judgment, an
+  *arrêt* of the Cour de cassation, an *acte d'accusation*) can be read
+  directly, reaching paragraph-level verification. A practitioner on the matter
+  usually already holds it; ask for it.
+- **A retrieval tool reads it** — where a document-retrieval tool or MCP server
+  is available (Légifrance/Judilibre for statute and Cour de cassation; a
+  fetch-and-extract tool for a PDF), prefer it over a raw fetch.
+
+Only when the document cannot be obtained do you fall back to the ladder above
+— and then you state the ceiling honestly (for assises judgments, often
+"existence + official/Tier-2 account").
+
+## Site-search results are leads, not content
+
+A result from a site-search index — or a "synthesis" of search snippets —
+establishes at most that something **exists**. It is **never** content- or
+paragraph-level verification. Treat it as a lead to confirm against the
+document, and label it as such. Two recurring traps:
+
+- **Transliteration / OCR garbling.** Names and acronyms get corrupted
+  (foreign names transliterated into French, diacritics dropped). A name or
+  acronym that appears only once in a snippet is a red flag — do not assert it.
+- **Relational claims.** Who is whose subordinate, superior, co-perpetrator, or
+  *complice* is the detail a synthesis most often inverts. Never assert a
+  relationship — or a jurisdictional basis — from a snippet; it requires the
+  document.
