@@ -21,10 +21,10 @@ The Bemba Trial Chamber conviction was set aside by the Appeals Chamber on 8 Jun
 ### Verify
 
 ```
-web_fetch("https://www.icc-cpi.int/court-record/icc-01/05-01/08-3343")
+search legal-tools.org for "ICC-01/05-01/08-3343" → open the record's Persistent URL
 → full document retrieved. Read the Article 28(a) / effective control section. Note the paragraph(s) articulating the standard.
 
-web_fetch("https://www.icc-cpi.int/court-record/icc-01/05-01/08-3636-Red")
+search legal-tools.org for "ICC-01/05-01/08-3636-Red" → open the record's Persistent URL
 → full document retrieved. Read the Appeals Chamber reasoning on command responsibility.
 ```
 

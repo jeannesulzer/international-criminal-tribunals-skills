@@ -3,6 +3,18 @@
 All notable changes to the `icc/` skill. Versions follow the suite-level
 versioning indicated in the top-level `README.md`.
 
+## v1.1.5 — 2026-10-06
+
+### Changed
+- The ICC Legal Tools Database (`legal-tools.org`) is now the **first
+  retrieval stop** throughout the skill: the fallback ladders, the workflow,
+  and the worked examples start there, with `icc-cpi.int` as the second
+  rung. The Database registers the Court's public decisions comprehensively,
+  each under a Persistent URL, and answers automated retrieval reliably,
+  where direct icc-cpi.int fetches 403 structurally. The source hierarchy
+  itself is unchanged — both remain Tier 1, and icc-cpi.int remains the
+  Court's official website.
+
 ## v1.1.4 — 2026-09-27
 
 ### Added
