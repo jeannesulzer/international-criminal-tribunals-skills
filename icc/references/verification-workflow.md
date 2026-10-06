@@ -4,7 +4,7 @@ The operational procedure for getting any ICC citation into an output. Read this
 
 ## The discipline
 
-For any case-specific document — judgment, decision, warrant, filing, OTP statement — verify before citing. Verification means retrieving the document from icc-cpi.int or legal-tools.org (or another Tier 1 source) in the current conversation. Foundational texts in project knowledge are the only exception.
+For any case-specific document — judgment, decision, warrant, filing, OTP statement — verify before citing. Verification means retrieving the document from legal-tools.org (the ICC Legal Tools Database, where the Court's public decisions are systematically registered) or icc-cpi.int (or another Tier 1 source) in the current conversation. Foundational texts in project knowledge are the only exception.
 
 The reason: ICC document numbers are exact, paragraph numbers are exact, and the cost of an invented citation in real work — a filed brief, a published article, an internal memo a colleague relies on — is high. Two to five `web_fetch` calls per citation is the correct cost.
 
@@ -26,9 +26,9 @@ When verification stops short of what the claim needs, either: (a) soften the cl
 
 When the first attempt fails, work the ladder. Stop at the first level that gives you what the claim needs.
 
-**1. icc-cpi.int direct fetch.** The case page or court-record URL.
+**1. legal-tools.org.** The ICC Legal Tools Database — the first retrieval stop. The Court's public decisions are systematically registered there, each under a Persistent URL, and the Database answers automated retrieval reliably. Search the document number; open the record.
 
-**2. legal-tools.org.** The ICC Legal Tools Database; comprehensive, including older filings.
+**2. icc-cpi.int direct fetch.** The case page or court-record URL. Authoritative whenever it answers; its 403s are structural, not a sign the document does not exist.
 
 **3. Search-engine snippet from a Tier 1 domain.** `web_search` for the document number plus `icc-cpi.int` or `legal-tools.org`. If a result excerpts the relevant passage from a Tier 1 page, that excerpt is existence-verifying (the document exists and the search engine pulled real text from a Tier 1 URL) but generally not paragraph-verifying (snippets are short and not always paragraph-aligned).
 
@@ -70,12 +70,12 @@ If any answer is no, fix it or remove the citation.
 **Step 2 — verify.**
 
 ```
-web_fetch("https://www.icc-cpi.int/court-record/icc-01/05-01/08-3343")
+search legal-tools.org for "ICC-01/05-01/08-3343" → open the record's Persistent URL
 ```
 
 If this succeeds: read the Article 28 section. Note the paragraphs articulating the standard. Verification: paragraph-level.
 
-If this returns 403: fall back to legal-tools.org → search snippet → press release. Each gives a different verification level. The output must then match. If only the press release is reachable, the output can say "the Trial Chamber's articulation of effective control" but cannot quote or pinpoint to a paragraph.
+If the Database record is not retrievable: try the icc-cpi.int court record directly, then the search snippet, then the press release. Each gives a different verification level. The output must then match. If only the press release is reachable, the output can say "the Trial Chamber's articulation of effective control" but cannot quote or pinpoint to a paragraph.
 
 Repeat for the AJ.
 

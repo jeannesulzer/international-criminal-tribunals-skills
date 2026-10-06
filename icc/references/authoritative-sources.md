@@ -4,6 +4,12 @@ Sources that may be cited, and how to access them. Read this whenever verifying 
 
 ## Tier 1 — primary, authoritative
 
+For retrieval, start with the Legal Tools Database (`legal-tools.org`): the
+Court's public decisions are comprehensively registered there, each under a
+Persistent URL, and the Database answers automated retrieval reliably.
+`icc-cpi.int` remains the Court's official website — authoritative for
+everything it serves — but its 403s on direct fetch are structural.
+
 ### icc-cpi.int — the official Court website
 
 Authoritative for everything the Court itself issues.
@@ -30,7 +36,7 @@ When the fetch *does* succeed, capture from the official page:
 
 ### legal-tools.org — ICC Legal Tools Database
 
-Comprehensive collection of ICC documents and related international criminal law materials. Usually the fastest path to a full text when icc-cpi.int blocks. Entry: `https://www.legal-tools.org/`; search: `https://www.legal-tools.org/search`.
+The first retrieval stop. Comprehensive collection of ICC documents and related international criminal law materials — the Court's public decisions are systematically registered, each with a Persistent URL — and reliable to automated retrieval where icc-cpi.int blocks. Entry: `https://www.legal-tools.org/`; search: `https://www.legal-tools.org/search`.
 
 Documents have unique LTD identifiers (e.g. `LTD-12345`). Prefer the ICC document number for citation; you may include the Legal Tools URL as a retrievability aid.
 
@@ -84,9 +90,9 @@ When citing secondary material:
 
 In order:
 
-1. `web_search` for `[document number] icc-cpi.int` → ICC press release (Tier 1A; supports verification levels A and B).
-2. `web_search` for `[document number] legal-tools.org` → full text (Tier 1B; supports level C if the document is retrievable).
-3. `web_fetch` against legal-tools.org URLs that appear in search results.
+1. `web_search` for `[document number] legal-tools.org` → full text (Tier 1; supports level C if the document is retrievable).
+2. `web_fetch` against legal-tools.org URLs that appear in search results.
+3. `web_search` for `[document number] icc-cpi.int` → ICC press release (Tier 1; supports verification levels A and B).
 4. `web_search` for the document on OUP ORIL or in a Court-published "Summary of the Judgment" PDF (Tier 1 / Tier 2 mix; supports levels A and B).
 5. If none of the above produces enough, report the level achieved and the gap — do not invent.
 

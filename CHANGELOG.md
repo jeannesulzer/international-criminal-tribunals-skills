@@ -25,6 +25,10 @@ project aims to follow semantic versioning at the suite level.
   tests cover all three (13/13).
 
 ### Changed
+- ICC skill (v1.1.5): the ICC Legal Tools Database is now the first
+  retrieval stop in the verification workflow, the fallback ladders, and the
+  worked examples, with icc-cpi.int as the second rung. Tier 1 membership
+  and the source hierarchy are unchanged.
 - `list_tribunals` now lists the tribunals in the order the institutions
   were founded (Nuremberg 1945 first, the Colombian JEP last), each with
   its founding year and instrument, instead of alphabetically — the order
