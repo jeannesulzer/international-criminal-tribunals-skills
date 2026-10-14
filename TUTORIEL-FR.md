@@ -13,6 +13,22 @@ colombienne, qui apprennent à votre assistant IA à chercher dans les bonnes
 sources, citer au bon format, et surtout : **ne jamais citer sans avoir
 vérifié le document officiel**.
 
+## Un skill et le serveur MCP : quelle différence ?
+
+- **Un skill est un document de méthode.** L'assistant le lit et sait alors
+  *comment* travailler : les sources autorisées, les formats de citation, la
+  règle de vérification. Pas d'installation : ce sont des fichiers que vous
+  déposez dans un projet.
+- **Le serveur MCP est un branchement technique.** Il donne à l'assistant des
+  outils d'action en plus : chercher dans les treize guides d'un coup,
+  analyser une référence, vérifier une citation mot à mot contre le document
+  officiel. Il demande une petite installation (voir
+  [`mcp/README.md`](mcp/README.md)) et ne fonctionne que sur les assistants
+  compatibles MCP, comme Claude.
+
+**Les skills suffisent pour travailler.** Le serveur MCP automatise les
+vérifications ; il n'est jamais obligatoire.
+
 ## Avec quels assistants IA ?
 
 Les skills sont de simples fichiers texte : ils fonctionnent avec tout
@@ -47,7 +63,7 @@ dossier, sous-dossiers compris) :
 - **ChatGPT** : créez un « Project », ou joignez les fichiers à la
   conversation.
 
-## Étape 3 · Poser vos questions, comme à un collègue
+## Étape 3 · Posez une question
 
 Dans cet espace, travaillez normalement. Par exemple :
 
