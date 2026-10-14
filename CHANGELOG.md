@@ -11,6 +11,12 @@ project aims to follow semantic versioning at the suite level.
 ## [Unreleased]
 
 ### Added
+- `TUTORIEL-FR.md` and its one-page PDF
+  (`docs/Tutoriel-Skills-Justice-Internationale.pdf`) — a French-language
+  quick-start for practitioners, written after user reports that the entry
+  point was unclear. States which AI assistants the suite works with: the
+  skills as documents on Claude, Le Chat (Mistral) and ChatGPT; the MCP
+  server on Claude and any MCP-capable client.
 - Three new MCP tools mechanising the first rungs of the verification
   gradient: `resolve_citation` (parses a citation, validates its form
   against the tribunal's documented number scheme, extracts components,
