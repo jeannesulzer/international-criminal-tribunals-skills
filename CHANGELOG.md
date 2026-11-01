@@ -11,6 +11,12 @@ project aims to follow semantic versioning at the suite level.
 ## [Unreleased]
 
 ### Added
+- `mcp/LICENSE` — the server code is now explicitly licensed under the MIT
+  License (OSI-approved), alongside the CC BY 4.0 licence that continues to
+  cover the content of the repository. An "Ownership and licensing" section
+  in `README.md` states that the project is owned by Impact Litigation Lab,
+  a French non-profit association (loi 1901). Prepares the nomination of the
+  suite as a Digital Public Good.
 - `TUTORIEL-FR.md` and its one-page PDF
   (`docs/Tutoriel-Skills-Justice-Internationale.pdf`) — a French-language
   quick-start for practitioners, written after user reports that the entry
