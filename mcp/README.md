@@ -169,3 +169,8 @@ instant.
   caller to verify.
 - **Path-safe.** File access is constrained to within a tribunal folder;
   traversal outside the repo is rejected.
+
+## License
+
+The server code in this directory is licensed under the [MIT License](LICENSE).
+The skill content it serves is licensed under [CC BY 4.0](../LICENSE).

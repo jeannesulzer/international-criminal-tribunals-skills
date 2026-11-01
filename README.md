@@ -119,3 +119,15 @@ If you use these skills in research or practice, please cite as:
 ---
 
 © 2026 Jeanne Sulzer / Impact Litigation Lab. Released under the Creative Commons Attribution 4.0 International licence (CC BY 4.0).
+
+## Ownership and licensing
+
+This project is owned and maintained by **Impact Litigation Lab**, a
+non-profit association under the French law of 1 July 1901, based in
+Paris, founded by Jeanne Sulzer (avocate au Barreau de Paris, ICC List
+of Counsel).
+
+- The research guides, references, examples and documentation are
+  licensed under [CC BY 4.0](LICENSE).
+- The International Justice MCP server (`mcp/`) is licensed under the
+  [MIT License](mcp/LICENSE).
